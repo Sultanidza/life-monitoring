@@ -9,7 +9,7 @@ import sys
 from collections import Counter
 from pathlib import Path
 
-from PIL import Image
+from PIL import Image, ImageDraw, ImageFont
 import torch
 from transformers import AutoModelForZeroShotObjectDetection, AutoProcessor
 
@@ -24,8 +24,14 @@ DEFAULT_IMAGE_ROOTS = [
     "data/frames/obs-studio-2026-05-17-11-06-20",
 ]
 DEFAULT_OUTPUT = "data/predictions/grounding_dino_predictions.json"
+DEFAULT_ANNOTATED_DIR = "data/predictions/grounding_dino_annotated"
 DEFAULT_PROMPT = "guitar. musical instrument. person."
 DEFAULT_MODEL_ID = "IDEA-Research/grounding-dino-base"
+ANNOTATION_COLORS = {
+    "guitar": "#ff4d4f",
+    "musical instrument": "#1890ff",
+    "person": "#52c41a",
+}
 
 
 def parse_args() -> argparse.Namespace:
@@ -52,6 +58,11 @@ def parse_args() -> argparse.Namespace:
         "--model-id",
         default=DEFAULT_MODEL_ID,
         help=f"Grounding DINO model id. Default: {DEFAULT_MODEL_ID}",
+    )
+    parser.add_argument(
+        "--annotated-dir",
+        default=DEFAULT_ANNOTATED_DIR,
+        help=f"Directory to save annotated images. Default: {DEFAULT_ANNOTATED_DIR}",
     )
     parser.add_argument(
         "--prompt",
@@ -129,8 +140,55 @@ def to_coco_bbox(box: list[float]) -> list[float]:
     ]
 
 
+def color_for_label(label: str) -> str:
+    return ANNOTATION_COLORS.get(label, "#faad14")
+
+
 def normalize_label(label: str) -> str:
     return str(label).strip().lower()
+
+
+def safe_output_name(file_name: str, image_id: int) -> str:
+    basename = Path(file_name).name.replace("%20", "_").replace("/", "_")
+    return f"{image_id:04d}-{basename}"
+
+
+def draw_detections(
+    image_path: Path,
+    detections: list[dict],
+    destination: Path,
+) -> None:
+    image = Image.open(image_path).convert("RGB")
+    draw = ImageDraw.Draw(image)
+    font = ImageFont.load_default()
+
+    for detection in detections:
+        label = detection["label"]
+        score = detection["score"]
+        x, y, width, height = detection["bbox"]
+        x2 = x + width
+        y2 = y + height
+        color = color_for_label(label)
+
+        draw.rectangle([x, y, x2, y2], outline=color, width=3)
+
+        text = f"{label} {score:.2f}"
+        try:
+            text_x1, text_y1, text_x2, text_y2 = draw.textbbox((x, y), text, font=font)
+            text_width = text_x2 - text_x1
+            text_height = text_y2 - text_y1
+        except AttributeError:
+            text_width, text_height = draw.textsize(text, font=font)
+
+        label_top = max(0, y - text_height - 6)
+        label_bottom = label_top + text_height + 4
+        label_right = x + text_width + 8
+
+        draw.rectangle([x, label_top, label_right, label_bottom], fill=color)
+        draw.text((x + 4, label_top + 2), text, fill="white", font=font)
+
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    image.save(destination)
 
 
 def post_process_outputs(
@@ -167,6 +225,7 @@ def run_inference(
     box_threshold: float,
     text_threshold: float,
     device: str,
+    annotated_dir: Path,
 ) -> tuple[list[dict], Counter]:
     processor = AutoProcessor.from_pretrained(model_id)
     model = AutoModelForZeroShotObjectDetection.from_pretrained(model_id).to(device)
@@ -209,11 +268,18 @@ def run_inference(
                 }
             )
 
+        annotated_path = annotated_dir / safe_output_name(
+            image_entry["file_name"],
+            image_entry["image_id"],
+        )
+        draw_detections(image_path, detections, annotated_path)
+
         predictions.append(
             {
                 "image_id": image_entry["image_id"],
                 "file_name": image_entry["file_name"],
                 "resolved_path": image_entry["resolved_path"],
+                "annotated_image": str(annotated_path),
                 "detections": detections,
             }
         )
@@ -226,6 +292,7 @@ def main() -> int:
     project_root = Path(__file__).resolve().parents[1]
     coco_path = (project_root / args.coco).resolve()
     output_path = (project_root / args.output).resolve()
+    annotated_dir = (project_root / args.annotated_dir).resolve()
     image_roots = [(project_root / root).resolve() for root in args.image_roots]
 
     coco_data = load_coco(coco_path)
@@ -240,9 +307,11 @@ def main() -> int:
         box_threshold=args.box_threshold,
         text_threshold=args.text_threshold,
         device=choose_device(args.device),
+        annotated_dir=annotated_dir,
     )
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
+    annotated_dir.mkdir(parents=True, exist_ok=True)
     output_payload = {
         "coco_file": str(coco_path),
         "image_roots": [str(root) for root in image_roots],
@@ -250,6 +319,7 @@ def main() -> int:
         "prompt": args.prompt,
         "box_threshold": args.box_threshold,
         "text_threshold": args.text_threshold,
+        "annotated_dir": str(annotated_dir),
         "predictions": predictions,
     }
     output_path.write_text(json.dumps(output_payload, indent=2), encoding="utf-8")
