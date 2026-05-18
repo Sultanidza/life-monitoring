@@ -13,12 +13,28 @@ Thumbs.db
 __pycache__/
 *.pyc
 .venv/
+env/
 .pytest_cache/
 .mypy_cache/
 .ipynb_checkpoints/
 
 # Generated reports
 reports/test-runs/
+reports/frame-extraction/
+
+# Dataset assets
+data/raw-videos/*
+data/frames/*
+data/annotations/*
+data/splits/*
+data/predictions/*
+data/metrics/*
+!data/raw-videos/.gitkeep
+!data/frames/.gitkeep
+!data/annotations/.gitkeep
+!data/splits/.gitkeep
+!data/predictions/.gitkeep
+!data/metrics/.gitkeep
 
 # Model weights
 *.pt
