@@ -426,6 +426,10 @@ Use this file to keep:
 - dataset and labeling decisions
 - evaluation results worth preserving
 
+Full meeting summaries are stored in:
+
+- `docs/meeting-summaries/`
+
 Do not use this file for:
 
 - private personal notes
