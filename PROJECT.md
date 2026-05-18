@@ -21,9 +21,12 @@ Do not store personal notes here.
 Current product direction inferred from the linked project discussions and the implemented repo workflow:
 
 - build an MVP around object detection
+- keep the product intentionally narrow: one camera, one user, one core metric
 - detect `person`
 - detect `guitar`
 - test whether `musical instrument` is useful as a broader class
+- aggregate practice/session duration from detections
+- visualize activity as a 24-hour heatmap by instrument/session tags
 - evaluate models with clear IoU and precision/recall diagnostics
 - keep the process data-centric
 - keep the pipeline portable enough for Docker or `docker-compose`
@@ -37,6 +40,7 @@ Primary goals:
 - compare baseline detection models on project data
 - inspect prediction failures visually, not only numerically
 - converge on a practical baseline for the MVP
+- demonstrate end-to-end value with a minimal usable output, not only model metrics
 
 Secondary goals:
 
@@ -50,11 +54,16 @@ Current MVP scope:
 
 - object detection, not segmentation or tracking
 - image/frame-based evaluation first
+- one-camera setup
+- one-user setup
 - classes:
   - `person`
   - `guitar`
   - `musical instrument`
 - emphasis on `person` and `guitar` as the clearest initial targets
+- aggregate detected activity into session-duration summaries
+- generate a 24-hour heatmap or equivalent chart of instrument activity
+- keep minimal UX simple, for example notifications plus compact visual reporting
 
 Out of scope for now:
 
@@ -62,6 +71,8 @@ Out of scope for now:
 - full COCO mAP reporting
 - end-to-end video analytics beyond frame extraction
 - broad lifestyle-event taxonomy beyond the current detection classes
+- multi-user generalization as a first-class requirement
+- broad robotics scope outside this CV MVP
 
 ## Detection Task
 
@@ -81,6 +92,23 @@ fallback_rules:
   - if_no_multi_instrument_model: use_guitar
   - if_broad_instrument_class_is_noisy: prioritize_guitar_for_evaluation
 ```
+
+## Product Constraints
+
+Current product constraints:
+
+- one camera
+- one primary user
+- one narrow activity domain
+- one core downstream metric: time spent in sessions or practice activity
+- short, concrete iterations with visible artifacts
+
+Current preferred product output:
+
+- detect `person` and instrument presence/interactions
+- estimate or aggregate session duration
+- visualize activity on a 24-hour timeline or heatmap
+- optionally expose minimal notifications, such as Telegram, in later MVP stages
 
 ## Model Search Preferences
 
@@ -143,6 +171,8 @@ Current decisions:
 - raw datasets stay under `data/`
 - reports and run metadata stay under `reports/`
 - keep source datasets separated by folder rather than flattening everything immediately
+- prefer minimizing manual labeling cost
+- use pretrained models, transfer learning, and small focused datasets before scaling labeling effort
 
 Important path-resolution rule for Label Studio exports:
 
@@ -151,6 +181,24 @@ Important path-resolution rule for Label Studio exports:
   - URL-decode it
   - strip Label Studio hash prefix like `xxxxxxxx__`
   - search known image roots
+
+## Data Strategy
+
+Current data strategy:
+
+- start with personal/source-local video and image data
+- combine project data with open datasets where useful
+- prefer narrow, realistic recording scenarios over broad uncontrolled coverage
+- use augmentation aggressively for lighting, angle, and noise variation
+- treat synthetic data as a valid supplement if real labeled data is scarce
+- use weak supervision and semi-automatic labeling where it reduces annotation cost
+
+Techniques explicitly aligned with project direction:
+
+- pseudo-labeling with confidence thresholds
+- active-learning style frame prioritization
+- tracking-assisted label propagation between frames
+- heuristic pre-labeling, such as motion/background-based proposals, when useful
 
 ## Current Workflow
 
@@ -166,6 +214,22 @@ Current project workflow:
 8. compute IoU/precision/recall diagnostics
 9. inspect false positives, false negatives, and class confusion visually
 10. refine data, prompts, and class definitions before making larger model changes
+
+Preferred iteration style:
+
+- short sprints
+- one instrument or one narrow setup at a time
+- fixed camera/light/background when possible
+- visible artifacts each cycle: dataset growth, detections, metrics, or visualization output
+
+Data-centric loop to preserve:
+
+1. label a small trusted set
+2. run baseline inference
+3. prelabel a larger set with the model
+4. validate and correct labels
+5. recompute metrics
+6. track the numbers at each iteration
 
 ## Implemented Tooling
 
@@ -184,6 +248,18 @@ Current environment/tooling assumptions:
 - local file serving for Label Studio should point at the project `data/` root
 - `ffmpeg` is available for frame extraction
 
+Planned tooling direction beyond current scripts:
+
+- a simple session-duration aggregation step
+- heatmap or chart generation for 24-hour activity summaries
+- Dockerfile plus `docker-compose` support for reproducible startup
+
+Repository context files that should be maintained:
+
+- `PROJECT.md`
+- `AGENTS.md`
+- project-local skills under `.codex/skills/`
+
 ## Baseline Model Context
 
 Project baseline search and testing so far identified:
@@ -201,6 +277,13 @@ Current practical conclusion from project testing:
 - Grounding DINO is the strongest current baseline on project data
 
 ## Current Results
+
+Pre-metrics baseline stage:
+
+- several zero-shot detection models were tested visually
+- Grounding DINO emerged as the strongest visual baseline
+- the first comparison was based on roughly `30` images
+- visual inspection alone was considered insufficient and was later replaced with explicit metrics
 
 Grounding DINO COCO inference output:
 
@@ -261,6 +344,24 @@ Current findings from the project data:
 - `musical instrument` is currently a poor class for evaluation with Grounding DINO in this setup
 - broad instrument labeling appears noisier than concrete `guitar` labeling
 - visual inspection is necessary because aggregate metrics alone hide class-confusion patterns
+- narrow, concrete classes appear more useful than broad semantic classes for the current MVP
+- a small manually trusted test set is necessary before scaling any video evaluation
+
+## Test Set Strategy
+
+Current agreed test-set strategy:
+
+- start with about `30` manually labeled images for trustworthy evaluation
+- then expand toward about `150` images
+- use model prelabeling for the larger portion
+- manually validate or correct prelabels before treating them as evaluation-quality data
+- do not rely on visual judgment alone once metrics are available
+
+Class note:
+
+- one meeting summary referenced `person`, `guitar`, and `percussion` as manual labeling classes
+- the current repo COCO evaluation export uses `person`, `guitar`, and `musical instrument`
+- this class-definition mismatch should be treated as an open normalization issue for future evaluation work
 
 ## Working Hypotheses
 
@@ -271,6 +372,8 @@ Current hypotheses worth testing:
 - prompt wording may materially affect Grounding DINO quality
 - data quality and class-definition clarity will improve results faster than swapping models again immediately
 - a data-centric iteration loop will produce more value than model-family churn
+- one-camera/one-user constraints may allow a useful MVP with much less data than a general detector would require
+- a deployable demo with simple reporting may be more valuable than chasing a broader class taxonomy early
 
 ## Evaluation Priorities
 
@@ -299,6 +402,18 @@ Current deployment expectations:
 - avoid environment-specific assumptions where possible
 - preserve a path toward Docker or `docker-compose`
 - prefer simple, scriptable workflows over manual one-offs
+- plan for a dockerized local or VM deployment path
+- keep open-source-friendly structure and startup simplicity where possible
+
+## Near-Term Execution Priorities
+
+Near-term priorities currently supported by the project context:
+
+- keep improving the labeled test set
+- increase scene diversity in collected images and videos
+- continue extracting frames automatically from video at roughly `2` to `5` second intervals where useful
+- use model-assisted prelabeling instead of scaling manual labeling linearly
+- keep the current detection case focused before expanding to unrelated domains
 
 ## Project Memory Rules
 
