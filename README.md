@@ -4,10 +4,37 @@ Minimal project scaffold for `life-monitoring`.
 
 ## Structure
 
+- `data/` for local dataset assets kept out of git
+- `PROJECT.md` for project-specific goals and preferences used by local skills
 - `src/` for application code
 - `.codex/skills/` for project-local Codex skills
 - `scripts/test_baseline_models.py` for quick detector smoke tests
+- `scripts/extract_video_frames.py` for turning videos into still-image datasets
+- `scripts/resolve_coco_image_paths.py` for checking COCO filename alignment against local images
+- `scripts/run_grounding_dino_coco.py` for exporting Grounding DINO predictions on COCO-labeled images
+- `scripts/eval_grounding_dino_predictions.py` for simple IoU/precision/recall diagnostics
 - `reports/` for saved research notes and test runs
+
+## Extract Video Frames
+
+Extract one frame every 2 seconds from a video or a directory of videos:
+
+```bash
+python scripts/extract_video_frames.py --source path/to/video-or-folder --interval 2
+```
+
+By default:
+
+- frames are saved under `data/frames/<dataset-name>/`
+- run metadata is saved under `reports/frame-extraction/<timestamp>/`
+
+Use `--recursive` if `--source` is a directory and the videos are nested in subfolders.
+
+## Annotations
+
+Store dataset labels under `data/annotations/<dataset-name>/`, for example:
+
+- `data/annotations/eval-webcamoid-obs-studio-2026-05-17-11-06-20/coco.json`
 
 ## Test Baselines
 
