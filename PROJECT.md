@@ -24,7 +24,6 @@ Current product direction inferred from the linked project discussions and the i
 - keep the product intentionally narrow: one camera, one user, one core metric
 - detect `person`
 - detect `guitar`
-- test whether `musical instrument` is useful as a broader class
 - aggregate practice/session duration from detections
 - visualize activity as a 24-hour heatmap by instrument/session tags
 - evaluate models with clear IoU and precision/recall diagnostics
@@ -59,7 +58,6 @@ Current MVP scope:
 - classes:
   - `person`
   - `guitar`
-  - `musical instrument`
 - emphasis on `person` and `guitar` as the clearest initial targets
 - aggregate detected activity into session-duration summaries
 - generate a 24-hour heatmap or equivalent chart of instrument activity
@@ -82,15 +80,12 @@ task_type: object detection
 targets:
   - person
   - guitar
-  - musical instrument
 
 aliases:
   human: person
-  musical instruments: musical instrument
 
 fallback_rules:
-  - if_no_multi_instrument_model: use_guitar
-  - if_broad_instrument_class_is_noisy: prioritize_guitar_for_evaluation
+  - focus_primary_evaluation_on: [person, guitar]
 ```
 
 ## Product Constraints
@@ -148,19 +143,25 @@ Current mixed evaluation annotation set:
 That COCO set currently contains:
 
 - `30` images
-- `52` annotations
-- `3` categories
+- `45` annotations
+- `2` categories
 
 Category mapping in the current COCO export:
 
 - `0` -> `guitar`
-- `1` -> `musical instrument`
-- `2` -> `person`
+- `1` -> `person`
 
 Current labeled export mixes:
 
 - `27` images from `webcamoid`
 - `3` images from `obs-studio-2026-05-17-11-06-20`
+
+Archived historical 3-class evaluation assets:
+
+- `data/annotations/history/2026-05-17-initial-3class-coco.json`
+- `data/predictions/history/2026-05-17-initial-3class-grounding_dino_predictions.json`
+- `data/predictions/history/2026-05-17-initial-3class-grounding_dino_annotated/`
+- `data/metrics/history/2026-05-17-initial-3class-grounding_dino_eval_iou050.json`
 
 ## Data And Annotation Decisions
 
@@ -298,42 +299,33 @@ Current Grounding DINO metrics at IoU `0.5`:
 
 - `guitar`
   - GT: `22`
-  - Pred: `24`
-  - TP: `20`
-  - FP: `4`
-  - FN: `2`
-  - Precision: `0.8333`
-  - Recall: `0.9091`
-  - Mean IoU: `0.8593`
-- `musical instrument`
-  - GT: `7`
-  - Pred: `18`
-  - TP: `0`
-  - FP: `18`
-  - FN: `7`
-  - Precision: `0.0000`
-  - Recall: `0.0000`
-  - Mean IoU: `0.0000`
+  - Pred: `27`
+  - TP: `21`
+  - FP: `6`
+  - FN: `1`
+  - Precision: `0.7778`
+  - Recall: `0.9545`
+  - Mean IoU: `0.8609`
 - `person`
   - GT: `23`
-  - Pred: `37`
+  - Pred: `38`
   - TP: `23`
-  - FP: `14`
+  - FP: `15`
   - FN: `0`
-  - Precision: `0.6216`
+  - Precision: `0.6053`
   - Recall: `1.0000`
-  - Mean IoU: `0.9640`
+  - Mean IoU: `0.9661`
 
 Overall current totals:
 
-- GT: `52`
-- Pred: `79`
-- TP: `43`
-- FP: `36`
-- FN: `9`
-- Precision: `0.5443`
-- Recall: `0.8269`
-- Mean IoU: `0.9153`
+- GT: `45`
+- Pred: `65`
+- TP: `44`
+- FP: `21`
+- FN: `1`
+- Precision: `0.6769`
+- Recall: `0.9778`
+- Mean IoU: `0.9159`
 
 ## Current Findings
 
@@ -341,11 +333,10 @@ Current findings from the project data:
 
 - `person` works well in recall
 - `guitar` is already usable as an evaluation class
-- `musical instrument` is currently a poor class for evaluation with Grounding DINO in this setup
-- broad instrument labeling appears noisier than concrete `guitar` labeling
 - visual inspection is necessary because aggregate metrics alone hide class-confusion patterns
-- narrow, concrete classes appear more useful than broad semantic classes for the current MVP
+- narrow, concrete classes are more useful than broad semantic classes for the current MVP
 - a small manually trusted test set is necessary before scaling any video evaluation
+- removing `musical instrument` from the active evaluation set produced a much cleaner benchmark
 
 ## Test Set Strategy
 
@@ -360,14 +351,13 @@ Current agreed test-set strategy:
 Class note:
 
 - one meeting summary referenced `person`, `guitar`, and `percussion` as manual labeling classes
-- the current repo COCO evaluation export uses `person`, `guitar`, and `musical instrument`
-- this class-definition mismatch should be treated as an open normalization issue for future evaluation work
+- the current active evaluation export uses `person` and `guitar`
+- broader instrument labels were removed from primary evaluation to avoid ambiguity
 
 ## Working Hypotheses
 
 Current hypotheses worth testing:
 
-- `guitar` is a better MVP class than `musical instrument`
 - open-vocabulary detection is a better fit than closed-set baselines for this project
 - prompt wording may materially affect Grounding DINO quality
 - data quality and class-definition clarity will improve results faster than swapping models again immediately

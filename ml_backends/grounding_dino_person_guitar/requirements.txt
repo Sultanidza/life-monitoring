@@ -1,0 +1,4 @@
+git+https://github.com/HumanSignal/label-studio-ml-backend.git
+torch
+transformers
+pillow

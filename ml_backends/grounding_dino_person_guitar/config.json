@@ -1,0 +1,11 @@
+{
+  "model_id": "IDEA-Research/grounding-dino-base",
+  "prompt": "guitar. person.",
+  "labels": [
+    "guitar",
+    "person"
+  ],
+  "local_files_document_root": "/home/arturka/Documents/Projects/life-monitoring/data",
+  "box_threshold": 0.35,
+  "text_threshold": 0.25
+}
