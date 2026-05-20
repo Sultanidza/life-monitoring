@@ -39,6 +39,9 @@ data/metrics/*
 # Model weights
 *.pt
 
+# Runtime backend caches
+ml_backends/**/cache.db
+
 # Node
 node_modules/
 dist/
