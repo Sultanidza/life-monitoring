@@ -21,6 +21,7 @@ env/
 # Generated reports
 reports/test-runs/
 reports/frame-extraction/
+reports/model-validation/
 
 # Dataset assets
 data/raw-videos/*
@@ -38,6 +39,7 @@ data/metrics/*
 
 # Model weights
 *.pt
+*.pth
 
 # Runtime backend caches
 ml_backends/**/cache.db
