@@ -1,0 +1,899 @@
+{
+  "model": "grounding-dino",
+  "metadata": {
+    "model_id": "IDEA-Research/grounding-dino-base",
+    "device": "cuda",
+    "labels": [
+      "guitar",
+      "person"
+    ],
+    "box_threshold": 0.35,
+    "text_threshold": 0.25
+  },
+  "predictions": [
+    {
+      "image_id": 0,
+      "file_name": "images/69935b94__Picture%202026-05-12%2012-05-45.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-05-45.png",
+      "detections": [
+        {
+          "label": "guitar",
+          "category_id": 0,
+          "bbox": [
+            1453.77,
+            490.38,
+            161.14,
+            380.56
+          ],
+          "score": 0.9599
+        },
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            452.42,
+            253.67,
+            339.54,
+            817.05
+          ],
+          "score": 0.8308
+        }
+      ]
+    },
+    {
+      "image_id": 1,
+      "file_name": "images/f98dcdc3__Picture%202026-05-12%2012-06-03.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-03.png",
+      "detections": [
+        {
+          "label": "guitar",
+          "category_id": 0,
+          "bbox": [
+            1454.39,
+            490.87,
+            161.71,
+            381.07
+          ],
+          "score": 0.9484
+        },
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            1185.51,
+            386.47,
+            206.5,
+            452.78
+          ],
+          "score": 0.9012
+        }
+      ]
+    },
+    {
+      "image_id": 2,
+      "file_name": "images/a9168e1d__Picture%202026-05-12%2012-06-18.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-18.png",
+      "detections": [
+        {
+          "label": "guitar",
+          "category_id": 0,
+          "bbox": [
+            862.36,
+            450.41,
+            602.05,
+            229.6
+          ],
+          "score": 0.9209
+        },
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            813.2,
+            269.55,
+            375.53,
+            783.97
+          ],
+          "score": 0.7204
+        }
+      ]
+    },
+    {
+      "image_id": 3,
+      "file_name": "images/44c664c8__Picture%202026-05-12%2012-06-30.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-30.png",
+      "detections": [
+        {
+          "label": "guitar",
+          "category_id": 0,
+          "bbox": [
+            146.96,
+            27.3,
+            372.99,
+            540.09
+          ],
+          "score": 0.9579
+        },
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            370.55,
+            219.32,
+            617.23,
+            841.85
+          ],
+          "score": 0.8688
+        }
+      ]
+    },
+    {
+      "image_id": 4,
+      "file_name": "images/350097b9__Picture%202026-05-12%2012-06-46.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-46.png",
+      "detections": [
+        {
+          "label": "guitar",
+          "category_id": 0,
+          "bbox": [
+            664.95,
+            294.59,
+            1038.28,
+            484.33
+          ],
+          "score": 0.9218
+        },
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            196.12,
+            468.44,
+            152.7,
+            410.93
+          ],
+          "score": 0.4255
+        },
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            647.68,
+            103.05,
+            795.04,
+            964.78
+          ],
+          "score": 0.4553
+        }
+      ]
+    },
+    {
+      "image_id": 5,
+      "file_name": "images/7b8f0b3e__Picture%202026-05-12%2012-07-22.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-07-22.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            768.65,
+            94.57,
+            673.03,
+            975.72
+          ],
+          "score": 0.609
+        },
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            205.1,
+            467.01,
+            142.6,
+            407.83
+          ],
+          "score": 0.3757
+        }
+      ]
+    },
+    {
+      "image_id": 6,
+      "file_name": "images/94128ab1__Picture%202026-05-12%2012-07-45.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-07-45.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            421.02,
+            1.02,
+            1222.26,
+            1070.24
+          ],
+          "score": 0.4585
+        },
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            96.03,
+            463.08,
+            201.59,
+            317.71
+          ],
+          "score": 0.4257
+        },
+        {
+          "label": "guitar",
+          "category_id": 0,
+          "bbox": [
+            1470.73,
+            136.46,
+            134.18,
+            380.83
+          ],
+          "score": 0.4025
+        }
+      ]
+    },
+    {
+      "image_id": 7,
+      "file_name": "images/41c13ac9__Picture%202026-05-12%2012-09-49.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-09-49.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            133.38,
+            481.01,
+            140.07,
+            289.0
+          ],
+          "score": 0.6501
+        },
+        {
+          "label": "guitar",
+          "category_id": 0,
+          "bbox": [
+            138.85,
+            480.76,
+            118.58,
+            189.99
+          ],
+          "score": 0.8579
+        }
+      ]
+    },
+    {
+      "image_id": 8,
+      "file_name": "images/5cf69a79__Picture%202026-05-12%2012-33-45.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-33-45.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            208.48,
+            688.87,
+            130.52,
+            337.02
+          ],
+          "score": 0.7889
+        },
+        {
+          "label": "guitar",
+          "category_id": 0,
+          "bbox": [
+            210.05,
+            841.65,
+            60.03,
+            112.43
+          ],
+          "score": 0.3667
+        }
+      ]
+    },
+    {
+      "image_id": 9,
+      "file_name": "images/38ef070c__Picture%202026-05-12%2012-34-00.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-34-00.png",
+      "detections": []
+    },
+    {
+      "image_id": 10,
+      "file_name": "images/bdcc7ade__Picture%202026-05-12%2012-34-35.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-34-35.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            10.23,
+            836.76,
+            254.64,
+            235.95
+          ],
+          "score": 0.4414
+        }
+      ]
+    },
+    {
+      "image_id": 11,
+      "file_name": "images/6f311e64__Picture%202026-05-12%2012-35-52.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-35-52.png",
+      "detections": [
+        {
+          "label": "guitar",
+          "category_id": 0,
+          "bbox": [
+            1214.44,
+            290.08,
+            580.34,
+            655.25
+          ],
+          "score": 0.9097
+        },
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            1272.99,
+            403.91,
+            377.92,
+            667.29
+          ],
+          "score": 0.7035
+        }
+      ]
+    },
+    {
+      "image_id": 12,
+      "file_name": "images/3e3ee29e__Picture%202026-05-12%2012-43-25.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-43-25.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            639.46,
+            404.04,
+            336.71,
+            667.93
+          ],
+          "score": 0.7969
+        },
+        {
+          "label": "guitar",
+          "category_id": 0,
+          "bbox": [
+            832.61,
+            596.69,
+            136.18,
+            325.13
+          ],
+          "score": 0.7529
+        }
+      ]
+    },
+    {
+      "image_id": 13,
+      "file_name": "images/f7f0d6c4__Picture%202026-05-12%2012-43-47.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-43-47.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            678.03,
+            385.14,
+            492.03,
+            684.76
+          ],
+          "score": 0.941
+        },
+        {
+          "label": "guitar",
+          "category_id": 0,
+          "bbox": [
+            540.62,
+            582.87,
+            614.67,
+            226.15
+          ],
+          "score": 0.816
+        }
+      ]
+    },
+    {
+      "image_id": 14,
+      "file_name": "images/580ece02__Picture%202026-05-12%2012-46-44.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-46-44.png",
+      "detections": [
+        {
+          "label": "guitar",
+          "category_id": 0,
+          "bbox": [
+            570.3,
+            287.22,
+            174.33,
+            164.73
+          ],
+          "score": 0.5109
+        },
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            656.71,
+            -0.91,
+            659.39,
+            1070.97
+          ],
+          "score": 0.6026
+        },
+        {
+          "label": "guitar",
+          "category_id": 0,
+          "bbox": [
+            637.88,
+            3.79,
+            343.27,
+            524.84
+          ],
+          "score": 0.376
+        }
+      ]
+    },
+    {
+      "image_id": 15,
+      "file_name": "images/6317c225__Picture%202026-05-12%2012-47-10.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-47-10.png",
+      "detections": [
+        {
+          "label": "guitar",
+          "category_id": 0,
+          "bbox": [
+            241.04,
+            528.98,
+            684.37,
+            281.19
+          ],
+          "score": 0.9294
+        },
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            228.6,
+            329.71,
+            641.46,
+            704.71
+          ],
+          "score": 0.852
+        }
+      ]
+    },
+    {
+      "image_id": 16,
+      "file_name": "images/b7a6d995__Picture%202026-05-12%2012-47-36.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-47-36.png",
+      "detections": [
+        {
+          "label": "guitar",
+          "category_id": 0,
+          "bbox": [
+            6.12,
+            405.65,
+            307.76,
+            481.79
+          ],
+          "score": 0.9598
+        },
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            466.07,
+            342.76,
+            449.02,
+            725.96
+          ],
+          "score": 0.9154
+        }
+      ]
+    },
+    {
+      "image_id": 17,
+      "file_name": "images/dcb8826e__Picture%202026-05-12%2012-49-00.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-49-00.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            433.85,
+            7.41,
+            440.5,
+            1039.45
+          ],
+          "score": 0.8841
+        },
+        {
+          "label": "guitar",
+          "category_id": 0,
+          "bbox": [
+            290.58,
+            319.55,
+            383.51,
+            161.33
+          ],
+          "score": 0.877
+        }
+      ]
+    },
+    {
+      "image_id": 18,
+      "file_name": "images/2e686276__Picture%202026-05-12%2012-49-36.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-49-36.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            242.66,
+            356.61,
+            478.17,
+            714.45
+          ],
+          "score": 0.8821
+        },
+        {
+          "label": "guitar",
+          "category_id": 0,
+          "bbox": [
+            463.33,
+            599.72,
+            218.55,
+            460.55
+          ],
+          "score": 0.425
+        },
+        {
+          "label": "guitar",
+          "category_id": 0,
+          "bbox": [
+            524.8,
+            598.85,
+            153.12,
+            412.77
+          ],
+          "score": 0.364
+        }
+      ]
+    },
+    {
+      "image_id": 19,
+      "file_name": "images/c524b9ad__Picture%202026-05-12%2012-52-42.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-52-42.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            147.87,
+            292.42,
+            1501.19,
+            775.18
+          ],
+          "score": 0.6239
+        },
+        {
+          "label": "guitar",
+          "category_id": 0,
+          "bbox": [
+            1474.15,
+            481.52,
+            242.94,
+            254.56
+          ],
+          "score": 0.3677
+        }
+      ]
+    },
+    {
+      "image_id": 20,
+      "file_name": "images/6507eb33__Picture%202026-05-12%2013-08-05.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-08-05.png",
+      "detections": [
+        {
+          "label": "guitar",
+          "category_id": 0,
+          "bbox": [
+            740.96,
+            403.04,
+            128.9,
+            201.33
+          ],
+          "score": 0.6205
+        },
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            638.28,
+            179.4,
+            413.49,
+            887.76
+          ],
+          "score": 0.8845
+        }
+      ]
+    },
+    {
+      "image_id": 21,
+      "file_name": "images/9b5775bc__Picture%202026-05-12%2013-08-49.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-08-49.png",
+      "detections": [
+        {
+          "label": "guitar",
+          "category_id": 0,
+          "bbox": [
+            839.32,
+            306.88,
+            208.29,
+            533.38
+          ],
+          "score": 0.9372
+        },
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            401.55,
+            366.14,
+            106.65,
+            238.23
+          ],
+          "score": 0.7833
+        }
+      ]
+    },
+    {
+      "image_id": 22,
+      "file_name": "images/cb232967__Picture%202026-05-12%2013-09-16.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-09-16.png",
+      "detections": [
+        {
+          "label": "guitar",
+          "category_id": 0,
+          "bbox": [
+            644.49,
+            186.13,
+            341.51,
+            888.21
+          ],
+          "score": 0.8768
+        },
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            400.25,
+            364.41,
+            97.96,
+            233.45
+          ],
+          "score": 0.6343
+        }
+      ]
+    },
+    {
+      "image_id": 23,
+      "file_name": "images/9b56b3e2__Picture%202026-05-12%2013-09-53.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-09-53.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            384.44,
+            386.89,
+            155.38,
+            219.96
+          ],
+          "score": 0.5426
+        },
+        {
+          "label": "guitar",
+          "category_id": 0,
+          "bbox": [
+            552.15,
+            126.16,
+            489.03,
+            938.87
+          ],
+          "score": 0.4092
+        },
+        {
+          "label": "guitar",
+          "category_id": 0,
+          "bbox": [
+            555.72,
+            127.64,
+            488.77,
+            619.49
+          ],
+          "score": 0.3571
+        }
+      ]
+    },
+    {
+      "image_id": 24,
+      "file_name": "images/f7f815b3__Picture%202026-05-12%2013-10-20.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-10-20.png",
+      "detections": [
+        {
+          "label": "guitar",
+          "category_id": 0,
+          "bbox": [
+            239.8,
+            436.24,
+            868.44,
+            639.82
+          ],
+          "score": 0.4315
+        }
+      ]
+    },
+    {
+      "image_id": 25,
+      "file_name": "images/387c0c4f__Picture%202026-05-12%2013-10-50.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-10-50.png",
+      "detections": [
+        {
+          "label": "guitar",
+          "category_id": 0,
+          "bbox": [
+            554.88,
+            656.89,
+            846.45,
+            417.27
+          ],
+          "score": 0.9625
+        },
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            504.6,
+            125.68,
+            1152.88,
+            947.49
+          ],
+          "score": 0.6674
+        }
+      ]
+    },
+    {
+      "image_id": 26,
+      "file_name": "images/144ef3c4__Picture%202026-05-17%2010-22-05.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-17 10-22-05.png",
+      "detections": [
+        {
+          "label": "guitar",
+          "category_id": 0,
+          "bbox": [
+            1371.68,
+            560.46,
+            134.07,
+            372.04
+          ],
+          "score": 0.9404
+        },
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            451.05,
+            189.38,
+            996.98,
+            879.17
+          ],
+          "score": 0.8622
+        }
+      ]
+    },
+    {
+      "image_id": 27,
+      "file_name": "../../home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000001.jpg",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000001.jpg",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            418.77,
+            215.4,
+            355.67,
+            469.76
+          ],
+          "score": 0.9333
+        },
+        {
+          "label": "guitar",
+          "category_id": 0,
+          "bbox": [
+            814.73,
+            375.07,
+            89.22,
+            224.39
+          ],
+          "score": 0.9551
+        }
+      ]
+    },
+    {
+      "image_id": 28,
+      "file_name": "../../home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000002.jpg",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000002.jpg",
+      "detections": [
+        {
+          "label": "guitar",
+          "category_id": 0,
+          "bbox": [
+            814.08,
+            375.96,
+            90.18,
+            224.15
+          ],
+          "score": 0.9361
+        },
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            457.48,
+            194.76,
+            271.58,
+            489.81
+          ],
+          "score": 0.6885
+        }
+      ]
+    },
+    {
+      "image_id": 29,
+      "file_name": "../../home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000003.jpg",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000003.jpg",
+      "detections": [
+        {
+          "label": "guitar",
+          "category_id": 0,
+          "bbox": [
+            814.25,
+            375.66,
+            89.33,
+            224.17
+          ],
+          "score": 0.9322
+        },
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            483.78,
+            261.55,
+            220.43,
+            421.78
+          ],
+          "score": 0.7186
+        }
+      ]
+    }
+  ],
+  "class_prediction_counts": {
+    "guitar": 30,
+    "person": 31
+  }
+}

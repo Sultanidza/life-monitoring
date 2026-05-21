@@ -1,0 +1,9 @@
+{
+  "run_dir": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645",
+  "generated": [
+    "overall_model_comparison_heatmap.svg",
+    "per_class_model_comparison_heatmap.svg",
+    "precision_recall_scatter.svg",
+    "hard_image_gallery.html"
+  ]
+}

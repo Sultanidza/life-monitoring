@@ -1,0 +1,55 @@
+{
+  "title": "ultralytics Metrics Heatmap",
+  "subtitle": "30 labeled images \u2022 IoU threshold 0.50 \u2022 ultralytics",
+  "model": "ultralytics",
+  "coco_file": "/home/arturka/Documents/Projects/life-monitoring/data/annotations/eval-webcamoid-obs-studio-2026-05-17-11-06-20/coco.json",
+  "predictions_file": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/predictions/ultralytics_predictions.json",
+  "iou_threshold": 0.5,
+  "categories": [
+    {
+      "id": 0,
+      "name": "guitar"
+    },
+    {
+      "id": 1,
+      "name": "person"
+    }
+  ],
+  "per_class": {
+    "0": {
+      "gt_count": 28,
+      "prediction_count": 5,
+      "tp": 3,
+      "fp": 2,
+      "fn": 25,
+      "precision": 0.6,
+      "recall": 0.1071,
+      "mean_iou": 0.7611,
+      "matched_count": 3,
+      "name": "guitar"
+    },
+    "1": {
+      "gt_count": 39,
+      "prediction_count": 10,
+      "tp": 10,
+      "fp": 0,
+      "fn": 29,
+      "precision": 1.0,
+      "recall": 0.2564,
+      "mean_iou": 0.9322,
+      "matched_count": 10,
+      "name": "person"
+    }
+  },
+  "overall": {
+    "gt_count": 67,
+    "prediction_count": 15,
+    "tp": 13,
+    "fp": 2,
+    "fn": 54,
+    "precision": 0.8667,
+    "recall": 0.194,
+    "mean_iou": 0.8927,
+    "matched_count": 13
+  }
+}

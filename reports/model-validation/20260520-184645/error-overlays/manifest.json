@@ -1,0 +1,1662 @@
+{
+  "run_dir": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645",
+  "iou_threshold": 0.5,
+  "models": [
+    {
+      "model": "ultralytics",
+      "output_dir": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/ultralytics",
+      "images": [
+        {
+          "image_id": 0,
+          "file_name": "images/69935b94__Picture%202026-05-12%2012-05-45.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-05-45.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/ultralytics/frames-webcamoid-Picture_2026-05-12_12-05-45-overlay.png",
+          "tp": 0,
+          "fp": 0,
+          "fn": 3
+        },
+        {
+          "image_id": 1,
+          "file_name": "images/f98dcdc3__Picture%202026-05-12%2012-06-03.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-03.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/ultralytics/frames-webcamoid-Picture_2026-05-12_12-06-03-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 2,
+          "file_name": "images/a9168e1d__Picture%202026-05-12%2012-06-18.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-18.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/ultralytics/frames-webcamoid-Picture_2026-05-12_12-06-18-overlay.png",
+          "tp": 2,
+          "fp": 2,
+          "fn": 0
+        },
+        {
+          "image_id": 3,
+          "file_name": "images/44c664c8__Picture%202026-05-12%2012-06-30.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-30.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/ultralytics/frames-webcamoid-Picture_2026-05-12_12-06-30-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 4,
+          "file_name": "images/350097b9__Picture%202026-05-12%2012-06-46.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-46.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/ultralytics/frames-webcamoid-Picture_2026-05-12_12-06-46-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 2
+        },
+        {
+          "image_id": 5,
+          "file_name": "images/7b8f0b3e__Picture%202026-05-12%2012-07-22.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-07-22.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/ultralytics/frames-webcamoid-Picture_2026-05-12_12-07-22-overlay.png",
+          "tp": 0,
+          "fp": 0,
+          "fn": 2
+        },
+        {
+          "image_id": 6,
+          "file_name": "images/94128ab1__Picture%202026-05-12%2012-07-45.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-07-45.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/ultralytics/frames-webcamoid-Picture_2026-05-12_12-07-45-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 7,
+          "file_name": "images/41c13ac9__Picture%202026-05-12%2012-09-49.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-09-49.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/ultralytics/frames-webcamoid-Picture_2026-05-12_12-09-49-overlay.png",
+          "tp": 0,
+          "fp": 0,
+          "fn": 2
+        },
+        {
+          "image_id": 8,
+          "file_name": "images/5cf69a79__Picture%202026-05-12%2012-33-45.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-33-45.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/ultralytics/frames-webcamoid-Picture_2026-05-12_12-33-45-overlay.png",
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 9,
+          "file_name": "images/38ef070c__Picture%202026-05-12%2012-34-00.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-34-00.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/ultralytics/frames-webcamoid-Picture_2026-05-12_12-34-00-overlay.png",
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 10,
+          "file_name": "images/bdcc7ade__Picture%202026-05-12%2012-34-35.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-34-35.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/ultralytics/frames-webcamoid-Picture_2026-05-12_12-34-35-overlay.png",
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 11,
+          "file_name": "images/6f311e64__Picture%202026-05-12%2012-35-52.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-35-52.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/ultralytics/frames-webcamoid-Picture_2026-05-12_12-35-52-overlay.png",
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 12,
+          "file_name": "images/3e3ee29e__Picture%202026-05-12%2012-43-25.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-43-25.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/ultralytics/frames-webcamoid-Picture_2026-05-12_12-43-25-overlay.png",
+          "tp": 0,
+          "fp": 0,
+          "fn": 3
+        },
+        {
+          "image_id": 13,
+          "file_name": "images/f7f0d6c4__Picture%202026-05-12%2012-43-47.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-43-47.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/ultralytics/frames-webcamoid-Picture_2026-05-12_12-43-47-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 2
+        },
+        {
+          "image_id": 14,
+          "file_name": "images/580ece02__Picture%202026-05-12%2012-46-44.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-46-44.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/ultralytics/frames-webcamoid-Picture_2026-05-12_12-46-44-overlay.png",
+          "tp": 0,
+          "fp": 0,
+          "fn": 4
+        },
+        {
+          "image_id": 15,
+          "file_name": "images/6317c225__Picture%202026-05-12%2012-47-10.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-47-10.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/ultralytics/frames-webcamoid-Picture_2026-05-12_12-47-10-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 16,
+          "file_name": "images/b7a6d995__Picture%202026-05-12%2012-47-36.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-47-36.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/ultralytics/frames-webcamoid-Picture_2026-05-12_12-47-36-overlay.png",
+          "tp": 0,
+          "fp": 0,
+          "fn": 3
+        },
+        {
+          "image_id": 17,
+          "file_name": "images/dcb8826e__Picture%202026-05-12%2012-49-00.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-49-00.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/ultralytics/frames-webcamoid-Picture_2026-05-12_12-49-00-overlay.png",
+          "tp": 0,
+          "fp": 0,
+          "fn": 2
+        },
+        {
+          "image_id": 18,
+          "file_name": "images/2e686276__Picture%202026-05-12%2012-49-36.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-49-36.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/ultralytics/frames-webcamoid-Picture_2026-05-12_12-49-36-overlay.png",
+          "tp": 0,
+          "fp": 0,
+          "fn": 2
+        },
+        {
+          "image_id": 19,
+          "file_name": "images/c524b9ad__Picture%202026-05-12%2012-52-42.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-52-42.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/ultralytics/frames-webcamoid-Picture_2026-05-12_12-52-42-overlay.png",
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 20,
+          "file_name": "images/6507eb33__Picture%202026-05-12%2013-08-05.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-08-05.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/ultralytics/frames-webcamoid-Picture_2026-05-12_13-08-05-overlay.png",
+          "tp": 0,
+          "fp": 0,
+          "fn": 2
+        },
+        {
+          "image_id": 21,
+          "file_name": "images/9b5775bc__Picture%202026-05-12%2013-08-49.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-08-49.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/ultralytics/frames-webcamoid-Picture_2026-05-12_13-08-49-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 22,
+          "file_name": "images/cb232967__Picture%202026-05-12%2013-09-16.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-09-16.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/ultralytics/frames-webcamoid-Picture_2026-05-12_13-09-16-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 23,
+          "file_name": "images/9b56b3e2__Picture%202026-05-12%2013-09-53.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-09-53.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/ultralytics/frames-webcamoid-Picture_2026-05-12_13-09-53-overlay.png",
+          "tp": 0,
+          "fp": 0,
+          "fn": 4
+        },
+        {
+          "image_id": 24,
+          "file_name": "images/f7f815b3__Picture%202026-05-12%2013-10-20.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-10-20.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/ultralytics/frames-webcamoid-Picture_2026-05-12_13-10-20-overlay.png",
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 25,
+          "file_name": "images/387c0c4f__Picture%202026-05-12%2013-10-50.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-10-50.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/ultralytics/frames-webcamoid-Picture_2026-05-12_13-10-50-overlay.png",
+          "tp": 0,
+          "fp": 0,
+          "fn": 4
+        },
+        {
+          "image_id": 26,
+          "file_name": "images/144ef3c4__Picture%202026-05-17%2010-22-05.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-17 10-22-05.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/ultralytics/frames-webcamoid-Picture_2026-05-17_10-22-05-overlay.png",
+          "tp": 0,
+          "fp": 0,
+          "fn": 2
+        },
+        {
+          "image_id": 27,
+          "file_name": "../../home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000001.jpg",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000001.jpg",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/ultralytics/frames-obs-studio-2026-05-17-11-06-20-frame_000001-overlay.jpg",
+          "tp": 0,
+          "fp": 0,
+          "fn": 2
+        },
+        {
+          "image_id": 28,
+          "file_name": "../../home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000002.jpg",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000002.jpg",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/ultralytics/frames-obs-studio-2026-05-17-11-06-20-frame_000002-overlay.jpg",
+          "tp": 1,
+          "fp": 0,
+          "fn": 2
+        },
+        {
+          "image_id": 29,
+          "file_name": "../../home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000003.jpg",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000003.jpg",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/ultralytics/frames-obs-studio-2026-05-17-11-06-20-frame_000003-overlay.jpg",
+          "tp": 0,
+          "fp": 0,
+          "fn": 3
+        }
+      ]
+    },
+    {
+      "model": "detectron2",
+      "output_dir": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/detectron2",
+      "images": [
+        {
+          "image_id": 0,
+          "file_name": "images/69935b94__Picture%202026-05-12%2012-05-45.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-05-45.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/detectron2/frames-webcamoid-Picture_2026-05-12_12-05-45-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 1,
+          "file_name": "images/f98dcdc3__Picture%202026-05-12%2012-06-03.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-03.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/detectron2/frames-webcamoid-Picture_2026-05-12_12-06-03-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 2,
+          "file_name": "images/a9168e1d__Picture%202026-05-12%2012-06-18.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-18.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/detectron2/frames-webcamoid-Picture_2026-05-12_12-06-18-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 3,
+          "file_name": "images/44c664c8__Picture%202026-05-12%2012-06-30.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-30.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/detectron2/frames-webcamoid-Picture_2026-05-12_12-06-30-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 4,
+          "file_name": "images/350097b9__Picture%202026-05-12%2012-06-46.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-46.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/detectron2/frames-webcamoid-Picture_2026-05-12_12-06-46-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 2
+        },
+        {
+          "image_id": 5,
+          "file_name": "images/7b8f0b3e__Picture%202026-05-12%2012-07-22.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-07-22.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/detectron2/frames-webcamoid-Picture_2026-05-12_12-07-22-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 6,
+          "file_name": "images/94128ab1__Picture%202026-05-12%2012-07-45.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-07-45.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/detectron2/frames-webcamoid-Picture_2026-05-12_12-07-45-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 7,
+          "file_name": "images/41c13ac9__Picture%202026-05-12%2012-09-49.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-09-49.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/detectron2/frames-webcamoid-Picture_2026-05-12_12-09-49-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 8,
+          "file_name": "images/5cf69a79__Picture%202026-05-12%2012-33-45.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-33-45.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/detectron2/frames-webcamoid-Picture_2026-05-12_12-33-45-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 9,
+          "file_name": "images/38ef070c__Picture%202026-05-12%2012-34-00.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-34-00.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/detectron2/frames-webcamoid-Picture_2026-05-12_12-34-00-overlay.png",
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 10,
+          "file_name": "images/bdcc7ade__Picture%202026-05-12%2012-34-35.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-34-35.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/detectron2/frames-webcamoid-Picture_2026-05-12_12-34-35-overlay.png",
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 11,
+          "file_name": "images/6f311e64__Picture%202026-05-12%2012-35-52.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-35-52.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/detectron2/frames-webcamoid-Picture_2026-05-12_12-35-52-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 12,
+          "file_name": "images/3e3ee29e__Picture%202026-05-12%2012-43-25.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-43-25.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/detectron2/frames-webcamoid-Picture_2026-05-12_12-43-25-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 13,
+          "file_name": "images/f7f0d6c4__Picture%202026-05-12%2012-43-47.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-43-47.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/detectron2/frames-webcamoid-Picture_2026-05-12_12-43-47-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 2
+        },
+        {
+          "image_id": 14,
+          "file_name": "images/580ece02__Picture%202026-05-12%2012-46-44.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-46-44.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/detectron2/frames-webcamoid-Picture_2026-05-12_12-46-44-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 2
+        },
+        {
+          "image_id": 15,
+          "file_name": "images/6317c225__Picture%202026-05-12%2012-47-10.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-47-10.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/detectron2/frames-webcamoid-Picture_2026-05-12_12-47-10-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 16,
+          "file_name": "images/b7a6d995__Picture%202026-05-12%2012-47-36.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-47-36.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/detectron2/frames-webcamoid-Picture_2026-05-12_12-47-36-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 2
+        },
+        {
+          "image_id": 17,
+          "file_name": "images/dcb8826e__Picture%202026-05-12%2012-49-00.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-49-00.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/detectron2/frames-webcamoid-Picture_2026-05-12_12-49-00-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 18,
+          "file_name": "images/2e686276__Picture%202026-05-12%2012-49-36.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-49-36.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/detectron2/frames-webcamoid-Picture_2026-05-12_12-49-36-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 19,
+          "file_name": "images/c524b9ad__Picture%202026-05-12%2012-52-42.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-52-42.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/detectron2/frames-webcamoid-Picture_2026-05-12_12-52-42-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 20,
+          "file_name": "images/6507eb33__Picture%202026-05-12%2013-08-05.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-08-05.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/detectron2/frames-webcamoid-Picture_2026-05-12_13-08-05-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 21,
+          "file_name": "images/9b5775bc__Picture%202026-05-12%2013-08-49.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-08-49.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/detectron2/frames-webcamoid-Picture_2026-05-12_13-08-49-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 22,
+          "file_name": "images/cb232967__Picture%202026-05-12%2013-09-16.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-09-16.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/detectron2/frames-webcamoid-Picture_2026-05-12_13-09-16-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 23,
+          "file_name": "images/9b56b3e2__Picture%202026-05-12%2013-09-53.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-09-53.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/detectron2/frames-webcamoid-Picture_2026-05-12_13-09-53-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 3
+        },
+        {
+          "image_id": 24,
+          "file_name": "images/f7f815b3__Picture%202026-05-12%2013-10-20.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-10-20.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/detectron2/frames-webcamoid-Picture_2026-05-12_13-10-20-overlay.png",
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 25,
+          "file_name": "images/387c0c4f__Picture%202026-05-12%2013-10-50.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-10-50.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/detectron2/frames-webcamoid-Picture_2026-05-12_13-10-50-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 2
+        },
+        {
+          "image_id": 26,
+          "file_name": "images/144ef3c4__Picture%202026-05-17%2010-22-05.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-17 10-22-05.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/detectron2/frames-webcamoid-Picture_2026-05-17_10-22-05-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 27,
+          "file_name": "../../home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000001.jpg",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000001.jpg",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/detectron2/frames-obs-studio-2026-05-17-11-06-20-frame_000001-overlay.jpg",
+          "tp": 1,
+          "fp": 1,
+          "fn": 1
+        },
+        {
+          "image_id": 28,
+          "file_name": "../../home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000002.jpg",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000002.jpg",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/detectron2/frames-obs-studio-2026-05-17-11-06-20-frame_000002-overlay.jpg",
+          "tp": 2,
+          "fp": 1,
+          "fn": 1
+        },
+        {
+          "image_id": 29,
+          "file_name": "../../home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000003.jpg",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000003.jpg",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/detectron2/frames-obs-studio-2026-05-17-11-06-20-frame_000003-overlay.jpg",
+          "tp": 2,
+          "fp": 0,
+          "fn": 1
+        }
+      ]
+    },
+    {
+      "model": "grounding-dino",
+      "output_dir": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/grounding-dino",
+      "images": [
+        {
+          "image_id": 0,
+          "file_name": "images/69935b94__Picture%202026-05-12%2012-05-45.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-05-45.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/grounding-dino/frames-webcamoid-Picture_2026-05-12_12-05-45-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 1,
+          "file_name": "images/f98dcdc3__Picture%202026-05-12%2012-06-03.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-03.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/grounding-dino/frames-webcamoid-Picture_2026-05-12_12-06-03-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 2,
+          "file_name": "images/a9168e1d__Picture%202026-05-12%2012-06-18.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-18.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/grounding-dino/frames-webcamoid-Picture_2026-05-12_12-06-18-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 3,
+          "file_name": "images/44c664c8__Picture%202026-05-12%2012-06-30.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-30.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/grounding-dino/frames-webcamoid-Picture_2026-05-12_12-06-30-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 4,
+          "file_name": "images/350097b9__Picture%202026-05-12%2012-06-46.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-46.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/grounding-dino/frames-webcamoid-Picture_2026-05-12_12-06-46-overlay.png",
+          "tp": 3,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 5,
+          "file_name": "images/7b8f0b3e__Picture%202026-05-12%2012-07-22.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-07-22.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/grounding-dino/frames-webcamoid-Picture_2026-05-12_12-07-22-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 6,
+          "file_name": "images/94128ab1__Picture%202026-05-12%2012-07-45.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-07-45.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/grounding-dino/frames-webcamoid-Picture_2026-05-12_12-07-45-overlay.png",
+          "tp": 2,
+          "fp": 1,
+          "fn": 0
+        },
+        {
+          "image_id": 7,
+          "file_name": "images/41c13ac9__Picture%202026-05-12%2012-09-49.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-09-49.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/grounding-dino/frames-webcamoid-Picture_2026-05-12_12-09-49-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 8,
+          "file_name": "images/5cf69a79__Picture%202026-05-12%2012-33-45.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-33-45.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/grounding-dino/frames-webcamoid-Picture_2026-05-12_12-33-45-overlay.png",
+          "tp": 1,
+          "fp": 1,
+          "fn": 0
+        },
+        {
+          "image_id": 9,
+          "file_name": "images/38ef070c__Picture%202026-05-12%2012-34-00.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-34-00.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/grounding-dino/frames-webcamoid-Picture_2026-05-12_12-34-00-overlay.png",
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 10,
+          "file_name": "images/bdcc7ade__Picture%202026-05-12%2012-34-35.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-34-35.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/grounding-dino/frames-webcamoid-Picture_2026-05-12_12-34-35-overlay.png",
+          "tp": 0,
+          "fp": 1,
+          "fn": 0
+        },
+        {
+          "image_id": 11,
+          "file_name": "images/6f311e64__Picture%202026-05-12%2012-35-52.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-35-52.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/grounding-dino/frames-webcamoid-Picture_2026-05-12_12-35-52-overlay.png",
+          "tp": 1,
+          "fp": 1,
+          "fn": 0
+        },
+        {
+          "image_id": 12,
+          "file_name": "images/3e3ee29e__Picture%202026-05-12%2012-43-25.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-43-25.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/grounding-dino/frames-webcamoid-Picture_2026-05-12_12-43-25-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 13,
+          "file_name": "images/f7f0d6c4__Picture%202026-05-12%2012-43-47.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-43-47.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/grounding-dino/frames-webcamoid-Picture_2026-05-12_12-43-47-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 14,
+          "file_name": "images/580ece02__Picture%202026-05-12%2012-46-44.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-46-44.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/grounding-dino/frames-webcamoid-Picture_2026-05-12_12-46-44-overlay.png",
+          "tp": 3,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 15,
+          "file_name": "images/6317c225__Picture%202026-05-12%2012-47-10.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-47-10.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/grounding-dino/frames-webcamoid-Picture_2026-05-12_12-47-10-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 16,
+          "file_name": "images/b7a6d995__Picture%202026-05-12%2012-47-36.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-47-36.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/grounding-dino/frames-webcamoid-Picture_2026-05-12_12-47-36-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 17,
+          "file_name": "images/dcb8826e__Picture%202026-05-12%2012-49-00.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-49-00.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/grounding-dino/frames-webcamoid-Picture_2026-05-12_12-49-00-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 18,
+          "file_name": "images/2e686276__Picture%202026-05-12%2012-49-36.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-49-36.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/grounding-dino/frames-webcamoid-Picture_2026-05-12_12-49-36-overlay.png",
+          "tp": 2,
+          "fp": 1,
+          "fn": 0
+        },
+        {
+          "image_id": 19,
+          "file_name": "images/c524b9ad__Picture%202026-05-12%2012-52-42.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-52-42.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/grounding-dino/frames-webcamoid-Picture_2026-05-12_12-52-42-overlay.png",
+          "tp": 1,
+          "fp": 1,
+          "fn": 0
+        },
+        {
+          "image_id": 20,
+          "file_name": "images/6507eb33__Picture%202026-05-12%2013-08-05.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-08-05.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/grounding-dino/frames-webcamoid-Picture_2026-05-12_13-08-05-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 21,
+          "file_name": "images/9b5775bc__Picture%202026-05-12%2013-08-49.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-08-49.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/grounding-dino/frames-webcamoid-Picture_2026-05-12_13-08-49-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 22,
+          "file_name": "images/cb232967__Picture%202026-05-12%2013-09-16.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-09-16.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/grounding-dino/frames-webcamoid-Picture_2026-05-12_13-09-16-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 23,
+          "file_name": "images/9b56b3e2__Picture%202026-05-12%2013-09-53.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-09-53.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/grounding-dino/frames-webcamoid-Picture_2026-05-12_13-09-53-overlay.png",
+          "tp": 2,
+          "fp": 1,
+          "fn": 2
+        },
+        {
+          "image_id": 24,
+          "file_name": "images/f7f815b3__Picture%202026-05-12%2013-10-20.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-10-20.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/grounding-dino/frames-webcamoid-Picture_2026-05-12_13-10-20-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 25,
+          "file_name": "images/387c0c4f__Picture%202026-05-12%2013-10-50.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-10-50.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/grounding-dino/frames-webcamoid-Picture_2026-05-12_13-10-50-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 2
+        },
+        {
+          "image_id": 26,
+          "file_name": "images/144ef3c4__Picture%202026-05-17%2010-22-05.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-17 10-22-05.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/grounding-dino/frames-webcamoid-Picture_2026-05-17_10-22-05-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 27,
+          "file_name": "../../home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000001.jpg",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000001.jpg",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/grounding-dino/frames-obs-studio-2026-05-17-11-06-20-frame_000001-overlay.jpg",
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 28,
+          "file_name": "../../home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000002.jpg",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000002.jpg",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/grounding-dino/frames-obs-studio-2026-05-17-11-06-20-frame_000002-overlay.jpg",
+          "tp": 2,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 29,
+          "file_name": "../../home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000003.jpg",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000003.jpg",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/grounding-dino/frames-obs-studio-2026-05-17-11-06-20-frame_000003-overlay.jpg",
+          "tp": 2,
+          "fp": 0,
+          "fn": 1
+        }
+      ]
+    },
+    {
+      "model": "owlv2",
+      "output_dir": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/owlv2",
+      "images": [
+        {
+          "image_id": 0,
+          "file_name": "images/69935b94__Picture%202026-05-12%2012-05-45.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-05-45.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/owlv2/frames-webcamoid-Picture_2026-05-12_12-05-45-overlay.png",
+          "tp": 3,
+          "fp": 2,
+          "fn": 0
+        },
+        {
+          "image_id": 1,
+          "file_name": "images/f98dcdc3__Picture%202026-05-12%2012-06-03.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-03.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/owlv2/frames-webcamoid-Picture_2026-05-12_12-06-03-overlay.png",
+          "tp": 2,
+          "fp": 1,
+          "fn": 0
+        },
+        {
+          "image_id": 2,
+          "file_name": "images/a9168e1d__Picture%202026-05-12%2012-06-18.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-18.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/owlv2/frames-webcamoid-Picture_2026-05-12_12-06-18-overlay.png",
+          "tp": 2,
+          "fp": 1,
+          "fn": 0
+        },
+        {
+          "image_id": 3,
+          "file_name": "images/44c664c8__Picture%202026-05-12%2012-06-30.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-30.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/owlv2/frames-webcamoid-Picture_2026-05-12_12-06-30-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 4,
+          "file_name": "images/350097b9__Picture%202026-05-12%2012-06-46.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-46.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/owlv2/frames-webcamoid-Picture_2026-05-12_12-06-46-overlay.png",
+          "tp": 4,
+          "fp": 7,
+          "fn": 0
+        },
+        {
+          "image_id": 5,
+          "file_name": "images/7b8f0b3e__Picture%202026-05-12%2012-07-22.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-07-22.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/owlv2/frames-webcamoid-Picture_2026-05-12_12-07-22-overlay.png",
+          "tp": 2,
+          "fp": 1,
+          "fn": 0
+        },
+        {
+          "image_id": 6,
+          "file_name": "images/94128ab1__Picture%202026-05-12%2012-07-45.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-07-45.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/owlv2/frames-webcamoid-Picture_2026-05-12_12-07-45-overlay.png",
+          "tp": 2,
+          "fp": 3,
+          "fn": 0
+        },
+        {
+          "image_id": 7,
+          "file_name": "images/41c13ac9__Picture%202026-05-12%2012-09-49.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-09-49.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/owlv2/frames-webcamoid-Picture_2026-05-12_12-09-49-overlay.png",
+          "tp": 2,
+          "fp": 3,
+          "fn": 0
+        },
+        {
+          "image_id": 8,
+          "file_name": "images/5cf69a79__Picture%202026-05-12%2012-33-45.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-33-45.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/owlv2/frames-webcamoid-Picture_2026-05-12_12-33-45-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 9,
+          "file_name": "images/38ef070c__Picture%202026-05-12%2012-34-00.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-34-00.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/owlv2/frames-webcamoid-Picture_2026-05-12_12-34-00-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 10,
+          "file_name": "images/bdcc7ade__Picture%202026-05-12%2012-34-35.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-34-35.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/owlv2/frames-webcamoid-Picture_2026-05-12_12-34-35-overlay.png",
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 11,
+          "file_name": "images/6f311e64__Picture%202026-05-12%2012-35-52.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-35-52.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/owlv2/frames-webcamoid-Picture_2026-05-12_12-35-52-overlay.png",
+          "tp": 1,
+          "fp": 6,
+          "fn": 0
+        },
+        {
+          "image_id": 12,
+          "file_name": "images/3e3ee29e__Picture%202026-05-12%2012-43-25.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-43-25.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/owlv2/frames-webcamoid-Picture_2026-05-12_12-43-25-overlay.png",
+          "tp": 3,
+          "fp": 1,
+          "fn": 0
+        },
+        {
+          "image_id": 13,
+          "file_name": "images/f7f0d6c4__Picture%202026-05-12%2012-43-47.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-43-47.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/owlv2/frames-webcamoid-Picture_2026-05-12_12-43-47-overlay.png",
+          "tp": 2,
+          "fp": 3,
+          "fn": 1
+        },
+        {
+          "image_id": 14,
+          "file_name": "images/580ece02__Picture%202026-05-12%2012-46-44.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-46-44.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/owlv2/frames-webcamoid-Picture_2026-05-12_12-46-44-overlay.png",
+          "tp": 4,
+          "fp": 5,
+          "fn": 0
+        },
+        {
+          "image_id": 15,
+          "file_name": "images/6317c225__Picture%202026-05-12%2012-47-10.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-47-10.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/owlv2/frames-webcamoid-Picture_2026-05-12_12-47-10-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 16,
+          "file_name": "images/b7a6d995__Picture%202026-05-12%2012-47-36.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-47-36.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/owlv2/frames-webcamoid-Picture_2026-05-12_12-47-36-overlay.png",
+          "tp": 3,
+          "fp": 1,
+          "fn": 0
+        },
+        {
+          "image_id": 17,
+          "file_name": "images/dcb8826e__Picture%202026-05-12%2012-49-00.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-49-00.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/owlv2/frames-webcamoid-Picture_2026-05-12_12-49-00-overlay.png",
+          "tp": 2,
+          "fp": 1,
+          "fn": 0
+        },
+        {
+          "image_id": 18,
+          "file_name": "images/2e686276__Picture%202026-05-12%2012-49-36.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-49-36.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/owlv2/frames-webcamoid-Picture_2026-05-12_12-49-36-overlay.png",
+          "tp": 2,
+          "fp": 6,
+          "fn": 0
+        },
+        {
+          "image_id": 19,
+          "file_name": "images/c524b9ad__Picture%202026-05-12%2012-52-42.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-52-42.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/owlv2/frames-webcamoid-Picture_2026-05-12_12-52-42-overlay.png",
+          "tp": 1,
+          "fp": 2,
+          "fn": 0
+        },
+        {
+          "image_id": 20,
+          "file_name": "images/6507eb33__Picture%202026-05-12%2013-08-05.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-08-05.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/owlv2/frames-webcamoid-Picture_2026-05-12_13-08-05-overlay.png",
+          "tp": 2,
+          "fp": 3,
+          "fn": 0
+        },
+        {
+          "image_id": 21,
+          "file_name": "images/9b5775bc__Picture%202026-05-12%2013-08-49.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-08-49.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/owlv2/frames-webcamoid-Picture_2026-05-12_13-08-49-overlay.png",
+          "tp": 2,
+          "fp": 1,
+          "fn": 0
+        },
+        {
+          "image_id": 22,
+          "file_name": "images/cb232967__Picture%202026-05-12%2013-09-16.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-09-16.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/owlv2/frames-webcamoid-Picture_2026-05-12_13-09-16-overlay.png",
+          "tp": 2,
+          "fp": 7,
+          "fn": 0
+        },
+        {
+          "image_id": 23,
+          "file_name": "images/9b56b3e2__Picture%202026-05-12%2013-09-53.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-09-53.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/owlv2/frames-webcamoid-Picture_2026-05-12_13-09-53-overlay.png",
+          "tp": 4,
+          "fp": 7,
+          "fn": 0
+        },
+        {
+          "image_id": 24,
+          "file_name": "images/f7f815b3__Picture%202026-05-12%2013-10-20.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-10-20.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/owlv2/frames-webcamoid-Picture_2026-05-12_13-10-20-overlay.png",
+          "tp": 1,
+          "fp": 6,
+          "fn": 0
+        },
+        {
+          "image_id": 25,
+          "file_name": "images/387c0c4f__Picture%202026-05-12%2013-10-50.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-10-50.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/owlv2/frames-webcamoid-Picture_2026-05-12_13-10-50-overlay.png",
+          "tp": 4,
+          "fp": 6,
+          "fn": 0
+        },
+        {
+          "image_id": 26,
+          "file_name": "images/144ef3c4__Picture%202026-05-17%2010-22-05.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-17 10-22-05.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/owlv2/frames-webcamoid-Picture_2026-05-17_10-22-05-overlay.png",
+          "tp": 2,
+          "fp": 3,
+          "fn": 0
+        },
+        {
+          "image_id": 27,
+          "file_name": "../../home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000001.jpg",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000001.jpg",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/owlv2/frames-obs-studio-2026-05-17-11-06-20-frame_000001-overlay.jpg",
+          "tp": 2,
+          "fp": 6,
+          "fn": 0
+        },
+        {
+          "image_id": 28,
+          "file_name": "../../home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000002.jpg",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000002.jpg",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/owlv2/frames-obs-studio-2026-05-17-11-06-20-frame_000002-overlay.jpg",
+          "tp": 3,
+          "fp": 2,
+          "fn": 0
+        },
+        {
+          "image_id": 29,
+          "file_name": "../../home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000003.jpg",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000003.jpg",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/owlv2/frames-obs-studio-2026-05-17-11-06-20-frame_000003-overlay.jpg",
+          "tp": 3,
+          "fp": 3,
+          "fn": 0
+        }
+      ]
+    },
+    {
+      "model": "florence2",
+      "output_dir": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/florence2",
+      "images": [
+        {
+          "image_id": 0,
+          "file_name": "images/69935b94__Picture%202026-05-12%2012-05-45.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-05-45.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/florence2/frames-webcamoid-Picture_2026-05-12_12-05-45-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 1,
+          "file_name": "images/f98dcdc3__Picture%202026-05-12%2012-06-03.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-03.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/florence2/frames-webcamoid-Picture_2026-05-12_12-06-03-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 2,
+          "file_name": "images/a9168e1d__Picture%202026-05-12%2012-06-18.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-18.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/florence2/frames-webcamoid-Picture_2026-05-12_12-06-18-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 3,
+          "file_name": "images/44c664c8__Picture%202026-05-12%2012-06-30.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-30.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/florence2/frames-webcamoid-Picture_2026-05-12_12-06-30-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 4,
+          "file_name": "images/350097b9__Picture%202026-05-12%2012-06-46.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-46.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/florence2/frames-webcamoid-Picture_2026-05-12_12-06-46-overlay.png",
+          "tp": 3,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 5,
+          "file_name": "images/7b8f0b3e__Picture%202026-05-12%2012-07-22.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-07-22.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/florence2/frames-webcamoid-Picture_2026-05-12_12-07-22-overlay.png",
+          "tp": 2,
+          "fp": 1,
+          "fn": 0
+        },
+        {
+          "image_id": 6,
+          "file_name": "images/94128ab1__Picture%202026-05-12%2012-07-45.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-07-45.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/florence2/frames-webcamoid-Picture_2026-05-12_12-07-45-overlay.png",
+          "tp": 2,
+          "fp": 1,
+          "fn": 0
+        },
+        {
+          "image_id": 7,
+          "file_name": "images/41c13ac9__Picture%202026-05-12%2012-09-49.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-09-49.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/florence2/frames-webcamoid-Picture_2026-05-12_12-09-49-overlay.png",
+          "tp": 1,
+          "fp": 1,
+          "fn": 1
+        },
+        {
+          "image_id": 8,
+          "file_name": "images/5cf69a79__Picture%202026-05-12%2012-33-45.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-33-45.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/florence2/frames-webcamoid-Picture_2026-05-12_12-33-45-overlay.png",
+          "tp": 1,
+          "fp": 1,
+          "fn": 0
+        },
+        {
+          "image_id": 9,
+          "file_name": "images/38ef070c__Picture%202026-05-12%2012-34-00.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-34-00.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/florence2/frames-webcamoid-Picture_2026-05-12_12-34-00-overlay.png",
+          "tp": 0,
+          "fp": 2,
+          "fn": 1
+        },
+        {
+          "image_id": 10,
+          "file_name": "images/bdcc7ade__Picture%202026-05-12%2012-34-35.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-34-35.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/florence2/frames-webcamoid-Picture_2026-05-12_12-34-35-overlay.png",
+          "tp": 0,
+          "fp": 2,
+          "fn": 0
+        },
+        {
+          "image_id": 11,
+          "file_name": "images/6f311e64__Picture%202026-05-12%2012-35-52.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-35-52.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/florence2/frames-webcamoid-Picture_2026-05-12_12-35-52-overlay.png",
+          "tp": 1,
+          "fp": 1,
+          "fn": 0
+        },
+        {
+          "image_id": 12,
+          "file_name": "images/3e3ee29e__Picture%202026-05-12%2012-43-25.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-43-25.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/florence2/frames-webcamoid-Picture_2026-05-12_12-43-25-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 13,
+          "file_name": "images/f7f0d6c4__Picture%202026-05-12%2012-43-47.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-43-47.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/florence2/frames-webcamoid-Picture_2026-05-12_12-43-47-overlay.png",
+          "tp": 1,
+          "fp": 1,
+          "fn": 2
+        },
+        {
+          "image_id": 14,
+          "file_name": "images/580ece02__Picture%202026-05-12%2012-46-44.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-46-44.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/florence2/frames-webcamoid-Picture_2026-05-12_12-46-44-overlay.png",
+          "tp": 3,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 15,
+          "file_name": "images/6317c225__Picture%202026-05-12%2012-47-10.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-47-10.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/florence2/frames-webcamoid-Picture_2026-05-12_12-47-10-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 16,
+          "file_name": "images/b7a6d995__Picture%202026-05-12%2012-47-36.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-47-36.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/florence2/frames-webcamoid-Picture_2026-05-12_12-47-36-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 17,
+          "file_name": "images/dcb8826e__Picture%202026-05-12%2012-49-00.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-49-00.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/florence2/frames-webcamoid-Picture_2026-05-12_12-49-00-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 18,
+          "file_name": "images/2e686276__Picture%202026-05-12%2012-49-36.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-49-36.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/florence2/frames-webcamoid-Picture_2026-05-12_12-49-36-overlay.png",
+          "tp": 1,
+          "fp": 1,
+          "fn": 1
+        },
+        {
+          "image_id": 19,
+          "file_name": "images/c524b9ad__Picture%202026-05-12%2012-52-42.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-52-42.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/florence2/frames-webcamoid-Picture_2026-05-12_12-52-42-overlay.png",
+          "tp": 1,
+          "fp": 1,
+          "fn": 0
+        },
+        {
+          "image_id": 20,
+          "file_name": "images/6507eb33__Picture%202026-05-12%2013-08-05.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-08-05.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/florence2/frames-webcamoid-Picture_2026-05-12_13-08-05-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 21,
+          "file_name": "images/9b5775bc__Picture%202026-05-12%2013-08-49.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-08-49.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/florence2/frames-webcamoid-Picture_2026-05-12_13-08-49-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 22,
+          "file_name": "images/cb232967__Picture%202026-05-12%2013-09-16.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-09-16.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/florence2/frames-webcamoid-Picture_2026-05-12_13-09-16-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 23,
+          "file_name": "images/9b56b3e2__Picture%202026-05-12%2013-09-53.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-09-53.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/florence2/frames-webcamoid-Picture_2026-05-12_13-09-53-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 2
+        },
+        {
+          "image_id": 24,
+          "file_name": "images/f7f815b3__Picture%202026-05-12%2013-10-20.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-10-20.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/florence2/frames-webcamoid-Picture_2026-05-12_13-10-20-overlay.png",
+          "tp": 1,
+          "fp": 1,
+          "fn": 0
+        },
+        {
+          "image_id": 25,
+          "file_name": "images/387c0c4f__Picture%202026-05-12%2013-10-50.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-10-50.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/florence2/frames-webcamoid-Picture_2026-05-12_13-10-50-overlay.png",
+          "tp": 3,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 26,
+          "file_name": "images/144ef3c4__Picture%202026-05-17%2010-22-05.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-17 10-22-05.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/florence2/frames-webcamoid-Picture_2026-05-17_10-22-05-overlay.png",
+          "tp": 1,
+          "fp": 1,
+          "fn": 1
+        },
+        {
+          "image_id": 27,
+          "file_name": "../../home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000001.jpg",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000001.jpg",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/florence2/frames-obs-studio-2026-05-17-11-06-20-frame_000001-overlay.jpg",
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 28,
+          "file_name": "../../home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000002.jpg",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000002.jpg",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/florence2/frames-obs-studio-2026-05-17-11-06-20-frame_000002-overlay.jpg",
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 29,
+          "file_name": "../../home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000003.jpg",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000003.jpg",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/florence2/frames-obs-studio-2026-05-17-11-06-20-frame_000003-overlay.jpg",
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        }
+      ]
+    },
+    {
+      "model": "yolox",
+      "output_dir": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/yolox",
+      "images": [
+        {
+          "image_id": 0,
+          "file_name": "images/69935b94__Picture%202026-05-12%2012-05-45.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-05-45.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/yolox/frames-webcamoid-Picture_2026-05-12_12-05-45-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 1,
+          "file_name": "images/f98dcdc3__Picture%202026-05-12%2012-06-03.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-03.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/yolox/frames-webcamoid-Picture_2026-05-12_12-06-03-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 2,
+          "file_name": "images/a9168e1d__Picture%202026-05-12%2012-06-18.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-18.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/yolox/frames-webcamoid-Picture_2026-05-12_12-06-18-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 3,
+          "file_name": "images/44c664c8__Picture%202026-05-12%2012-06-30.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-30.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/yolox/frames-webcamoid-Picture_2026-05-12_12-06-30-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 4,
+          "file_name": "images/350097b9__Picture%202026-05-12%2012-06-46.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-46.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/yolox/frames-webcamoid-Picture_2026-05-12_12-06-46-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 2
+        },
+        {
+          "image_id": 5,
+          "file_name": "images/7b8f0b3e__Picture%202026-05-12%2012-07-22.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-07-22.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/yolox/frames-webcamoid-Picture_2026-05-12_12-07-22-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 6,
+          "file_name": "images/94128ab1__Picture%202026-05-12%2012-07-45.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-07-45.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/yolox/frames-webcamoid-Picture_2026-05-12_12-07-45-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 7,
+          "file_name": "images/41c13ac9__Picture%202026-05-12%2012-09-49.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-09-49.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/yolox/frames-webcamoid-Picture_2026-05-12_12-09-49-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 8,
+          "file_name": "images/5cf69a79__Picture%202026-05-12%2012-33-45.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-33-45.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/yolox/frames-webcamoid-Picture_2026-05-12_12-33-45-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 9,
+          "file_name": "images/38ef070c__Picture%202026-05-12%2012-34-00.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-34-00.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/yolox/frames-webcamoid-Picture_2026-05-12_12-34-00-overlay.png",
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 10,
+          "file_name": "images/bdcc7ade__Picture%202026-05-12%2012-34-35.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-34-35.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/yolox/frames-webcamoid-Picture_2026-05-12_12-34-35-overlay.png",
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 11,
+          "file_name": "images/6f311e64__Picture%202026-05-12%2012-35-52.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-35-52.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/yolox/frames-webcamoid-Picture_2026-05-12_12-35-52-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 12,
+          "file_name": "images/3e3ee29e__Picture%202026-05-12%2012-43-25.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-43-25.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/yolox/frames-webcamoid-Picture_2026-05-12_12-43-25-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 13,
+          "file_name": "images/f7f0d6c4__Picture%202026-05-12%2012-43-47.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-43-47.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/yolox/frames-webcamoid-Picture_2026-05-12_12-43-47-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 2
+        },
+        {
+          "image_id": 14,
+          "file_name": "images/580ece02__Picture%202026-05-12%2012-46-44.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-46-44.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/yolox/frames-webcamoid-Picture_2026-05-12_12-46-44-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 2
+        },
+        {
+          "image_id": 15,
+          "file_name": "images/6317c225__Picture%202026-05-12%2012-47-10.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-47-10.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/yolox/frames-webcamoid-Picture_2026-05-12_12-47-10-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 16,
+          "file_name": "images/b7a6d995__Picture%202026-05-12%2012-47-36.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-47-36.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/yolox/frames-webcamoid-Picture_2026-05-12_12-47-36-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 2
+        },
+        {
+          "image_id": 17,
+          "file_name": "images/dcb8826e__Picture%202026-05-12%2012-49-00.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-49-00.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/yolox/frames-webcamoid-Picture_2026-05-12_12-49-00-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 18,
+          "file_name": "images/2e686276__Picture%202026-05-12%2012-49-36.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-49-36.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/yolox/frames-webcamoid-Picture_2026-05-12_12-49-36-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 19,
+          "file_name": "images/c524b9ad__Picture%202026-05-12%2012-52-42.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-52-42.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/yolox/frames-webcamoid-Picture_2026-05-12_12-52-42-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        {
+          "image_id": 20,
+          "file_name": "images/6507eb33__Picture%202026-05-12%2013-08-05.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-08-05.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/yolox/frames-webcamoid-Picture_2026-05-12_13-08-05-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 21,
+          "file_name": "images/9b5775bc__Picture%202026-05-12%2013-08-49.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-08-49.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/yolox/frames-webcamoid-Picture_2026-05-12_13-08-49-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 22,
+          "file_name": "images/cb232967__Picture%202026-05-12%2013-09-16.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-09-16.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/yolox/frames-webcamoid-Picture_2026-05-12_13-09-16-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 23,
+          "file_name": "images/9b56b3e2__Picture%202026-05-12%2013-09-53.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-09-53.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/yolox/frames-webcamoid-Picture_2026-05-12_13-09-53-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 3
+        },
+        {
+          "image_id": 24,
+          "file_name": "images/f7f815b3__Picture%202026-05-12%2013-10-20.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-10-20.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/yolox/frames-webcamoid-Picture_2026-05-12_13-10-20-overlay.png",
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 25,
+          "file_name": "images/387c0c4f__Picture%202026-05-12%2013-10-50.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-10-50.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/yolox/frames-webcamoid-Picture_2026-05-12_13-10-50-overlay.png",
+          "tp": 2,
+          "fp": 0,
+          "fn": 2
+        },
+        {
+          "image_id": 26,
+          "file_name": "images/144ef3c4__Picture%202026-05-17%2010-22-05.png",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-17 10-22-05.png",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/yolox/frames-webcamoid-Picture_2026-05-17_10-22-05-overlay.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 27,
+          "file_name": "../../home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000001.jpg",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000001.jpg",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/yolox/frames-obs-studio-2026-05-17-11-06-20-frame_000001-overlay.jpg",
+          "tp": 1,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 28,
+          "file_name": "../../home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000002.jpg",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000002.jpg",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/yolox/frames-obs-studio-2026-05-17-11-06-20-frame_000002-overlay.jpg",
+          "tp": 2,
+          "fp": 0,
+          "fn": 1
+        },
+        {
+          "image_id": 29,
+          "file_name": "../../home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000003.jpg",
+          "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000003.jpg",
+          "overlay_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/error-overlays/yolox/frames-obs-studio-2026-05-17-11-06-20-frame_000003-overlay.jpg",
+          "tp": 2,
+          "fp": 0,
+          "fn": 1
+        }
+      ]
+    }
+  ]
+}

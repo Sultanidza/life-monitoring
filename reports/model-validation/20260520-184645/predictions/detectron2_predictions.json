@@ -1,0 +1,639 @@
+{
+  "model": "detectron2",
+  "metadata": {
+    "config_path": "COCO-Detection/faster_rcnn_R_50_FPN_3x.yaml",
+    "weights": "https://dl.fbaipublicfiles.com/detectron2/COCO-Detection/faster_rcnn_R_50_FPN_3x/137849458/model_final_280758.pkl",
+    "threshold": 0.5,
+    "device": "cuda"
+  },
+  "predictions": [
+    {
+      "image_id": 0,
+      "file_name": "images/69935b94__Picture%202026-05-12%2012-05-45.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-05-45.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            452.15,
+            259.16,
+            340.05,
+            806.57
+          ],
+          "score": 0.9995
+        },
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            292.16,
+            487.14,
+            50.87,
+            415.97
+          ],
+          "score": 0.8843
+        }
+      ]
+    },
+    {
+      "image_id": 1,
+      "file_name": "images/f98dcdc3__Picture%202026-05-12%2012-06-03.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-03.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            1189.97,
+            399.09,
+            196.7,
+            438.38
+          ],
+          "score": 0.9994
+        }
+      ]
+    },
+    {
+      "image_id": 2,
+      "file_name": "images/a9168e1d__Picture%202026-05-12%2012-06-18.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-18.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            816.67,
+            272.4,
+            357.25,
+            725.4
+          ],
+          "score": 0.9986
+        }
+      ]
+    },
+    {
+      "image_id": 3,
+      "file_name": "images/44c664c8__Picture%202026-05-12%2012-06-30.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-30.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            387.32,
+            232.06,
+            606.43,
+            815.65
+          ],
+          "score": 0.9998
+        }
+      ]
+    },
+    {
+      "image_id": 4,
+      "file_name": "images/350097b9__Picture%202026-05-12%2012-06-46.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-06-46.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            638.13,
+            115.34,
+            766.75,
+            943.12
+          ],
+          "score": 0.9971
+        },
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            205.29,
+            471.78,
+            138.15,
+            392.97
+          ],
+          "score": 0.9956
+        }
+      ]
+    },
+    {
+      "image_id": 5,
+      "file_name": "images/7b8f0b3e__Picture%202026-05-12%2012-07-22.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-07-22.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            776.54,
+            98.52,
+            703.62,
+            944.26
+          ],
+          "score": 0.9989
+        },
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            218.83,
+            474.98,
+            123.65,
+            368.42
+          ],
+          "score": 0.9928
+        }
+      ]
+    },
+    {
+      "image_id": 6,
+      "file_name": "images/94128ab1__Picture%202026-05-12%2012-07-45.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-07-45.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            395.99,
+            13.92,
+            1290.12,
+            1037.31
+          ],
+          "score": 0.9993
+        },
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            101.83,
+            476.17,
+            188.72,
+            297.16
+          ],
+          "score": 0.9964
+        }
+      ]
+    },
+    {
+      "image_id": 7,
+      "file_name": "images/41c13ac9__Picture%202026-05-12%2012-09-49.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-09-49.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            151.25,
+            529.83,
+            122.81,
+            235.6
+          ],
+          "score": 0.9669
+        }
+      ]
+    },
+    {
+      "image_id": 8,
+      "file_name": "images/5cf69a79__Picture%202026-05-12%2012-33-45.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-33-45.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            217.1,
+            694.72,
+            106.78,
+            291.29
+          ],
+          "score": 0.9849
+        }
+      ]
+    },
+    {
+      "image_id": 9,
+      "file_name": "images/38ef070c__Picture%202026-05-12%2012-34-00.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-34-00.png",
+      "detections": []
+    },
+    {
+      "image_id": 10,
+      "file_name": "images/bdcc7ade__Picture%202026-05-12%2012-34-35.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-34-35.png",
+      "detections": []
+    },
+    {
+      "image_id": 11,
+      "file_name": "images/6f311e64__Picture%202026-05-12%2012-35-52.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-35-52.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            1235.3,
+            422.94,
+            422.3,
+            650.35
+          ],
+          "score": 0.9968
+        }
+      ]
+    },
+    {
+      "image_id": 12,
+      "file_name": "images/3e3ee29e__Picture%202026-05-12%2012-43-25.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-43-25.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            644.88,
+            408.6,
+            336.83,
+            666.68
+          ],
+          "score": 0.9996
+        },
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            315.83,
+            641.18,
+            59.94,
+            413.97
+          ],
+          "score": 0.7301
+        }
+      ]
+    },
+    {
+      "image_id": 13,
+      "file_name": "images/f7f0d6c4__Picture%202026-05-12%2012-43-47.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-43-47.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            602.05,
+            393.89,
+            574.49,
+            675.19
+          ],
+          "score": 0.9995
+        }
+      ]
+    },
+    {
+      "image_id": 14,
+      "file_name": "images/580ece02__Picture%202026-05-12%2012-46-44.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-46-44.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            614.35,
+            0.0,
+            701.16,
+            1079.56
+          ],
+          "score": 0.9994
+        },
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            599.74,
+            274.45,
+            142.61,
+            257.45
+          ],
+          "score": 0.973
+        }
+      ]
+    },
+    {
+      "image_id": 15,
+      "file_name": "images/6317c225__Picture%202026-05-12%2012-47-10.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-47-10.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            241.51,
+            362.06,
+            543.55,
+            676.01
+          ],
+          "score": 0.9208
+        }
+      ]
+    },
+    {
+      "image_id": 16,
+      "file_name": "images/b7a6d995__Picture%202026-05-12%2012-47-36.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-47-36.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            468.22,
+            351.76,
+            439.7,
+            715.85
+          ],
+          "score": 0.9989
+        }
+      ]
+    },
+    {
+      "image_id": 17,
+      "file_name": "images/dcb8826e__Picture%202026-05-12%2012-49-00.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-49-00.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            372.45,
+            2.48,
+            514.59,
+            1018.45
+          ],
+          "score": 0.9991
+        }
+      ]
+    },
+    {
+      "image_id": 18,
+      "file_name": "images/2e686276__Picture%202026-05-12%2012-49-36.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-49-36.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            255.08,
+            362.67,
+            463.88,
+            715.03
+          ],
+          "score": 0.9992
+        }
+      ]
+    },
+    {
+      "image_id": 19,
+      "file_name": "images/c524b9ad__Picture%202026-05-12%2012-52-42.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 12-52-42.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            184.81,
+            313.16,
+            1434.8,
+            745.5
+          ],
+          "score": 0.9971
+        }
+      ]
+    },
+    {
+      "image_id": 20,
+      "file_name": "images/6507eb33__Picture%202026-05-12%2013-08-05.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-08-05.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            620.75,
+            179.79,
+            433.21,
+            875.18
+          ],
+          "score": 0.9977
+        }
+      ]
+    },
+    {
+      "image_id": 21,
+      "file_name": "images/9b5775bc__Picture%202026-05-12%2013-08-49.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-08-49.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            404.74,
+            369.94,
+            101.63,
+            226.03
+          ],
+          "score": 0.9855
+        }
+      ]
+    },
+    {
+      "image_id": 22,
+      "file_name": "images/cb232967__Picture%202026-05-12%2013-09-16.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-09-16.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            400.8,
+            364.33,
+            94.15,
+            229.68
+          ],
+          "score": 0.9728
+        }
+      ]
+    },
+    {
+      "image_id": 23,
+      "file_name": "images/9b56b3e2__Picture%202026-05-12%2013-09-53.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-09-53.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            362.48,
+            393.92,
+            172.87,
+            201.67
+          ],
+          "score": 0.9865
+        }
+      ]
+    },
+    {
+      "image_id": 24,
+      "file_name": "images/f7f815b3__Picture%202026-05-12%2013-10-20.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-10-20.png",
+      "detections": []
+    },
+    {
+      "image_id": 25,
+      "file_name": "images/387c0c4f__Picture%202026-05-12%2013-10-50.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-12 13-10-50.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            511.86,
+            133.86,
+            1129.31,
+            928.97
+          ],
+          "score": 0.999
+        },
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            343.47,
+            402.94,
+            150.97,
+            165.39
+          ],
+          "score": 0.995
+        }
+      ]
+    },
+    {
+      "image_id": 26,
+      "file_name": "images/144ef3c4__Picture%202026-05-17%2010-22-05.png",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid/Picture 2026-05-17 10-22-05.png",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            458.44,
+            209.64,
+            1042.09,
+            860.81
+          ],
+          "score": 0.9997
+        }
+      ]
+    },
+    {
+      "image_id": 27,
+      "file_name": "../../home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000001.jpg",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000001.jpg",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            421.2,
+            215.71,
+            350.8,
+            483.26
+          ],
+          "score": 0.9985
+        },
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            6.81,
+            510.95,
+            203.39,
+            172.31
+          ],
+          "score": 0.5363
+        }
+      ]
+    },
+    {
+      "image_id": 28,
+      "file_name": "../../home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000002.jpg",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000002.jpg",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            466.04,
+            200.89,
+            255.88,
+            485.86
+          ],
+          "score": 0.9996
+        },
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            14.65,
+            307.02,
+            91.55,
+            227.67
+          ],
+          "score": 0.9362
+        },
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            5.22,
+            508.09,
+            205.06,
+            177.76
+          ],
+          "score": 0.6819
+        }
+      ]
+    },
+    {
+      "image_id": 29,
+      "file_name": "../../home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000003.jpg",
+      "resolved_path": "/home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20/frame_000003.jpg",
+      "detections": [
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            486.58,
+            266.4,
+            218.05,
+            421.85
+          ],
+          "score": 0.9991
+        },
+        {
+          "label": "person",
+          "category_id": 1,
+          "bbox": [
+            6.14,
+            322.37,
+            98.83,
+            223.35
+          ],
+          "score": 0.9943
+        }
+      ]
+    }
+  ],
+  "class_prediction_counts": {
+    "person": 38
+  }
+}

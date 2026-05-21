@@ -1,0 +1,387 @@
+{
+  "coco_file": "/home/arturka/Documents/Projects/life-monitoring/data/annotations/eval-webcamoid-obs-studio-2026-05-17-11-06-20/coco.json",
+  "image_roots": [
+    "/home/arturka/Documents/Projects/life-monitoring/data/frames/webcamoid",
+    "/home/arturka/Documents/Projects/life-monitoring/data/frames/obs-studio-2026-05-17-11-06-20"
+  ],
+  "labels": [
+    "guitar",
+    "person"
+  ],
+  "models": [
+    "ultralytics",
+    "detectron2",
+    "grounding-dino",
+    "owlv2",
+    "florence2",
+    "yolox"
+  ],
+  "results": [
+    {
+      "model": "ultralytics",
+      "predictions_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/predictions/ultralytics_predictions.json",
+      "metrics_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/metrics/ultralytics_eval_iou050.json",
+      "heatmap_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/metrics/ultralytics_eval_iou050_heatmap.svg",
+      "metrics": {
+        "title": "ultralytics Metrics Heatmap",
+        "subtitle": "30 labeled images \u2022 IoU threshold 0.50 \u2022 ultralytics",
+        "model": "ultralytics",
+        "coco_file": "/home/arturka/Documents/Projects/life-monitoring/data/annotations/eval-webcamoid-obs-studio-2026-05-17-11-06-20/coco.json",
+        "predictions_file": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/predictions/ultralytics_predictions.json",
+        "iou_threshold": 0.5,
+        "categories": [
+          {
+            "id": 0,
+            "name": "guitar"
+          },
+          {
+            "id": 1,
+            "name": "person"
+          }
+        ],
+        "per_class": {
+          "0": {
+            "gt_count": 28,
+            "prediction_count": 5,
+            "tp": 3,
+            "fp": 2,
+            "fn": 25,
+            "precision": 0.6,
+            "recall": 0.1071,
+            "mean_iou": 0.7611,
+            "matched_count": 3,
+            "name": "guitar"
+          },
+          "1": {
+            "gt_count": 39,
+            "prediction_count": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 29,
+            "precision": 1.0,
+            "recall": 0.2564,
+            "mean_iou": 0.9322,
+            "matched_count": 10,
+            "name": "person"
+          }
+        },
+        "overall": {
+          "gt_count": 67,
+          "prediction_count": 15,
+          "tp": 13,
+          "fp": 2,
+          "fn": 54,
+          "precision": 0.8667,
+          "recall": 0.194,
+          "mean_iou": 0.8927,
+          "matched_count": 13
+        }
+      }
+    },
+    {
+      "model": "detectron2",
+      "predictions_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/predictions/detectron2_predictions.json",
+      "metrics_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/metrics/detectron2_eval_iou050.json",
+      "heatmap_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/metrics/detectron2_eval_iou050_heatmap.svg",
+      "metrics": {
+        "title": "detectron2 Metrics Heatmap",
+        "subtitle": "30 labeled images \u2022 IoU threshold 0.50 \u2022 detectron2",
+        "model": "detectron2",
+        "coco_file": "/home/arturka/Documents/Projects/life-monitoring/data/annotations/eval-webcamoid-obs-studio-2026-05-17-11-06-20/coco.json",
+        "predictions_file": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/predictions/detectron2_predictions.json",
+        "iou_threshold": 0.5,
+        "categories": [
+          {
+            "id": 0,
+            "name": "guitar"
+          },
+          {
+            "id": 1,
+            "name": "person"
+          }
+        ],
+        "per_class": {
+          "0": {
+            "gt_count": 28,
+            "prediction_count": 0,
+            "tp": 0,
+            "fp": 0,
+            "fn": 28,
+            "precision": 0.0,
+            "recall": 0.0,
+            "mean_iou": 0.0,
+            "matched_count": 0,
+            "name": "guitar"
+          },
+          "1": {
+            "gt_count": 39,
+            "prediction_count": 38,
+            "tp": 36,
+            "fp": 2,
+            "fn": 3,
+            "precision": 0.9474,
+            "recall": 0.9231,
+            "mean_iou": 0.8692,
+            "matched_count": 36,
+            "name": "person"
+          }
+        },
+        "overall": {
+          "gt_count": 67,
+          "prediction_count": 38,
+          "tp": 36,
+          "fp": 2,
+          "fn": 31,
+          "precision": 0.9474,
+          "recall": 0.5373,
+          "mean_iou": 0.8692,
+          "matched_count": 36
+        }
+      }
+    },
+    {
+      "model": "grounding-dino",
+      "predictions_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/predictions/grounding-dino_predictions.json",
+      "metrics_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/metrics/grounding-dino_eval_iou050.json",
+      "heatmap_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/metrics/grounding-dino_eval_iou050_heatmap.svg",
+      "metrics": {
+        "title": "grounding-dino Metrics Heatmap",
+        "subtitle": "30 labeled images \u2022 IoU threshold 0.50 \u2022 grounding-dino",
+        "model": "grounding-dino",
+        "coco_file": "/home/arturka/Documents/Projects/life-monitoring/data/annotations/eval-webcamoid-obs-studio-2026-05-17-11-06-20/coco.json",
+        "predictions_file": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/predictions/grounding-dino_predictions.json",
+        "iou_threshold": 0.5,
+        "categories": [
+          {
+            "id": 0,
+            "name": "guitar"
+          },
+          {
+            "id": 1,
+            "name": "person"
+          }
+        ],
+        "per_class": {
+          "0": {
+            "gt_count": 28,
+            "prediction_count": 30,
+            "tp": 24,
+            "fp": 6,
+            "fn": 4,
+            "precision": 0.8,
+            "recall": 0.8571,
+            "mean_iou": 0.8401,
+            "matched_count": 24,
+            "name": "guitar"
+          },
+          "1": {
+            "gt_count": 39,
+            "prediction_count": 31,
+            "tp": 30,
+            "fp": 1,
+            "fn": 9,
+            "precision": 0.9677,
+            "recall": 0.7692,
+            "mean_iou": 0.9251,
+            "matched_count": 30,
+            "name": "person"
+          }
+        },
+        "overall": {
+          "gt_count": 67,
+          "prediction_count": 61,
+          "tp": 54,
+          "fp": 7,
+          "fn": 13,
+          "precision": 0.8852,
+          "recall": 0.806,
+          "mean_iou": 0.8873,
+          "matched_count": 54
+        }
+      }
+    },
+    {
+      "model": "owlv2",
+      "predictions_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/predictions/owlv2_predictions.json",
+      "metrics_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/metrics/owlv2_eval_iou050.json",
+      "heatmap_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/metrics/owlv2_eval_iou050_heatmap.svg",
+      "metrics": {
+        "title": "owlv2 Metrics Heatmap",
+        "subtitle": "30 labeled images \u2022 IoU threshold 0.50 \u2022 owlv2",
+        "model": "owlv2",
+        "coco_file": "/home/arturka/Documents/Projects/life-monitoring/data/annotations/eval-webcamoid-obs-studio-2026-05-17-11-06-20/coco.json",
+        "predictions_file": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/predictions/owlv2_predictions.json",
+        "iou_threshold": 0.5,
+        "categories": [
+          {
+            "id": 0,
+            "name": "guitar"
+          },
+          {
+            "id": 1,
+            "name": "person"
+          }
+        ],
+        "per_class": {
+          "0": {
+            "gt_count": 28,
+            "prediction_count": 99,
+            "tp": 27,
+            "fp": 72,
+            "fn": 1,
+            "precision": 0.2727,
+            "recall": 0.9643,
+            "mean_iou": 0.8235,
+            "matched_count": 27,
+            "name": "guitar"
+          },
+          "1": {
+            "gt_count": 39,
+            "prediction_count": 54,
+            "tp": 39,
+            "fp": 15,
+            "fn": 0,
+            "precision": 0.7222,
+            "recall": 1.0,
+            "mean_iou": 0.8829,
+            "matched_count": 39,
+            "name": "person"
+          }
+        },
+        "overall": {
+          "gt_count": 67,
+          "prediction_count": 153,
+          "tp": 66,
+          "fp": 87,
+          "fn": 1,
+          "precision": 0.4314,
+          "recall": 0.9851,
+          "mean_iou": 0.8586,
+          "matched_count": 66
+        }
+      }
+    },
+    {
+      "model": "florence2",
+      "predictions_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/predictions/florence2_predictions.json",
+      "metrics_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/metrics/florence2_eval_iou050.json",
+      "heatmap_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/metrics/florence2_eval_iou050_heatmap.svg",
+      "metrics": {
+        "title": "florence2 Metrics Heatmap",
+        "subtitle": "30 labeled images \u2022 IoU threshold 0.50 \u2022 florence2",
+        "model": "florence2",
+        "coco_file": "/home/arturka/Documents/Projects/life-monitoring/data/annotations/eval-webcamoid-obs-studio-2026-05-17-11-06-20/coco.json",
+        "predictions_file": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/predictions/florence2_predictions.json",
+        "iou_threshold": 0.5,
+        "categories": [
+          {
+            "id": 0,
+            "name": "guitar"
+          },
+          {
+            "id": 1,
+            "name": "person"
+          }
+        ],
+        "per_class": {
+          "0": {
+            "gt_count": 28,
+            "prediction_count": 30,
+            "tp": 20,
+            "fp": 10,
+            "fn": 8,
+            "precision": 0.6667,
+            "recall": 0.7143,
+            "mean_iou": 0.8217,
+            "matched_count": 20,
+            "name": "guitar"
+          },
+          "1": {
+            "gt_count": 39,
+            "prediction_count": 37,
+            "tp": 33,
+            "fp": 4,
+            "fn": 6,
+            "precision": 0.8919,
+            "recall": 0.8462,
+            "mean_iou": 0.902,
+            "matched_count": 33,
+            "name": "person"
+          }
+        },
+        "overall": {
+          "gt_count": 67,
+          "prediction_count": 67,
+          "tp": 53,
+          "fp": 14,
+          "fn": 14,
+          "precision": 0.791,
+          "recall": 0.791,
+          "mean_iou": 0.8717,
+          "matched_count": 53
+        }
+      }
+    },
+    {
+      "model": "yolox",
+      "predictions_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/predictions/yolox_predictions.json",
+      "metrics_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/metrics/yolox_eval_iou050.json",
+      "heatmap_path": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/metrics/yolox_eval_iou050_heatmap.svg",
+      "metrics": {
+        "title": "yolox Metrics Heatmap",
+        "subtitle": "30 labeled images \u2022 IoU threshold 0.50 \u2022 yolox",
+        "model": "yolox",
+        "coco_file": "/home/arturka/Documents/Projects/life-monitoring/data/annotations/eval-webcamoid-obs-studio-2026-05-17-11-06-20/coco.json",
+        "predictions_file": "/home/arturka/Documents/Projects/life-monitoring/reports/model-validation/20260520-184645/predictions/yolox_predictions.json",
+        "iou_threshold": 0.5,
+        "categories": [
+          {
+            "id": 0,
+            "name": "guitar"
+          },
+          {
+            "id": 1,
+            "name": "person"
+          }
+        ],
+        "per_class": {
+          "0": {
+            "gt_count": 28,
+            "prediction_count": 0,
+            "tp": 0,
+            "fp": 0,
+            "fn": 28,
+            "precision": 0.0,
+            "recall": 0.0,
+            "mean_iou": 0.0,
+            "matched_count": 0,
+            "name": "guitar"
+          },
+          "1": {
+            "gt_count": 39,
+            "prediction_count": 36,
+            "tp": 36,
+            "fp": 0,
+            "fn": 3,
+            "precision": 1.0,
+            "recall": 0.9231,
+            "mean_iou": 0.852,
+            "matched_count": 36,
+            "name": "person"
+          }
+        },
+        "overall": {
+          "gt_count": 67,
+          "prediction_count": 36,
+          "tp": 36,
+          "fp": 0,
+          "fn": 31,
+          "precision": 1.0,
+          "recall": 0.5373,
+          "mean_iou": 0.852,
+          "matched_count": 36
+        }
+      }
+    }
+  ]
+}
