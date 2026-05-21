@@ -22,6 +22,7 @@ Current product direction inferred from the linked project discussions and the i
 
 - build an MVP around object detection
 - keep the product intentionally narrow: one camera, one user, one core metric
+- make a model pipeline that can detect from video when the primary user is playing guitar
 - detect `person`
 - detect `guitar`
 - aggregate practice/session duration from detections
@@ -34,6 +35,7 @@ Current product direction inferred from the linked project discussions and the i
 
 Primary goals:
 
+- detect from video when the primary user is playing guitar
 - create a reusable dataset from local videos and screenshots
 - label images in a format suitable for objective evaluation
 - compare baseline detection models on project data
@@ -53,6 +55,7 @@ Current MVP scope:
 
 - object detection, not segmentation or tracking
 - image/frame-based evaluation first
+- image/frame-based evaluation is the preparation step for later video-level guitar-playing detection
 - one-camera setup
 - one-user setup
 - classes:
@@ -143,7 +146,7 @@ Current mixed evaluation annotation set:
 That COCO set currently contains:
 
 - `30` images
-- `45` annotations
+- `67` annotations
 - `2` categories
 
 Category mapping in the current COCO export:
@@ -163,6 +166,10 @@ Archived historical 3-class evaluation assets:
 - `data/predictions/history/2026-05-17-initial-3class-grounding_dino_annotated/`
 - `data/metrics/history/2026-05-17-initial-3class-grounding_dino_eval_iou050.json`
 
+Archived historical 2-class active-set snapshot before mirror-box update:
+
+- `data/annotations/history/2026-05-18-45ann-2class-coco.json`
+
 ## Data And Annotation Decisions
 
 Current decisions:
@@ -171,6 +178,8 @@ Current decisions:
 - Label Studio is acceptable for labeling as long as exports are normalized through the resolver
 - raw datasets stay under `data/`
 - reports and run metadata stay under `reports/`
+- `data/metrics/` is reserved for the active single-model evaluation path
+- multi-model comparison runs belong under `reports/model-validation/<timestamp>/`
 - keep source datasets separated by folder rather than flattening everything immediately
 - prefer minimizing manual labeling cost
 - use pretrained models, transfer learning, and small focused datasets before scaling labeling effort
@@ -241,6 +250,8 @@ Current project scripts:
 - `scripts/resolve_coco_image_paths.py`
 - `scripts/run_grounding_dino_coco.py`
 - `scripts/eval_grounding_dino_predictions.py`
+- `scripts/build_metrics_heatmap.py`
+- `scripts/run_coco_model_validation.py`
 
 Current environment/tooling assumptions:
 
@@ -254,6 +265,19 @@ Planned tooling direction beyond current scripts:
 - a simple session-duration aggregation step
 - heatmap or chart generation for 24-hour activity summaries
 - Dockerfile plus `docker-compose` support for reproducible startup
+
+## Metrics And Reporting Convention
+
+Use these storage conventions consistently:
+
+- `data/metrics/`
+  - only for the active single-model evaluation artifacts
+  - example: active Grounding DINO COCO evaluation JSON and heatmap
+- `reports/model-validation/<timestamp>/`
+  - for multi-model comparison runs
+  - store per-model predictions, metrics, heatmaps, manifests, and summary tables there
+
+This keeps the canonical single-model reference separate from experiment bundles.
 
 Repository context files that should be maintained:
 
@@ -271,11 +295,11 @@ Project baseline search and testing so far identified:
   - Grounding DINO
   - OWLv2
   - Florence-2
-  - YOLO-World
 
 Current practical conclusion from project testing:
 
 - Grounding DINO is the strongest current baseline on project data
+- Grounding DINO is also the most balanced model in the current multi-model comparison
 
 ## Current Results
 
@@ -286,16 +310,16 @@ Pre-metrics baseline stage:
 - the first comparison was based on roughly `30` images
 - visual inspection alone was considered insufficient and was later replaced with explicit metrics
 
-Grounding DINO COCO inference output:
+Single-model Grounding DINO COCO inference output:
 
 - `data/predictions/grounding_dino_predictions.json`
 - annotated images in `data/predictions/grounding_dino_annotated/`
 
-Current evaluation output:
+Active single-model evaluation output:
 
 - `data/metrics/grounding_dino_eval_iou050.json`
 
-Current Grounding DINO metrics at IoU `0.5`:
+Active single-model Grounding DINO metrics at IoU `0.5`:
 
 - `guitar`
   - GT: `22`
@@ -316,7 +340,7 @@ Current Grounding DINO metrics at IoU `0.5`:
   - Recall: `1.0000`
   - Mean IoU: `0.9661`
 
-Overall current totals:
+Overall active single-model totals:
 
 - GT: `45`
 - Pred: `65`
@@ -327,16 +351,54 @@ Overall current totals:
 - Recall: `0.9778`
 - Mean IoU: `0.9159`
 
+Latest multi-model comparison on the updated `67`-annotation COCO set is stored under:
+
+- `reports/model-validation/20260520-184645/`
+
+Overall metrics from that run:
+
+- `grounding-dino`
+  - Precision: `0.8852`
+  - Recall: `0.8060`
+  - Mean IoU: `0.8873`
+- `florence2`
+  - Precision: `0.7910`
+  - Recall: `0.7910`
+  - Mean IoU: `0.8717`
+- `detectron2`
+  - Precision: `0.9474`
+  - Recall: `0.5373`
+  - Mean IoU: `0.8692`
+- `yolox`
+  - Precision: `1.0000`
+  - Recall: `0.5373`
+  - Mean IoU: `0.8520`
+- `owlv2`
+  - Precision: `0.4314`
+  - Recall: `0.9851`
+  - Mean IoU: `0.8586`
+- `ultralytics`
+  - Precision: `0.8667`
+  - Recall: `0.1940`
+  - Mean IoU: `0.8927`
+
 ## Current Findings
 
 Current findings from the project data:
 
+- Grounding DINO remains the best overall model for this project because it is the most balanced on precision and recall
+- Grounding DINO precision is high at about `88.5%`, though it still produces occasional false guitar detections
+- Grounding DINO recall is about `80.6%` on the updated benchmark, which means some labeled objects are still missed
+- a significant share of the current misses appears to come from mirror reflections and other hard-view cases
+- reflection-heavy cases are challenging enough that model quality must be judged with both metrics and image-level overlays
+- fine-tuning Grounding DINO or a follow-on detector on project data is a reasonable next step for improving reflection handling
 - `person` works well in recall
 - `guitar` is already usable as an evaluation class
 - visual inspection is necessary because aggregate metrics alone hide class-confusion patterns
 - narrow, concrete classes are more useful than broad semantic classes for the current MVP
 - a small manually trusted test set is necessary before scaling any video evaluation
 - removing `musical instrument` from the active evaluation set produced a much cleaner benchmark
+- mirror reflections are currently part of the task definition and should be treated as legitimate visible instances when labeled
 
 ## Test Set Strategy
 
@@ -376,6 +438,7 @@ Current evaluation priorities:
 - false negatives
 - per-class diagnostics
 - visual error inspection
+- GT-vs-prediction overlays for hard images, especially mirror cases
 
 Current evaluation policy:
 
@@ -419,6 +482,10 @@ Use this file to keep:
 Full meeting summaries are stored in:
 
 - `docs/meeting-summaries/`
+
+Raw meeting transcripts are stored in:
+
+- `docs/meeting-transcripts/`
 
 Do not use this file for:
 
