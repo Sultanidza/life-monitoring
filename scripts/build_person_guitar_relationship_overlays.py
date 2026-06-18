@@ -15,6 +15,10 @@ from PIL import Image, ImageDraw, ImageFont
 DEFAULT_PREDICTIONS = "data/predictions/grounding_dino_expanded_2026_05_29_predictions.json"
 DEFAULT_OUTPUT_DIR = "data/metrics/person_guitar_relationship_overlays_expanded_2026_05_29"
 
+# Data-driven default from the person/guitar IoU distribution (Otsu's method).
+# Keep in sync with scripts/analyze_person_guitar_relationships.py.
+DEFAULT_IOU_THRESHOLD = 0.26
+
 PERSON_COLOR = "#2563eb"
 GUITAR_COLOR = "#16a34a"
 PAIR_COLOR = "#dc2626"
@@ -31,6 +35,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--output-dir", default=DEFAULT_OUTPUT_DIR)
     parser.add_argument("--person-label", default="person")
     parser.add_argument("--guitar-label", default="guitar")
+    parser.add_argument("--iou-threshold", type=float, default=DEFAULT_IOU_THRESHOLD)
     return parser.parse_args()
 
 
@@ -120,25 +125,18 @@ def choose_best_pair(persons: list[dict], guitars: list[dict]) -> dict | None:
     for person in persons:
         for guitar in guitars:
             features = pair_features(person, guitar)
-            ranking = (
-                features["guitar_intersection_over_guitar"],
-                1.0 - features["center_distance_person_diag"],
-                features["pair_score"],
-            )
+            # Rank by IoU first (the decision signal), then joint confidence.
+            ranking = (features["pair_iou"], features["pair_score"])
             candidate = {"ranking": ranking, **features}
             if best is None or candidate["ranking"] > best["ranking"]:
                 best = candidate
     return best
 
 
-def playing_candidate(features: dict | None) -> bool:
+def playing_candidate(features: dict | None, iou_threshold: float) -> bool:
     if not features:
         return False
-    return bool(
-        features["guitar_center_in_person"]
-        or features["guitar_intersection_over_guitar"] >= 0.35
-        or features["center_distance_person_diag"] <= 0.65
-    )
+    return features["pair_iou"] >= iou_threshold
 
 
 def text_size(draw: ImageDraw.ImageDraw, text: str, font) -> tuple[int, int]:
@@ -198,7 +196,9 @@ def draw_panel(draw: ImageDraw.ImageDraw, lines: list[str], font) -> None:
         draw.text((x + 14, y + 10 + index * line_h), line, fill=TEXT_COLOR, font=font)
 
 
-def draw_overlay(image_entry: dict, output_path: Path, person_label: str, guitar_label: str) -> dict:
+def draw_overlay(
+    image_entry: dict, output_path: Path, person_label: str, guitar_label: str, iou_threshold: float
+) -> dict:
     image = Image.open(image_entry["resolved_path"]).convert("RGB")
     draw = ImageDraw.Draw(image)
     font = ImageFont.load_default()
@@ -243,20 +243,18 @@ def draw_overlay(image_entry: dict, output_path: Path, person_label: str, guitar
         draw_center(draw, best["person_center"], PERSON_COLOR)
         draw_center(draw, best["guitar_center"], GUITAR_COLOR)
 
-    candidate = playing_candidate(best)
+    candidate = playing_candidate(best, iou_threshold)
     lines = [
         f"image_id: {image_entry['image_id']}",
         f"persons: {len(persons)}  guitars: {len(guitars)}",
-        f"playing_candidate: {candidate}",
+        f"person-with-guitar: {candidate}  (IoU >= {iou_threshold:.2f})",
     ]
     if best:
         lines.extend(
             [
-                f"center distance: {best['center_distance_px']:.1f}px",
-                f"distance / person diagonal: {best['center_distance_person_diag']:.3f}",
                 f"pair IoU: {best['pair_iou']:.3f}",
                 f"guitar overlap covered: {best['guitar_intersection_over_guitar']:.3f}",
-                f"guitar center in person: {best['guitar_center_in_person']}",
+                f"center distance: {best['center_distance_px']:.1f}px",
             ]
         )
     else:
@@ -298,15 +296,17 @@ def main() -> int:
                 output_path=output_dir / output_name,
                 person_label=args.person_label.lower(),
                 guitar_label=args.guitar_label.lower(),
+                iou_threshold=args.iou_threshold,
             )
         )
 
     manifest = {
         "predictions_file": str(predictions_path),
         "output_dir": str(output_dir),
+        "iou_threshold": args.iou_threshold,
         "heuristic": (
-            "playing_candidate if guitar center is inside person, or guitar/person "
-            "overlap covers >=35% of guitar, or center distance <=0.65 person diagonals"
+            f"person-with-guitar if the best person/guitar pair has IoU >= {args.iou_threshold} "
+            "(threshold from the IoU distribution via Otsu's method)"
         ),
         "overlays": outputs,
     }
@@ -330,8 +330,8 @@ def main() -> int:
     for item in outputs:
         index_lines.append(
             f"- `{Path(item['overlay_path']).name}`: "
-            f"candidate={item['playing_candidate']} "
-            f"distance_norm={item['center_distance_person_diag']}"
+            f"person_with_guitar={item['playing_candidate']} "
+            f"pair_iou={item['pair_iou']}"
         )
     (output_dir / "index.md").write_text("\n".join(index_lines) + "\n", encoding="utf-8")
 

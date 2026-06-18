@@ -26,17 +26,16 @@ work completed as of this check-in. Repo: https://github.com/Sultanidza/life-mon
       the descriptive report below, not the raw files.
 - [x] **Restore project context + send this action-item list.** Done (this doc).
 - [ ] **Update the `find-baseline-models-cv` skill** to its latest version.
-- [ ] **Use the skill to search for / apply a baseline suited to video.** Per mentor:
-      video models process *sequential frames*, so search via the skill for a
-      video-level baseline rather than assuming the image baseline transfers as-is.
-- [ ] **Run the baseline on video (not just images).** In progress — currently only
-      run on images; `data/raw-videos/` is empty, so this needs a sample clip or
-      reuse of an existing OBS frame sequence.
-- [ ] **Produce a short descriptive analytics report:** frames with/without
-      person-with-guitar, average IoU, and false-positive examples where nearby
-      objects caused a wrong pairing.
-- [ ] **Fix the relationship overlay images** so their "playing" verdicts use the new
-      IoU rule (currently still rendered with the old center-distance logic).
+- [x] **Use the skill to search for / apply a baseline suited to video.** Done.
+      Verified shortlist produced; `reports/model-search/2026-06-17-video-level-baseline-shortlist.md`.
+- [x] **Run the baseline on video (not just images).** Done. Ran VideoMAE on all 3
+      real OBS videos; compared VideoMAE/TimeSformer/ViViT — VideoMAE selected.
+      `reports/video-baseline/2026-06-17-video-baseline-report.md`.
+- [x] **Produce a short descriptive analytics report.** Done, both levels:
+      image-level IoU report (`reports/image-analysis/2026-06-17-image-iou-descriptive-report.md`,
+      counts / average IoU / false-positive gallery) and the video-baseline report above.
+- [x] **Fix the relationship overlay images** so their "playing" verdicts use the new
+      IoU ≥ 0.26 rule. Done — overlays regenerated.
 - [ ] **Send current CV** for review (job-search track).
 
 ### Mentor
