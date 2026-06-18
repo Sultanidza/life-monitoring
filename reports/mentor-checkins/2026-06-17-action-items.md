@@ -25,7 +25,10 @@ work completed as of this check-in. Repo: https://github.com/Sultanidza/life-mon
       Note: `data/metrics/` outputs are gitignored, so IoU stats will be shared via
       the descriptive report below, not the raw files.
 - [x] **Restore project context + send this action-item list.** Done (this doc).
-- [ ] **Update the `find-baseline-models-cv` skill** to its latest version.
+- [x] **Update the `find-baseline-models-cv` skill.** The skill is config-driven
+      (reads `PROJECT.md`, no hardcoded classes), already at its latest committed
+      version. Updated its behavior the correct way — by adding the video-level
+      families and selected baseline to `PROJECT.md` — then used it for the search.
 - [x] **Use the skill to search for / apply a baseline suited to video.** Done.
       Verified shortlist produced; `reports/model-search/2026-06-17-video-level-baseline-shortlist.md`.
 - [x] **Run the baseline on video (not just images).** Done. Ran VideoMAE on all 3
