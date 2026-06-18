@@ -117,6 +117,12 @@ preferred_families:
   - grounding-dino
   - owlv2
 
+# Video-level direction (per 2026-06-17 mentor guidance: video = sequential frames).
+# Searched as an extension to the image detectors above.
+preferred_families_video:
+  - detection-plus-tracking   # e.g. BoxMOT (ByteTrack/BoT-SORT/OC-SORT), Ultralytics tracking
+  - video-action-recognition  # e.g. VideoMAE (K400), InternVideo2, SlowFast/X3D, TimeSformer
+
 required_frameworks:
   - pytorch
 
@@ -300,6 +306,16 @@ Current practical conclusion from project testing:
 
 - Grounding DINO is the strongest current baseline on project data
 - Grounding DINO is also the most balanced model in the current multi-model comparison
+
+Video-level baseline shortlist (2026-06-17, via `find-baseline-models-cv`):
+
+- recommended action-recognition baseline: VideoMAE (Kinetics-400 finetuned) —
+  "playing guitar" is already a Kinetics-400 class, so it gives a near-zero-shot
+  video signal with minimal labeling
+- recommended detection complement: BoxMOT (detector-agnostic tracking) on top of
+  the existing Grounding DINO / YOLO detections, to make the IoU-based playing
+  decision temporally stable across frames
+- full shortlist and links: `reports/model-search/2026-06-17-video-level-baseline-shortlist.md`
 
 ## Current Results
 
