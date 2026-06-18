@@ -43,6 +43,7 @@ data/metrics/*
 
 # Runtime backend caches
 ml_backends/**/cache.db
+cache.db
 
 # Node
 node_modules/

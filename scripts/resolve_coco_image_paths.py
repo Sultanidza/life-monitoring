@@ -51,6 +51,20 @@ def decode_candidate_name(file_name: str) -> str:
     return LABEL_STUDIO_PREFIX.sub("", decoded)
 
 
+def direct_path_candidates(file_name: str) -> list[Path]:
+    decoded = unquote(file_name)
+    candidates = [Path(decoded).expanduser()]
+
+    # Label Studio COCO exports can contain paths like
+    # ../../home/user/project/data/frames/dataset/frame_000001.jpg.
+    # Treat the embedded /home/... suffix as the intended absolute path.
+    for marker in ("/home/", "/tmp/"):
+        if marker in decoded and not decoded.startswith(marker):
+            candidates.append(Path(decoded[decoded.index(marker) :]))
+
+    return candidates
+
+
 def collect_root_files(image_roots: list[Path]) -> dict[str, list[Path]]:
     by_name: dict[str, list[Path]] = {}
     for root in image_roots:
@@ -64,12 +78,13 @@ def collect_root_files(image_roots: list[Path]) -> dict[str, list[Path]]:
 
 
 def resolve_one(file_name: str, image_roots: list[Path], by_name: dict[str, list[Path]]) -> ResolutionResult:
-    direct_path = Path(file_name).expanduser()
     direct_matches: list[Path] = []
 
-    if direct_path.exists():
-        direct_matches.append(direct_path.resolve())
-    else:
+    for direct_path in direct_path_candidates(file_name):
+        if direct_path.exists():
+            direct_matches.append(direct_path.resolve())
+
+    if not direct_matches:
         for root in image_roots:
             candidate = root / file_name
             if candidate.exists():
