@@ -1,0 +1,101 @@
+[
+  {
+    "repo": "MCG-NJU/videomae-base-finetuned-kinetics",
+    "clip_len": 16,
+    "clip_span_sec": 2.53,
+    "windows": 126,
+    "top1_playing_guitar": 56,
+    "top1_guitar_rate": 0.4444,
+    "mean_playing_guitar_prob": 0.1839,
+    "model": "videomae",
+    "video": "2026-05-17 11-06-20.mkv"
+  },
+  {
+    "repo": "facebook/timesformer-base-finetuned-k400",
+    "clip_len": 8,
+    "clip_span_sec": 2.53,
+    "windows": 126,
+    "top1_playing_guitar": 25,
+    "top1_guitar_rate": 0.1984,
+    "mean_playing_guitar_prob": 0.1059,
+    "model": "timesformer",
+    "video": "2026-05-17 11-06-20.mkv"
+  },
+  {
+    "repo": "google/vivit-b-16x2-kinetics400",
+    "clip_len": 32,
+    "clip_span_sec": 2.53,
+    "windows": 126,
+    "top1_playing_guitar": 7,
+    "top1_guitar_rate": 0.0556,
+    "mean_playing_guitar_prob": 0.0427,
+    "model": "vivit",
+    "video": "2026-05-17 11-06-20.mkv"
+  },
+  {
+    "repo": "MCG-NJU/videomae-base-finetuned-kinetics",
+    "clip_len": 16,
+    "clip_span_sec": 2.53,
+    "windows": 129,
+    "top1_playing_guitar": 59,
+    "top1_guitar_rate": 0.4574,
+    "mean_playing_guitar_prob": 0.2021,
+    "model": "videomae",
+    "video": "2026-05-17 16-31-19.mkv"
+  },
+  {
+    "repo": "facebook/timesformer-base-finetuned-k400",
+    "clip_len": 8,
+    "clip_span_sec": 2.53,
+    "windows": 129,
+    "top1_playing_guitar": 48,
+    "top1_guitar_rate": 0.3721,
+    "mean_playing_guitar_prob": 0.2828,
+    "model": "timesformer",
+    "video": "2026-05-17 16-31-19.mkv"
+  },
+  {
+    "repo": "google/vivit-b-16x2-kinetics400",
+    "clip_len": 32,
+    "clip_span_sec": 2.53,
+    "windows": 129,
+    "top1_playing_guitar": 11,
+    "top1_guitar_rate": 0.0853,
+    "mean_playing_guitar_prob": 0.0724,
+    "model": "vivit",
+    "video": "2026-05-17 16-31-19.mkv"
+  },
+  {
+    "repo": "MCG-NJU/videomae-base-finetuned-kinetics",
+    "clip_len": 16,
+    "clip_span_sec": 2.53,
+    "windows": 128,
+    "top1_playing_guitar": 89,
+    "top1_guitar_rate": 0.6953,
+    "mean_playing_guitar_prob": 0.3034,
+    "model": "videomae",
+    "video": "2026-05-19 16-29-56.mkv"
+  },
+  {
+    "repo": "facebook/timesformer-base-finetuned-k400",
+    "clip_len": 8,
+    "clip_span_sec": 2.53,
+    "windows": 128,
+    "top1_playing_guitar": 62,
+    "top1_guitar_rate": 0.4844,
+    "mean_playing_guitar_prob": 0.3973,
+    "model": "timesformer",
+    "video": "2026-05-19 16-29-56.mkv"
+  },
+  {
+    "repo": "google/vivit-b-16x2-kinetics400",
+    "clip_len": 32,
+    "clip_span_sec": 2.53,
+    "windows": 128,
+    "top1_playing_guitar": 58,
+    "top1_guitar_rate": 0.4531,
+    "mean_playing_guitar_prob": 0.3873,
+    "model": "vivit",
+    "video": "2026-05-19 16-29-56.mkv"
+  }
+]

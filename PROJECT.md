@@ -317,6 +317,19 @@ Video-level baseline shortlist (2026-06-17, via `find-baseline-models-cv`):
   decision temporally stable across frames
 - full shortlist and links: `reports/model-search/2026-06-17-video-level-baseline-shortlist.md`
 
+Selected video-level baseline (2026-06-17, empirical, on 3 real OBS videos):
+
+- `MCG-NJU/videomae-base-finetuned-kinetics` is the chosen video-level baseline
+- it beat TimeSformer and ViViT on every video (top-1 "playing guitar" rate:
+  VideoMAE 53.3%, TimeSformer 35.2%, ViViT 19.8% across 383 windows)
+- decision rule: top-1 == "playing guitar" (an absolute P>=0.5 threshold
+  undercounts because Kinetics splits guitar across related classes)
+- loader note: remap the checkpoint's `q_bias`/`v_bias` to `query.bias`/`value.bias`
+  (newer transformers drops them, which silently breaks predictions)
+- full report: `reports/video-baseline/2026-06-17-video-baseline-report.md`
+- these videos are not yet labeled playing/not-playing, so rates are descriptive,
+  not validated precision/recall
+
 ## Current Results
 
 Pre-metrics baseline stage:

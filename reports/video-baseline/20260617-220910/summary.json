@@ -1,0 +1,48 @@
+{
+  "model": "MCG-NJU/videomae-base-finetuned-kinetics",
+  "guitar_label": "playing guitar",
+  "generated": "20260617-220910",
+  "videos": [
+    {
+      "video": "/home/arturka/Videos/OBS-Studio/2026-05-17 11-06-20.mkv",
+      "effective_fps": 6.0,
+      "clip_len_frames": 16,
+      "clip_span_sec": 2.67,
+      "window_stride_sec": 2.0,
+      "decimated_frames": 1519,
+      "windows": 126,
+      "playing_windows": 16,
+      "playing_rate": 0.127,
+      "mean_playing_guitar_prob": 0.1875,
+      "play_threshold": 0.5
+    },
+    {
+      "video": "/home/arturka/Videos/OBS-Studio/2026-05-17 16-31-19.mkv",
+      "effective_fps": 6.0,
+      "clip_len_frames": 16,
+      "clip_span_sec": 2.67,
+      "window_stride_sec": 2.0,
+      "decimated_frames": 1555,
+      "windows": 129,
+      "playing_windows": 12,
+      "playing_rate": 0.093,
+      "mean_playing_guitar_prob": 0.206,
+      "play_threshold": 0.5
+    },
+    {
+      "video": "/home/arturka/Videos/OBS-Studio/2026-05-19 16-29-56.mkv",
+      "effective_fps": 6.0,
+      "clip_len_frames": 16,
+      "clip_span_sec": 2.67,
+      "window_stride_sec": 2.0,
+      "decimated_frames": 1549,
+      "windows": 128,
+      "playing_windows": 26,
+      "playing_rate": 0.2031,
+      "mean_playing_guitar_prob": 0.3073,
+      "play_threshold": 0.5
+    }
+  ],
+  "total_windows": 383,
+  "total_playing_windows": 54
+}
