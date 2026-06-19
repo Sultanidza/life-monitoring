@@ -46,6 +46,24 @@ work completed as of this check-in. Repo: https://github.com/Sultanidza/life-mon
 - [ ] Review CV and send comments/clarifying questions.
 - [ ] Send meeting materials before/on Friday; confirm follow-up (same time).
 
+## Next steps (next sprint — validate the video baseline)
+
+Everything above is **descriptive**, not yet **validated**: we have no ground
+truth for *playing*, so we cannot yet say how well VideoMAE performs. The "top-1
+playing-guitar rate" used to compare models only counts positive predictions — it
+cannot tell genuine detection from over-prediction (false positives). Fixing that
+is the next priority.
+
+- [ ] **Define what counts as "playing"** (does tuning count? holding without
+      strumming? short mid-song pauses?) — agree the rule with mentor.
+- [ ] **Label the playing time-intervals on one video** (temporal labels, not
+      boxes — just note start/end times, e.g. `0:30–2:15`). One 4-min video is
+      enough to start (~250 windows).
+- [ ] **Score VideoMAE against those labels:** precision, recall, F1, and
+      total-playing-time error (precision directly exposes false positives).
+- [ ] Use the result to tune the decision rule and the session parameters, and to
+      decide whether a heavier model (temporal localization, tIoU) is justified.
+
 ## How to send
 
 This file is committed to the repo, so the GitHub link above is the single source.
