@@ -1,0 +1,127 @@
+window_index,start_sec,end_sec,ground_truth,prediction,outcome,playing_overlap_sec,not_playing_overlap_sec,ambiguous_overlap_sec,top1_label,top1_prob,playing_guitar_prob
+0,0.0,2.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,beatboxing,0.559716,0.001199
+1,2.0,4.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,stretching arm,0.975998,0.0
+2,4.0,6.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,stretching arm,0.994695,0.0
+3,6.0,8.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,stretching arm,0.992812,0.0
+4,8.0,10.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,stretching arm,0.997697,0.0
+5,10.0,12.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,stretching arm,0.974335,0.0
+6,12.0,14.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,lunge,0.191243,0.00022
+7,14.0,16.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,playing basketball,0.446446,0.000756
+8,16.0,18.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,dunking basketball,0.215662,0.001778
+9,18.0,20.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,dunking basketball,0.437992,0.000855
+10,20.0,22.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,dunking basketball,0.264066,0.000402
+11,22.0,24.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,robot dancing,0.127792,0.000285
+12,24.0,26.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,finger snapping,0.200457,0.000665
+13,26.0,28.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,dunking basketball,0.222837,0.000236
+14,28.0,30.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,playing ukulele,0.163011,0.019659
+15,30.0,32.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,playing ukulele,0.372659,0.020463
+16,32.0,34.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,playing ukulele,0.261074,0.018157
+17,34.0,36.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,playing ukulele,0.193054,0.017924
+18,36.0,38.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,playing basketball,0.310846,0.000249
+19,38.0,40.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,playing basketball,0.302362,1.7e-05
+20,40.0,42.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,dunking basketball,0.655269,2.4e-05
+21,42.0,44.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,dunking basketball,0.198987,0.001355
+22,44.0,46.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,playing ukulele,0.361559,0.001869
+23,46.0,48.5333,playing,playing,tp,1.8063,0.727,0.0,playing guitar,0.236038,0.236038
+24,48.0,50.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.770709,0.770709
+25,50.0,52.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.901603,0.901603
+26,52.0,54.5333,playing,not_playing,fn,2.5333,0.0,0.0,stretching arm,0.270573,0.003953
+27,54.0,56.5333,playing,not_playing,fn,2.5333,0.0,0.0,cleaning windows,0.149077,0.004458
+28,56.0,58.5333,playing,not_playing,fn,2.5333,0.0,0.0,throwing ball,0.147435,0.007681
+29,58.0,60.5333,playing,not_playing,fn,2.5333,0.0,0.0,punching bag,0.23478,0.005181
+30,60.0,62.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.342665,0.342665
+31,62.0,64.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.817625,0.817625
+32,64.0,66.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.606722,0.606722
+33,66.0,68.5333,playing,not_playing,fn,2.5333,0.0,0.0,air drumming,0.29661,0.06418
+34,68.0,70.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.439595,0.439595
+35,70.0,72.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.261013,0.261013
+36,72.0,74.5333,playing,not_playing,fn,2.5333,0.0,0.0,stretching arm,0.347833,0.048135
+37,74.0,76.5333,playing,not_playing,fn,2.5333,0.0,0.0,playing ukulele,0.445933,0.016606
+38,76.0,78.5333,playing,not_playing,fn,2.5333,0.0,0.0,singing,0.328034,0.049634
+39,78.0,80.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.349895,0.349895
+40,80.0,82.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.273701,0.273701
+41,82.0,84.5333,playing,not_playing,fn,2.5333,0.0,0.0,archery,0.405687,0.009497
+42,84.0,86.5333,playing,not_playing,fn,2.5333,0.0,0.0,archery,0.833265,0.000601
+43,86.0,88.5333,playing,not_playing,fn,2.5333,0.0,0.0,playing ukulele,0.107595,0.047441
+44,88.0,90.5333,playing,not_playing,fn,2.5333,0.0,0.0,playing bass guitar,0.199303,0.187496
+45,90.0,92.5333,playing,not_playing,fn,2.5333,0.0,0.0,playing violin,0.360253,0.008616
+46,92.0,94.5333,playing,not_playing,fn,2.5333,0.0,0.0,playing violin,0.501619,0.012167
+47,94.0,96.5333,playing,not_playing,fn,2.5333,0.0,0.0,playing violin,0.527007,0.012805
+48,96.0,98.5333,playing,not_playing,fn,2.5333,0.0,0.0,playing basketball,0.518482,3.8e-05
+49,98.0,100.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.21,0.21
+50,100.0,102.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.333754,0.333754
+51,102.0,104.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.732656,0.732656
+52,104.0,106.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.768541,0.768541
+53,106.0,108.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.729914,0.729914
+54,108.0,110.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.219951,0.219951
+55,110.0,112.5333,playing,not_playing,fn,2.5333,0.0,0.0,archery,0.509125,0.050601
+56,112.0,114.5333,ambiguous,playing,excluded,2.5083,0.0,0.025,playing guitar,0.374723,0.374723
+57,114.0,116.5333,ambiguous,not_playing,excluded,0.5083,0.0,2.025,contact juggling,0.693945,0.014502
+58,116.0,118.5333,ambiguous,not_playing,excluded,0.0,0.0,2.5333,stretching arm,0.110868,0.010111
+59,118.0,120.5333,ambiguous,not_playing,excluded,0.0,0.0,2.5333,stretching arm,0.107173,0.004756
+60,120.0,122.5333,ambiguous,not_playing,excluded,0.0,0.0,2.5333,stretching arm,0.209732,0.003898
+61,122.0,124.5333,ambiguous,not_playing,excluded,0.0,0.0,2.5333,stretching arm,0.194851,0.003009
+62,124.0,126.5333,ambiguous,not_playing,excluded,0.0,0.0,2.5333,stretching arm,0.204083,0.002967
+63,126.0,128.5333,ambiguous,not_playing,excluded,0.0,0.0,2.5333,stretching arm,0.188116,0.003782
+64,128.0,130.5333,ambiguous,not_playing,excluded,0.0,0.0,2.5333,playing bass guitar,0.368001,0.128327
+65,130.0,132.5333,ambiguous,playing,excluded,1.5062,0.0,1.0271,playing guitar,0.369797,0.369797
+66,132.0,134.5333,playing,not_playing,fn,2.5333,0.0,0.0,drinking beer,0.133707,0.036648
+67,134.0,136.5333,playing,not_playing,fn,2.5333,0.0,0.0,stretching arm,0.312131,0.000668
+68,136.0,138.5333,playing,not_playing,fn,2.5333,0.0,0.0,playing basketball,0.288849,9.9e-05
+69,138.0,140.5333,playing,not_playing,fn,2.5333,0.0,0.0,dunking basketball,0.369028,5e-06
+70,140.0,142.5333,playing,not_playing,fn,2.5333,0.0,0.0,stretching arm,0.523073,4.9e-05
+71,142.0,144.5333,playing,not_playing,fn,2.5333,0.0,0.0,stretching arm,0.368261,0.000155
+72,144.0,146.5333,ambiguous,not_playing,excluded,1.2574,0.0,1.2759,stretching arm,0.279367,0.00018
+73,146.0,148.5333,ambiguous,not_playing,excluded,0.0,0.0,2.5333,stretching arm,0.215029,0.002289
+74,148.0,150.5333,ambiguous,not_playing,excluded,0.0,0.0,2.5333,stretching arm,0.214433,0.002628
+75,150.0,152.5333,ambiguous,not_playing,excluded,0.0,0.0,2.5333,stretching arm,0.178085,0.002587
+76,152.0,154.5333,ambiguous,not_playing,excluded,0.0,0.0,2.5333,stretching arm,0.1632,0.002634
+77,154.0,156.5333,ambiguous,not_playing,excluded,0.0,0.0,2.5333,stretching arm,0.247339,0.002983
+78,156.0,158.5333,ambiguous,not_playing,excluded,0.0,0.0,2.5333,stretching arm,0.209385,0.003046
+79,158.0,160.5333,ambiguous,not_playing,excluded,0.3798,0.0,2.1535,stretching arm,0.231496,0.000671
+80,160.0,162.5333,ambiguous,not_playing,excluded,2.3798,0.0,0.1535,dunking basketball,0.195463,0.000332
+81,162.0,164.5333,playing,not_playing,fn,2.5333,0.0,0.0,dunking basketball,0.361124,0.000529
+82,164.0,166.5333,playing,not_playing,fn,2.5333,0.0,0.0,playing ukulele,0.207834,0.088787
+83,166.0,168.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.490919,0.490919
+84,168.0,170.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.460538,0.460538
+85,170.0,172.5333,playing,not_playing,fn,2.5333,0.0,0.0,playing bagpipes,0.496101,0.031388
+86,172.0,174.5333,playing,not_playing,fn,2.5333,0.0,0.0,archery,0.848547,0.00044
+87,174.0,176.5333,playing,not_playing,fn,2.5333,0.0,0.0,stretching arm,0.494817,0.004901
+88,176.0,178.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.355196,0.355196
+89,178.0,180.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.569041,0.569041
+90,180.0,182.5333,playing,not_playing,fn,2.5333,0.0,0.0,playing bagpipes,0.233785,0.161058
+91,182.0,184.5333,playing,not_playing,fn,2.5333,0.0,0.0,singing,0.156306,0.076411
+92,184.0,186.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.403852,0.403852
+93,186.0,188.5333,playing,not_playing,fn,2.5333,0.0,0.0,punching bag,0.333252,0.000243
+94,188.0,190.5333,playing,not_playing,fn,2.5333,0.0,0.0,drinking beer,0.269327,0.024612
+95,190.0,192.5333,playing,not_playing,fn,2.5333,0.0,0.0,playing violin,0.16541,0.03682
+96,192.0,194.5333,playing,not_playing,fn,2.5333,0.0,0.0,singing,0.238979,0.008492
+97,194.0,196.5333,playing,not_playing,fn,2.5333,0.0,0.0,busking,0.302977,0.056603
+98,196.0,198.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.302314,0.302314
+99,198.0,200.5333,playing,not_playing,fn,2.5333,0.0,0.0,archery,0.558894,0.000246
+100,200.0,202.5333,playing,not_playing,fn,2.5333,0.0,0.0,spray painting,0.159553,0.005301
+101,202.0,204.5333,playing,not_playing,fn,2.5333,0.0,0.0,playing ukulele,0.705317,0.018895
+102,204.0,206.5333,playing,not_playing,fn,2.5333,0.0,0.0,singing,0.246443,0.108005
+103,206.0,208.5333,playing,not_playing,fn,2.5333,0.0,0.0,stretching arm,0.285258,0.001711
+104,208.0,210.5333,playing,not_playing,fn,2.5333,0.0,0.0,high kick,0.334797,0.009849
+105,210.0,212.5333,playing,not_playing,fn,2.5333,0.0,0.0,playing violin,0.583355,0.005622
+106,212.0,214.5333,playing,not_playing,fn,2.5333,0.0,0.0,playing cymbals,0.343556,0.004858
+107,214.0,216.5333,playing,not_playing,fn,2.5333,0.0,0.0,busking,0.250398,0.075941
+108,216.0,218.5333,playing,not_playing,fn,2.5333,0.0,0.0,singing,0.243651,0.008842
+109,218.0,220.5333,playing,not_playing,fn,2.5333,0.0,0.0,singing,0.367363,0.098853
+110,220.0,222.5333,playing,playing,tp,1.5686,0.9647,0.0,playing guitar,0.354282,0.354282
+111,222.0,224.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,stretching arm,0.369213,0.000808
+112,224.0,226.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,throwing ball,0.342986,4e-05
+113,226.0,228.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,throwing ball,0.270223,0.000239
+114,228.0,230.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,dunking basketball,0.441228,0.000369
+115,230.0,232.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,stretching arm,0.562558,0.000327
+116,232.0,234.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,stretching arm,0.363878,0.000145
+117,234.0,236.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,stretching arm,0.265261,0.000637
+118,236.0,238.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,dunking basketball,0.184748,0.000747
+119,238.0,240.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,beatboxing,0.306793,0.000799
+120,240.0,242.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,stretching arm,0.120049,0.000516
+121,242.0,244.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,stretching arm,0.363971,0.000709
+122,244.0,246.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,beatboxing,0.341415,0.000449
+123,246.0,248.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,beatboxing,0.396368,0.001113
+124,248.0,250.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,beatboxing,0.438476,0.002145
+125,250.0,252.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,shaving head,0.222654,0.001973

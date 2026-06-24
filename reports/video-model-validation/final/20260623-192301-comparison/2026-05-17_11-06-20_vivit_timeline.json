@@ -1,0 +1,1275 @@
+{
+  "summary": {
+    "repo": "google/vivit-b-16x2-kinetics400",
+    "clip_len": 32,
+    "clip_span_sec": 2.53,
+    "windows": 126,
+    "top1_playing_guitar": 7,
+    "top1_guitar_rate": 0.0556,
+    "mean_playing_guitar_prob": 0.0433,
+    "model": "vivit",
+    "video": "2026-05-17_11-06-20.mp4"
+  },
+  "rows": [
+    {
+      "window_index": 0,
+      "start_sec": 0.0,
+      "end_sec": 2.5333,
+      "top1_id": 292,
+      "top1_label": "LABEL_292",
+      "top1_prob": 0.942395,
+      "playing_guitar_prob": 1e-06,
+      "is_playing": false
+    },
+    {
+      "window_index": 1,
+      "start_sec": 2.0,
+      "end_sec": 4.5333,
+      "top1_id": 333,
+      "top1_label": "LABEL_333",
+      "top1_prob": 0.807682,
+      "playing_guitar_prob": 1e-06,
+      "is_playing": false
+    },
+    {
+      "window_index": 2,
+      "start_sec": 4.0,
+      "end_sec": 6.5333,
+      "top1_id": 333,
+      "top1_label": "LABEL_333",
+      "top1_prob": 0.554847,
+      "playing_guitar_prob": 0.0,
+      "is_playing": false
+    },
+    {
+      "window_index": 3,
+      "start_sec": 6.0,
+      "end_sec": 8.5333,
+      "top1_id": 333,
+      "top1_label": "LABEL_333",
+      "top1_prob": 0.645537,
+      "playing_guitar_prob": 6e-06,
+      "is_playing": false
+    },
+    {
+      "window_index": 4,
+      "start_sec": 8.0,
+      "end_sec": 10.5333,
+      "top1_id": 333,
+      "top1_label": "LABEL_333",
+      "top1_prob": 0.983973,
+      "playing_guitar_prob": 0.0,
+      "is_playing": false
+    },
+    {
+      "window_index": 5,
+      "start_sec": 10.0,
+      "end_sec": 12.5333,
+      "top1_id": 333,
+      "top1_label": "LABEL_333",
+      "top1_prob": 0.863657,
+      "playing_guitar_prob": 1e-06,
+      "is_playing": false
+    },
+    {
+      "window_index": 6,
+      "start_sec": 12.0,
+      "end_sec": 14.5333,
+      "top1_id": 169,
+      "top1_label": "LABEL_169",
+      "top1_prob": 0.547537,
+      "playing_guitar_prob": 9e-06,
+      "is_playing": false
+    },
+    {
+      "window_index": 7,
+      "start_sec": 14.0,
+      "end_sec": 16.5333,
+      "top1_id": 169,
+      "top1_label": "LABEL_169",
+      "top1_prob": 0.124941,
+      "playing_guitar_prob": 1.2e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 8,
+      "start_sec": 16.0,
+      "end_sec": 18.5333,
+      "top1_id": 169,
+      "top1_label": "LABEL_169",
+      "top1_prob": 0.089114,
+      "playing_guitar_prob": 8.1e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 9,
+      "start_sec": 18.0,
+      "end_sec": 20.5333,
+      "top1_id": 107,
+      "top1_label": "LABEL_107",
+      "top1_prob": 0.059603,
+      "playing_guitar_prob": 7.4e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 10,
+      "start_sec": 20.0,
+      "end_sec": 22.5333,
+      "top1_id": 150,
+      "top1_label": "LABEL_150",
+      "top1_prob": 0.112011,
+      "playing_guitar_prob": 9.4e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 11,
+      "start_sec": 22.0,
+      "end_sec": 24.5333,
+      "top1_id": 169,
+      "top1_label": "LABEL_169",
+      "top1_prob": 0.146749,
+      "playing_guitar_prob": 0.000145,
+      "is_playing": false
+    },
+    {
+      "window_index": 12,
+      "start_sec": 24.0,
+      "end_sec": 26.5333,
+      "top1_id": 169,
+      "top1_label": "LABEL_169",
+      "top1_prob": 0.463676,
+      "playing_guitar_prob": 6e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 13,
+      "start_sec": 26.0,
+      "end_sec": 28.5333,
+      "top1_id": 169,
+      "top1_label": "LABEL_169",
+      "top1_prob": 0.195639,
+      "playing_guitar_prob": 0.000158,
+      "is_playing": false
+    },
+    {
+      "window_index": 14,
+      "start_sec": 28.0,
+      "end_sec": 30.5333,
+      "top1_id": 333,
+      "top1_label": "LABEL_333",
+      "top1_prob": 0.133371,
+      "playing_guitar_prob": 0.000217,
+      "is_playing": false
+    },
+    {
+      "window_index": 15,
+      "start_sec": 30.0,
+      "end_sec": 32.5333,
+      "top1_id": 333,
+      "top1_label": "LABEL_333",
+      "top1_prob": 0.169715,
+      "playing_guitar_prob": 0.000294,
+      "is_playing": false
+    },
+    {
+      "window_index": 16,
+      "start_sec": 32.0,
+      "end_sec": 34.5333,
+      "top1_id": 333,
+      "top1_label": "LABEL_333",
+      "top1_prob": 0.189762,
+      "playing_guitar_prob": 0.000176,
+      "is_playing": false
+    },
+    {
+      "window_index": 17,
+      "start_sec": 34.0,
+      "end_sec": 36.5333,
+      "top1_id": 333,
+      "top1_label": "LABEL_333",
+      "top1_prob": 0.181612,
+      "playing_guitar_prob": 0.000171,
+      "is_playing": false
+    },
+    {
+      "window_index": 18,
+      "start_sec": 36.0,
+      "end_sec": 38.5333,
+      "top1_id": 200,
+      "top1_label": "LABEL_200",
+      "top1_prob": 0.43704,
+      "playing_guitar_prob": 2.8e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 19,
+      "start_sec": 38.0,
+      "end_sec": 40.5333,
+      "top1_id": 200,
+      "top1_label": "LABEL_200",
+      "top1_prob": 0.263637,
+      "playing_guitar_prob": 1e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 20,
+      "start_sec": 40.0,
+      "end_sec": 42.5333,
+      "top1_id": 338,
+      "top1_label": "LABEL_338",
+      "top1_prob": 0.1273,
+      "playing_guitar_prob": 2.6e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 21,
+      "start_sec": 42.0,
+      "end_sec": 44.5333,
+      "top1_id": 347,
+      "top1_label": "LABEL_347",
+      "top1_prob": 0.442361,
+      "playing_guitar_prob": 2e-06,
+      "is_playing": false
+    },
+    {
+      "window_index": 22,
+      "start_sec": 44.0,
+      "end_sec": 46.5333,
+      "top1_id": 347,
+      "top1_label": "LABEL_347",
+      "top1_prob": 0.327242,
+      "playing_guitar_prob": 9e-06,
+      "is_playing": false
+    },
+    {
+      "window_index": 23,
+      "start_sec": 46.0,
+      "end_sec": 48.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.652513,
+      "playing_guitar_prob": 0.652513,
+      "is_playing": true
+    },
+    {
+      "window_index": 24,
+      "start_sec": 48.0,
+      "end_sec": 50.5333,
+      "top1_id": 335,
+      "top1_label": "LABEL_335",
+      "top1_prob": 0.266386,
+      "playing_guitar_prob": 0.241144,
+      "is_playing": false
+    },
+    {
+      "window_index": 25,
+      "start_sec": 50.0,
+      "end_sec": 52.5333,
+      "top1_id": 41,
+      "top1_label": "LABEL_41",
+      "top1_prob": 0.42085,
+      "playing_guitar_prob": 0.187067,
+      "is_playing": false
+    },
+    {
+      "window_index": 26,
+      "start_sec": 52.0,
+      "end_sec": 54.5333,
+      "top1_id": 347,
+      "top1_label": "LABEL_347",
+      "top1_prob": 0.150485,
+      "playing_guitar_prob": 1.6e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 27,
+      "start_sec": 54.0,
+      "end_sec": 56.5333,
+      "top1_id": 65,
+      "top1_label": "LABEL_65",
+      "top1_prob": 0.36177,
+      "playing_guitar_prob": 6e-06,
+      "is_playing": false
+    },
+    {
+      "window_index": 28,
+      "start_sec": 56.0,
+      "end_sec": 58.5333,
+      "top1_id": 169,
+      "top1_label": "LABEL_169",
+      "top1_prob": 0.177624,
+      "playing_guitar_prob": 0.000297,
+      "is_playing": false
+    },
+    {
+      "window_index": 29,
+      "start_sec": 58.0,
+      "end_sec": 60.5333,
+      "top1_id": 41,
+      "top1_label": "LABEL_41",
+      "top1_prob": 0.28847,
+      "playing_guitar_prob": 0.004533,
+      "is_playing": false
+    },
+    {
+      "window_index": 30,
+      "start_sec": 60.0,
+      "end_sec": 62.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.368728,
+      "playing_guitar_prob": 0.368728,
+      "is_playing": true
+    },
+    {
+      "window_index": 31,
+      "start_sec": 62.0,
+      "end_sec": 64.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.274267,
+      "playing_guitar_prob": 0.274267,
+      "is_playing": true
+    },
+    {
+      "window_index": 32,
+      "start_sec": 64.0,
+      "end_sec": 66.5333,
+      "top1_id": 335,
+      "top1_label": "LABEL_335",
+      "top1_prob": 0.339052,
+      "playing_guitar_prob": 0.014863,
+      "is_playing": false
+    },
+    {
+      "window_index": 33,
+      "start_sec": 66.0,
+      "end_sec": 68.5333,
+      "top1_id": 347,
+      "top1_label": "LABEL_347",
+      "top1_prob": 0.355253,
+      "playing_guitar_prob": 2e-06,
+      "is_playing": false
+    },
+    {
+      "window_index": 34,
+      "start_sec": 68.0,
+      "end_sec": 70.5333,
+      "top1_id": 347,
+      "top1_label": "LABEL_347",
+      "top1_prob": 0.119816,
+      "playing_guitar_prob": 1.9e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 35,
+      "start_sec": 70.0,
+      "end_sec": 72.5333,
+      "top1_id": 219,
+      "top1_label": "LABEL_219",
+      "top1_prob": 0.41192,
+      "playing_guitar_prob": 2.8e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 36,
+      "start_sec": 72.0,
+      "end_sec": 74.5333,
+      "top1_id": 347,
+      "top1_label": "LABEL_347",
+      "top1_prob": 0.118262,
+      "playing_guitar_prob": 0.106779,
+      "is_playing": false
+    },
+    {
+      "window_index": 37,
+      "start_sec": 74.0,
+      "end_sec": 76.5333,
+      "top1_id": 249,
+      "top1_label": "LABEL_249",
+      "top1_prob": 0.953315,
+      "playing_guitar_prob": 0.000533,
+      "is_playing": false
+    },
+    {
+      "window_index": 38,
+      "start_sec": 76.0,
+      "end_sec": 78.5333,
+      "top1_id": 41,
+      "top1_label": "LABEL_41",
+      "top1_prob": 0.145188,
+      "playing_guitar_prob": 0.103514,
+      "is_playing": false
+    },
+    {
+      "window_index": 39,
+      "start_sec": 78.0,
+      "end_sec": 80.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.458121,
+      "playing_guitar_prob": 0.458121,
+      "is_playing": true
+    },
+    {
+      "window_index": 40,
+      "start_sec": 80.0,
+      "end_sec": 82.5333,
+      "top1_id": 200,
+      "top1_label": "LABEL_200",
+      "top1_prob": 0.199643,
+      "playing_guitar_prob": 0.004319,
+      "is_playing": false
+    },
+    {
+      "window_index": 41,
+      "start_sec": 82.0,
+      "end_sec": 84.5333,
+      "top1_id": 169,
+      "top1_label": "LABEL_169",
+      "top1_prob": 0.118456,
+      "playing_guitar_prob": 3.1e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 42,
+      "start_sec": 84.0,
+      "end_sec": 86.5333,
+      "top1_id": 258,
+      "top1_label": "LABEL_258",
+      "top1_prob": 0.255067,
+      "playing_guitar_prob": 2e-06,
+      "is_playing": false
+    },
+    {
+      "window_index": 43,
+      "start_sec": 86.0,
+      "end_sec": 88.5333,
+      "top1_id": 328,
+      "top1_label": "LABEL_328",
+      "top1_prob": 0.566242,
+      "playing_guitar_prob": 8e-06,
+      "is_playing": false
+    },
+    {
+      "window_index": 44,
+      "start_sec": 88.0,
+      "end_sec": 90.5333,
+      "top1_id": 65,
+      "top1_label": "LABEL_65",
+      "top1_prob": 0.174502,
+      "playing_guitar_prob": 0.000431,
+      "is_playing": false
+    },
+    {
+      "window_index": 45,
+      "start_sec": 90.0,
+      "end_sec": 92.5333,
+      "top1_id": 5,
+      "top1_label": "LABEL_5",
+      "top1_prob": 0.070887,
+      "playing_guitar_prob": 0.00028,
+      "is_playing": false
+    },
+    {
+      "window_index": 46,
+      "start_sec": 92.0,
+      "end_sec": 94.5333,
+      "top1_id": 200,
+      "top1_label": "LABEL_200",
+      "top1_prob": 0.173945,
+      "playing_guitar_prob": 0.000407,
+      "is_playing": false
+    },
+    {
+      "window_index": 47,
+      "start_sec": 94.0,
+      "end_sec": 96.5333,
+      "top1_id": 200,
+      "top1_label": "LABEL_200",
+      "top1_prob": 0.176613,
+      "playing_guitar_prob": 0.00154,
+      "is_playing": false
+    },
+    {
+      "window_index": 48,
+      "start_sec": 96.0,
+      "end_sec": 98.5333,
+      "top1_id": 220,
+      "top1_label": "LABEL_220",
+      "top1_prob": 0.114277,
+      "playing_guitar_prob": 1.5e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 49,
+      "start_sec": 98.0,
+      "end_sec": 100.5333,
+      "top1_id": 41,
+      "top1_label": "LABEL_41",
+      "top1_prob": 0.069315,
+      "playing_guitar_prob": 0.003377,
+      "is_playing": false
+    },
+    {
+      "window_index": 50,
+      "start_sec": 100.0,
+      "end_sec": 102.5333,
+      "top1_id": 41,
+      "top1_label": "LABEL_41",
+      "top1_prob": 0.577736,
+      "playing_guitar_prob": 0.105454,
+      "is_playing": false
+    },
+    {
+      "window_index": 51,
+      "start_sec": 102.0,
+      "end_sec": 104.5333,
+      "top1_id": 41,
+      "top1_label": "LABEL_41",
+      "top1_prob": 0.369614,
+      "playing_guitar_prob": 0.130041,
+      "is_playing": false
+    },
+    {
+      "window_index": 52,
+      "start_sec": 104.0,
+      "end_sec": 106.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.604592,
+      "playing_guitar_prob": 0.604592,
+      "is_playing": true
+    },
+    {
+      "window_index": 53,
+      "start_sec": 106.0,
+      "end_sec": 108.5333,
+      "top1_id": 335,
+      "top1_label": "LABEL_335",
+      "top1_prob": 0.295503,
+      "playing_guitar_prob": 0.09591,
+      "is_playing": false
+    },
+    {
+      "window_index": 54,
+      "start_sec": 108.0,
+      "end_sec": 110.5333,
+      "top1_id": 41,
+      "top1_label": "LABEL_41",
+      "top1_prob": 0.605981,
+      "playing_guitar_prob": 0.036058,
+      "is_playing": false
+    },
+    {
+      "window_index": 55,
+      "start_sec": 110.0,
+      "end_sec": 112.5333,
+      "top1_id": 328,
+      "top1_label": "LABEL_328",
+      "top1_prob": 0.39522,
+      "playing_guitar_prob": 0.0,
+      "is_playing": false
+    },
+    {
+      "window_index": 56,
+      "start_sec": 112.0,
+      "end_sec": 114.5333,
+      "top1_id": 335,
+      "top1_label": "LABEL_335",
+      "top1_prob": 0.395554,
+      "playing_guitar_prob": 0.101683,
+      "is_playing": false
+    },
+    {
+      "window_index": 57,
+      "start_sec": 114.0,
+      "end_sec": 116.5333,
+      "top1_id": 249,
+      "top1_label": "LABEL_249",
+      "top1_prob": 0.44893,
+      "playing_guitar_prob": 0.021567,
+      "is_playing": false
+    },
+    {
+      "window_index": 58,
+      "start_sec": 116.0,
+      "end_sec": 118.5333,
+      "top1_id": 328,
+      "top1_label": "LABEL_328",
+      "top1_prob": 0.044479,
+      "playing_guitar_prob": 0.000509,
+      "is_playing": false
+    },
+    {
+      "window_index": 59,
+      "start_sec": 118.0,
+      "end_sec": 120.5333,
+      "top1_id": 38,
+      "top1_label": "LABEL_38",
+      "top1_prob": 0.042402,
+      "playing_guitar_prob": 0.000527,
+      "is_playing": false
+    },
+    {
+      "window_index": 60,
+      "start_sec": 120.0,
+      "end_sec": 122.5333,
+      "top1_id": 186,
+      "top1_label": "LABEL_186",
+      "top1_prob": 0.090747,
+      "playing_guitar_prob": 0.000439,
+      "is_playing": false
+    },
+    {
+      "window_index": 61,
+      "start_sec": 122.0,
+      "end_sec": 124.5333,
+      "top1_id": 186,
+      "top1_label": "LABEL_186",
+      "top1_prob": 0.090316,
+      "playing_guitar_prob": 0.000336,
+      "is_playing": false
+    },
+    {
+      "window_index": 62,
+      "start_sec": 124.0,
+      "end_sec": 126.5333,
+      "top1_id": 186,
+      "top1_label": "LABEL_186",
+      "top1_prob": 0.089156,
+      "playing_guitar_prob": 0.000282,
+      "is_playing": false
+    },
+    {
+      "window_index": 63,
+      "start_sec": 126.0,
+      "end_sec": 128.5333,
+      "top1_id": 186,
+      "top1_label": "LABEL_186",
+      "top1_prob": 0.083372,
+      "playing_guitar_prob": 0.000295,
+      "is_playing": false
+    },
+    {
+      "window_index": 64,
+      "start_sec": 128.0,
+      "end_sec": 130.5333,
+      "top1_id": 249,
+      "top1_label": "LABEL_249",
+      "top1_prob": 0.335257,
+      "playing_guitar_prob": 0.036086,
+      "is_playing": false
+    },
+    {
+      "window_index": 65,
+      "start_sec": 130.0,
+      "end_sec": 132.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.321559,
+      "playing_guitar_prob": 0.321559,
+      "is_playing": true
+    },
+    {
+      "window_index": 66,
+      "start_sec": 132.0,
+      "end_sec": 134.5333,
+      "top1_id": 216,
+      "top1_label": "LABEL_216",
+      "top1_prob": 0.459017,
+      "playing_guitar_prob": 0.000309,
+      "is_playing": false
+    },
+    {
+      "window_index": 67,
+      "start_sec": 134.0,
+      "end_sec": 136.5333,
+      "top1_id": 200,
+      "top1_label": "LABEL_200",
+      "top1_prob": 0.229839,
+      "playing_guitar_prob": 0.000142,
+      "is_playing": false
+    },
+    {
+      "window_index": 68,
+      "start_sec": 136.0,
+      "end_sec": 138.5333,
+      "top1_id": 338,
+      "top1_label": "LABEL_338",
+      "top1_prob": 0.40097,
+      "playing_guitar_prob": 2.7e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 69,
+      "start_sec": 138.0,
+      "end_sec": 140.5333,
+      "top1_id": 65,
+      "top1_label": "LABEL_65",
+      "top1_prob": 0.219254,
+      "playing_guitar_prob": 6e-06,
+      "is_playing": false
+    },
+    {
+      "window_index": 70,
+      "start_sec": 140.0,
+      "end_sec": 142.5333,
+      "top1_id": 255,
+      "top1_label": "LABEL_255",
+      "top1_prob": 0.209662,
+      "playing_guitar_prob": 3e-06,
+      "is_playing": false
+    },
+    {
+      "window_index": 71,
+      "start_sec": 142.0,
+      "end_sec": 144.5333,
+      "top1_id": 198,
+      "top1_label": "LABEL_198",
+      "top1_prob": 0.219933,
+      "playing_guitar_prob": 1.2e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 72,
+      "start_sec": 144.0,
+      "end_sec": 146.5333,
+      "top1_id": 333,
+      "top1_label": "LABEL_333",
+      "top1_prob": 0.147874,
+      "playing_guitar_prob": 1.6e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 73,
+      "start_sec": 146.0,
+      "end_sec": 148.5333,
+      "top1_id": 186,
+      "top1_label": "LABEL_186",
+      "top1_prob": 0.087712,
+      "playing_guitar_prob": 0.000133,
+      "is_playing": false
+    },
+    {
+      "window_index": 74,
+      "start_sec": 148.0,
+      "end_sec": 150.5333,
+      "top1_id": 186,
+      "top1_label": "LABEL_186",
+      "top1_prob": 0.093221,
+      "playing_guitar_prob": 0.000143,
+      "is_playing": false
+    },
+    {
+      "window_index": 75,
+      "start_sec": 150.0,
+      "end_sec": 152.5333,
+      "top1_id": 200,
+      "top1_label": "LABEL_200",
+      "top1_prob": 0.085537,
+      "playing_guitar_prob": 0.000148,
+      "is_playing": false
+    },
+    {
+      "window_index": 76,
+      "start_sec": 152.0,
+      "end_sec": 154.5333,
+      "top1_id": 186,
+      "top1_label": "LABEL_186",
+      "top1_prob": 0.089745,
+      "playing_guitar_prob": 8.6e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 77,
+      "start_sec": 154.0,
+      "end_sec": 156.5333,
+      "top1_id": 60,
+      "top1_label": "LABEL_60",
+      "top1_prob": 0.090901,
+      "playing_guitar_prob": 8e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 78,
+      "start_sec": 156.0,
+      "end_sec": 158.5333,
+      "top1_id": 200,
+      "top1_label": "LABEL_200",
+      "top1_prob": 0.098791,
+      "playing_guitar_prob": 0.000153,
+      "is_playing": false
+    },
+    {
+      "window_index": 79,
+      "start_sec": 158.0,
+      "end_sec": 160.5333,
+      "top1_id": 186,
+      "top1_label": "LABEL_186",
+      "top1_prob": 0.11265,
+      "playing_guitar_prob": 9.1e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 80,
+      "start_sec": 160.0,
+      "end_sec": 162.5333,
+      "top1_id": 169,
+      "top1_label": "LABEL_169",
+      "top1_prob": 0.068978,
+      "playing_guitar_prob": 9.4e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 81,
+      "start_sec": 162.0,
+      "end_sec": 164.5333,
+      "top1_id": 338,
+      "top1_label": "LABEL_338",
+      "top1_prob": 0.099843,
+      "playing_guitar_prob": 3.5e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 82,
+      "start_sec": 164.0,
+      "end_sec": 166.5333,
+      "top1_id": 41,
+      "top1_label": "LABEL_41",
+      "top1_prob": 0.373405,
+      "playing_guitar_prob": 0.034282,
+      "is_playing": false
+    },
+    {
+      "window_index": 83,
+      "start_sec": 166.0,
+      "end_sec": 168.5333,
+      "top1_id": 41,
+      "top1_label": "LABEL_41",
+      "top1_prob": 0.334679,
+      "playing_guitar_prob": 0.277253,
+      "is_playing": false
+    },
+    {
+      "window_index": 84,
+      "start_sec": 168.0,
+      "end_sec": 170.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.287597,
+      "playing_guitar_prob": 0.287597,
+      "is_playing": true
+    },
+    {
+      "window_index": 85,
+      "start_sec": 170.0,
+      "end_sec": 172.5333,
+      "top1_id": 203,
+      "top1_label": "LABEL_203",
+      "top1_prob": 0.361755,
+      "playing_guitar_prob": 0.020564,
+      "is_playing": false
+    },
+    {
+      "window_index": 86,
+      "start_sec": 172.0,
+      "end_sec": 174.5333,
+      "top1_id": 219,
+      "top1_label": "LABEL_219",
+      "top1_prob": 0.946897,
+      "playing_guitar_prob": 1.3e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 87,
+      "start_sec": 174.0,
+      "end_sec": 176.5333,
+      "top1_id": 338,
+      "top1_label": "LABEL_338",
+      "top1_prob": 0.56654,
+      "playing_guitar_prob": 7.9e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 88,
+      "start_sec": 176.0,
+      "end_sec": 178.5333,
+      "top1_id": 41,
+      "top1_label": "LABEL_41",
+      "top1_prob": 0.169244,
+      "playing_guitar_prob": 0.020938,
+      "is_playing": false
+    },
+    {
+      "window_index": 89,
+      "start_sec": 178.0,
+      "end_sec": 180.5333,
+      "top1_id": 335,
+      "top1_label": "LABEL_335",
+      "top1_prob": 0.220714,
+      "playing_guitar_prob": 0.100938,
+      "is_playing": false
+    },
+    {
+      "window_index": 90,
+      "start_sec": 180.0,
+      "end_sec": 182.5333,
+      "top1_id": 221,
+      "top1_label": "LABEL_221",
+      "top1_prob": 0.163632,
+      "playing_guitar_prob": 0.134704,
+      "is_playing": false
+    },
+    {
+      "window_index": 91,
+      "start_sec": 182.0,
+      "end_sec": 184.5333,
+      "top1_id": 335,
+      "top1_label": "LABEL_335",
+      "top1_prob": 0.25201,
+      "playing_guitar_prob": 0.161979,
+      "is_playing": false
+    },
+    {
+      "window_index": 92,
+      "start_sec": 184.0,
+      "end_sec": 186.5333,
+      "top1_id": 328,
+      "top1_label": "LABEL_328",
+      "top1_prob": 0.179735,
+      "playing_guitar_prob": 0.024148,
+      "is_playing": false
+    },
+    {
+      "window_index": 93,
+      "start_sec": 186.0,
+      "end_sec": 188.5333,
+      "top1_id": 258,
+      "top1_label": "LABEL_258",
+      "top1_prob": 0.146672,
+      "playing_guitar_prob": 2.5e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 94,
+      "start_sec": 188.0,
+      "end_sec": 190.5333,
+      "top1_id": 65,
+      "top1_label": "LABEL_65",
+      "top1_prob": 0.328101,
+      "playing_guitar_prob": 0.006301,
+      "is_playing": false
+    },
+    {
+      "window_index": 95,
+      "start_sec": 190.0,
+      "end_sec": 192.5333,
+      "top1_id": 203,
+      "top1_label": "LABEL_203",
+      "top1_prob": 0.120481,
+      "playing_guitar_prob": 0.001205,
+      "is_playing": false
+    },
+    {
+      "window_index": 96,
+      "start_sec": 192.0,
+      "end_sec": 194.5333,
+      "top1_id": 169,
+      "top1_label": "LABEL_169",
+      "top1_prob": 0.247968,
+      "playing_guitar_prob": 6.6e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 97,
+      "start_sec": 194.0,
+      "end_sec": 196.5333,
+      "top1_id": 41,
+      "top1_label": "LABEL_41",
+      "top1_prob": 0.272105,
+      "playing_guitar_prob": 0.241761,
+      "is_playing": false
+    },
+    {
+      "window_index": 98,
+      "start_sec": 196.0,
+      "end_sec": 198.5333,
+      "top1_id": 41,
+      "top1_label": "LABEL_41",
+      "top1_prob": 0.392812,
+      "playing_guitar_prob": 0.016108,
+      "is_playing": false
+    },
+    {
+      "window_index": 99,
+      "start_sec": 198.0,
+      "end_sec": 200.5333,
+      "top1_id": 328,
+      "top1_label": "LABEL_328",
+      "top1_prob": 0.691752,
+      "playing_guitar_prob": 1e-06,
+      "is_playing": false
+    },
+    {
+      "window_index": 100,
+      "start_sec": 200.0,
+      "end_sec": 202.5333,
+      "top1_id": 328,
+      "top1_label": "LABEL_328",
+      "top1_prob": 0.752008,
+      "playing_guitar_prob": 0.000225,
+      "is_playing": false
+    },
+    {
+      "window_index": 101,
+      "start_sec": 202.0,
+      "end_sec": 204.5333,
+      "top1_id": 249,
+      "top1_label": "LABEL_249",
+      "top1_prob": 0.439097,
+      "playing_guitar_prob": 0.000255,
+      "is_playing": false
+    },
+    {
+      "window_index": 102,
+      "start_sec": 204.0,
+      "end_sec": 206.5333,
+      "top1_id": 249,
+      "top1_label": "LABEL_249",
+      "top1_prob": 0.615153,
+      "playing_guitar_prob": 0.000511,
+      "is_playing": false
+    },
+    {
+      "window_index": 103,
+      "start_sec": 206.0,
+      "end_sec": 208.5333,
+      "top1_id": 333,
+      "top1_label": "LABEL_333",
+      "top1_prob": 0.160027,
+      "playing_guitar_prob": 0.000201,
+      "is_playing": false
+    },
+    {
+      "window_index": 104,
+      "start_sec": 208.0,
+      "end_sec": 210.5333,
+      "top1_id": 345,
+      "top1_label": "LABEL_345",
+      "top1_prob": 0.602823,
+      "playing_guitar_prob": 0.000128,
+      "is_playing": false
+    },
+    {
+      "window_index": 105,
+      "start_sec": 210.0,
+      "end_sec": 212.5333,
+      "top1_id": 217,
+      "top1_label": "LABEL_217",
+      "top1_prob": 0.177212,
+      "playing_guitar_prob": 7.7e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 106,
+      "start_sec": 212.0,
+      "end_sec": 214.5333,
+      "top1_id": 382,
+      "top1_label": "LABEL_382",
+      "top1_prob": 0.302693,
+      "playing_guitar_prob": 6.7e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 107,
+      "start_sec": 214.0,
+      "end_sec": 216.5333,
+      "top1_id": 41,
+      "top1_label": "LABEL_41",
+      "top1_prob": 0.38927,
+      "playing_guitar_prob": 0.064364,
+      "is_playing": false
+    },
+    {
+      "window_index": 108,
+      "start_sec": 216.0,
+      "end_sec": 218.5333,
+      "top1_id": 249,
+      "top1_label": "LABEL_249",
+      "top1_prob": 0.605517,
+      "playing_guitar_prob": 0.005648,
+      "is_playing": false
+    },
+    {
+      "window_index": 109,
+      "start_sec": 218.0,
+      "end_sec": 220.5333,
+      "top1_id": 41,
+      "top1_label": "LABEL_41",
+      "top1_prob": 0.192781,
+      "playing_guitar_prob": 0.162445,
+      "is_playing": false
+    },
+    {
+      "window_index": 110,
+      "start_sec": 220.0,
+      "end_sec": 222.5333,
+      "top1_id": 41,
+      "top1_label": "LABEL_41",
+      "top1_prob": 0.120791,
+      "playing_guitar_prob": 0.018038,
+      "is_playing": false
+    },
+    {
+      "window_index": 111,
+      "start_sec": 222.0,
+      "end_sec": 224.5333,
+      "top1_id": 169,
+      "top1_label": "LABEL_169",
+      "top1_prob": 0.600346,
+      "playing_guitar_prob": 0.0,
+      "is_playing": false
+    },
+    {
+      "window_index": 112,
+      "start_sec": 224.0,
+      "end_sec": 226.5333,
+      "top1_id": 347,
+      "top1_label": "LABEL_347",
+      "top1_prob": 0.120182,
+      "playing_guitar_prob": 3.7e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 113,
+      "start_sec": 226.0,
+      "end_sec": 228.5333,
+      "top1_id": 347,
+      "top1_label": "LABEL_347",
+      "top1_prob": 0.182756,
+      "playing_guitar_prob": 3e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 114,
+      "start_sec": 228.0,
+      "end_sec": 230.5333,
+      "top1_id": 200,
+      "top1_label": "LABEL_200",
+      "top1_prob": 0.126358,
+      "playing_guitar_prob": 2.1e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 115,
+      "start_sec": 230.0,
+      "end_sec": 232.5333,
+      "top1_id": 169,
+      "top1_label": "LABEL_169",
+      "top1_prob": 0.382506,
+      "playing_guitar_prob": 1.9e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 116,
+      "start_sec": 232.0,
+      "end_sec": 234.5333,
+      "top1_id": 292,
+      "top1_label": "LABEL_292",
+      "top1_prob": 0.40758,
+      "playing_guitar_prob": 2e-06,
+      "is_playing": false
+    },
+    {
+      "window_index": 117,
+      "start_sec": 234.0,
+      "end_sec": 236.5333,
+      "top1_id": 292,
+      "top1_label": "LABEL_292",
+      "top1_prob": 0.787992,
+      "playing_guitar_prob": 2e-06,
+      "is_playing": false
+    },
+    {
+      "window_index": 118,
+      "start_sec": 236.0,
+      "end_sec": 238.5333,
+      "top1_id": 292,
+      "top1_label": "LABEL_292",
+      "top1_prob": 0.804201,
+      "playing_guitar_prob": 2e-06,
+      "is_playing": false
+    },
+    {
+      "window_index": 119,
+      "start_sec": 238.0,
+      "end_sec": 240.5333,
+      "top1_id": 292,
+      "top1_label": "LABEL_292",
+      "top1_prob": 0.385575,
+      "playing_guitar_prob": 1.6e-05,
+      "is_playing": false
+    },
+    {
+      "window_index": 120,
+      "start_sec": 240.0,
+      "end_sec": 242.5333,
+      "top1_id": 292,
+      "top1_label": "LABEL_292",
+      "top1_prob": 0.858191,
+      "playing_guitar_prob": 3e-06,
+      "is_playing": false
+    },
+    {
+      "window_index": 121,
+      "start_sec": 242.0,
+      "end_sec": 244.5333,
+      "top1_id": 292,
+      "top1_label": "LABEL_292",
+      "top1_prob": 0.846654,
+      "playing_guitar_prob": 2e-06,
+      "is_playing": false
+    },
+    {
+      "window_index": 122,
+      "start_sec": 244.0,
+      "end_sec": 246.5333,
+      "top1_id": 292,
+      "top1_label": "LABEL_292",
+      "top1_prob": 0.832832,
+      "playing_guitar_prob": 1e-06,
+      "is_playing": false
+    },
+    {
+      "window_index": 123,
+      "start_sec": 246.0,
+      "end_sec": 248.5333,
+      "top1_id": 292,
+      "top1_label": "LABEL_292",
+      "top1_prob": 0.954947,
+      "playing_guitar_prob": 1e-06,
+      "is_playing": false
+    },
+    {
+      "window_index": 124,
+      "start_sec": 248.0,
+      "end_sec": 250.5333,
+      "top1_id": 292,
+      "top1_label": "LABEL_292",
+      "top1_prob": 0.952494,
+      "playing_guitar_prob": 0.0,
+      "is_playing": false
+    },
+    {
+      "window_index": 125,
+      "start_sec": 250.0,
+      "end_sec": 252.5333,
+      "top1_id": 292,
+      "top1_label": "LABEL_292",
+      "top1_prob": 0.973292,
+      "playing_guitar_prob": 0.0,
+      "is_playing": false
+    }
+  ]
+}

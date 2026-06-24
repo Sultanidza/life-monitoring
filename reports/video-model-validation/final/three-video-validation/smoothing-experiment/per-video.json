@@ -1,0 +1,192 @@
+{
+  "2026-05-17_11-06-20": {
+    "raw": {
+      "tp": 53,
+      "fp": 2,
+      "fn": 16,
+      "tn": 36,
+      "excluded": 19,
+      "precision": 0.9636363636363636,
+      "recall": 0.7681159420289855,
+      "f1": 0.8548387096774193
+    },
+    "fill_up_to_2_negatives": {
+      "tp": 64,
+      "fp": 2,
+      "fn": 5,
+      "tn": 36,
+      "excluded": 19,
+      "precision": 0.9696969696969697,
+      "recall": 0.927536231884058,
+      "f1": 0.9481481481481481
+    },
+    "changed": [
+      {
+        "window_index": 26,
+        "start_sec": 52.0,
+        "end_sec": 54.5333,
+        "ground_truth": "playing",
+        "top1_label": "stretching arm"
+      },
+      {
+        "window_index": 28,
+        "start_sec": 56.0,
+        "end_sec": 58.5333,
+        "ground_truth": "playing",
+        "top1_label": "playing ukulele"
+      },
+      {
+        "window_index": 34,
+        "start_sec": 68.0,
+        "end_sec": 70.5333,
+        "ground_truth": "playing",
+        "top1_label": "playing bagpipes"
+      },
+      {
+        "window_index": 37,
+        "start_sec": 74.0,
+        "end_sec": 76.5333,
+        "ground_truth": "playing",
+        "top1_label": "playing ukulele"
+      },
+      {
+        "window_index": 47,
+        "start_sec": 94.0,
+        "end_sec": 96.5333,
+        "ground_truth": "playing",
+        "top1_label": "moving furniture"
+      },
+      {
+        "window_index": 48,
+        "start_sec": 96.0,
+        "end_sec": 98.5333,
+        "ground_truth": "playing",
+        "top1_label": "playing ukulele"
+      },
+      {
+        "window_index": 55,
+        "start_sec": 110.0,
+        "end_sec": 112.5333,
+        "ground_truth": "playing",
+        "top1_label": "playing ukulele"
+      },
+      {
+        "window_index": 86,
+        "start_sec": 172.0,
+        "end_sec": 174.5333,
+        "ground_truth": "playing",
+        "top1_label": "opening bottle"
+      },
+      {
+        "window_index": 87,
+        "start_sec": 174.0,
+        "end_sec": 176.5333,
+        "ground_truth": "playing",
+        "top1_label": "playing bagpipes"
+      },
+      {
+        "window_index": 95,
+        "start_sec": 190.0,
+        "end_sec": 192.5333,
+        "ground_truth": "playing",
+        "top1_label": "playing ukulele"
+      },
+      {
+        "window_index": 99,
+        "start_sec": 198.0,
+        "end_sec": 200.5333,
+        "ground_truth": "playing",
+        "top1_label": "stretching arm"
+      }
+    ]
+  },
+  "2026-05-17_16-31-19": {
+    "raw": {
+      "tp": 54,
+      "fp": 4,
+      "fn": 1,
+      "tn": 65,
+      "excluded": 5,
+      "precision": 0.9310344827586207,
+      "recall": 0.9818181818181818,
+      "f1": 0.9557522123893805
+    },
+    "fill_up_to_2_negatives": {
+      "tp": 54,
+      "fp": 4,
+      "fn": 1,
+      "tn": 65,
+      "excluded": 5,
+      "precision": 0.9310344827586207,
+      "recall": 0.9818181818181818,
+      "f1": 0.9557522123893805
+    },
+    "changed": []
+  },
+  "2026-05-19_16-29-56": {
+    "raw": {
+      "tp": 84,
+      "fp": 6,
+      "fn": 19,
+      "tn": 13,
+      "excluded": 6,
+      "precision": 0.9333333333333333,
+      "recall": 0.8155339805825242,
+      "f1": 0.8704663212435233
+    },
+    "fill_up_to_2_negatives": {
+      "tp": 89,
+      "fp": 7,
+      "fn": 14,
+      "tn": 12,
+      "excluded": 6,
+      "precision": 0.9270833333333334,
+      "recall": 0.8640776699029126,
+      "f1": 0.8944723618090452
+    },
+    "changed": [
+      {
+        "window_index": 12,
+        "start_sec": 24.0,
+        "end_sec": 26.5333,
+        "ground_truth": "not_playing",
+        "top1_label": "archery"
+      },
+      {
+        "window_index": 18,
+        "start_sec": 36.0,
+        "end_sec": 38.5333,
+        "ground_truth": "playing",
+        "top1_label": "headbanging"
+      },
+      {
+        "window_index": 22,
+        "start_sec": 44.0,
+        "end_sec": 46.5333,
+        "ground_truth": "playing",
+        "top1_label": "headbanging"
+      },
+      {
+        "window_index": 26,
+        "start_sec": 52.0,
+        "end_sec": 54.5333,
+        "ground_truth": "playing",
+        "top1_label": "headbanging"
+      },
+      {
+        "window_index": 40,
+        "start_sec": 80.0,
+        "end_sec": 82.5333,
+        "ground_truth": "playing",
+        "top1_label": "plastering"
+      },
+      {
+        "window_index": 102,
+        "start_sec": 204.0,
+        "end_sec": 206.5333,
+        "ground_truth": "playing",
+        "top1_label": "plastering"
+      }
+    ]
+  }
+}

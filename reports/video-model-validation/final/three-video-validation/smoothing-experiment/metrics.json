@@ -1,0 +1,74 @@
+{
+  "none": {
+    "tp": 191,
+    "fp": 12,
+    "fn": 36,
+    "tn": 114,
+    "excluded": 30,
+    "precision": 0.9408866995073891,
+    "recall": 0.8414096916299559,
+    "f1": 0.8883720930232558,
+    "accuracy": 0.8640226628895185,
+    "changed_windows": 0
+  },
+  "fill_1_negative": {
+    "tp": 203,
+    "fp": 13,
+    "fn": 24,
+    "tn": 113,
+    "excluded": 30,
+    "precision": 0.9398148148148148,
+    "recall": 0.8942731277533039,
+    "f1": 0.9164785553047403,
+    "accuracy": 0.8951841359773371,
+    "changed_windows": 13
+  },
+  "fill_up_to_2_negatives": {
+    "tp": 207,
+    "fp": 13,
+    "fn": 20,
+    "tn": 113,
+    "excluded": 30,
+    "precision": 0.9409090909090909,
+    "recall": 0.9118942731277533,
+    "f1": 0.9261744966442953,
+    "accuracy": 0.9065155807365439,
+    "changed_windows": 17
+  },
+  "remove_1_positive": {
+    "tp": 188,
+    "fp": 11,
+    "fn": 39,
+    "tn": 115,
+    "excluded": 30,
+    "precision": 0.9447236180904522,
+    "recall": 0.8281938325991189,
+    "f1": 0.8826291079812206,
+    "accuracy": 0.8583569405099151,
+    "changed_windows": 4
+  },
+  "fill_1_remove_1": {
+    "tp": 203,
+    "fp": 13,
+    "fn": 24,
+    "tn": 113,
+    "excluded": 30,
+    "precision": 0.9398148148148148,
+    "recall": 0.8942731277533039,
+    "f1": 0.9164785553047403,
+    "accuracy": 0.8951841359773371,
+    "changed_windows": 13
+  },
+  "fill_2_remove_1": {
+    "tp": 207,
+    "fp": 13,
+    "fn": 20,
+    "tn": 113,
+    "excluded": 30,
+    "precision": 0.9409090909090909,
+    "recall": 0.9118942731277533,
+    "f1": 0.9261744966442953,
+    "accuracy": 0.9065155807365439,
+    "changed_windows": 17
+  }
+}

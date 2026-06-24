@@ -1,0 +1,129 @@
+window_index,start_sec,end_sec,ground_truth,prediction,outcome,playing_overlap_sec,not_playing_overlap_sec,ambiguous_overlap_sec,top1_label,top1_prob,playing_guitar_prob
+0,0.0,2.5333,not_playing,playing,fp,0.0,2.5333,0.0,playing guitar,0.424053,0.424053
+1,2.0,4.5333,not_playing,playing,fp,0.0,2.5333,0.0,playing guitar,0.524766,0.524766
+2,4.0,6.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,stretching arm,0.214408,0.004441
+3,6.0,8.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,playing piano,0.034759,0.005305
+4,8.0,10.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,dunking basketball,0.141654,0.003129
+5,10.0,12.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,punching bag,0.228688,0.003799
+6,12.0,14.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,juggling balls,0.07486,0.003415
+7,14.0,16.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,juggling balls,0.070683,0.003459
+8,16.0,18.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,contact juggling,0.055281,0.00186
+9,18.0,20.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,contact juggling,0.114839,0.003114
+10,20.0,22.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,punching bag,0.25286,0.051588
+11,22.0,24.5333,not_playing,playing,fp,0.0,2.5333,0.0,playing guitar,0.356532,0.356532
+12,24.0,26.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,archery,0.318731,0.024052
+13,26.0,28.5333,playing,playing,tp,1.4873,1.046,0.0,playing guitar,0.13752,0.13752
+14,28.0,30.5333,playing,not_playing,fn,2.5333,0.0,0.0,archery,0.396067,0.022816
+15,30.0,32.5333,playing,not_playing,fn,2.5333,0.0,0.0,archery,0.106789,0.028647
+16,32.0,34.5333,playing,not_playing,fn,2.5333,0.0,0.0,spray painting,0.141453,0.015954
+17,34.0,36.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.074799,0.074799
+18,36.0,38.5333,playing,not_playing,fn,2.5333,0.0,0.0,headbanging,0.119182,0.113153
+19,38.0,40.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.09659,0.09659
+20,40.0,42.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.105269,0.105269
+21,42.0,44.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.056153,0.056153
+22,44.0,46.5333,playing,not_playing,fn,2.5333,0.0,0.0,headbanging,0.078692,0.055847
+23,46.0,48.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.13568,0.13568
+24,48.0,50.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.047472,0.047472
+25,50.0,52.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.106416,0.106416
+26,52.0,54.5333,playing,not_playing,fn,2.5333,0.0,0.0,headbanging,0.140969,0.030068
+27,54.0,56.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.050115,0.050115
+28,56.0,58.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.129965,0.129965
+29,58.0,60.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.049044,0.049044
+30,60.0,62.5333,playing,not_playing,fn,2.5333,0.0,0.0,stretching arm,0.088289,0.043801
+31,62.0,64.5333,playing,not_playing,fn,2.5333,0.0,0.0,shaking head,0.09996,0.073804
+32,64.0,66.5333,playing,not_playing,fn,2.5333,0.0,0.0,headbanging,0.259455,0.089906
+33,66.0,68.5333,playing,not_playing,fn,2.5333,0.0,0.0,headbanging,0.391325,0.034437
+34,68.0,70.5333,playing,not_playing,fn,2.5333,0.0,0.0,headbanging,0.330728,0.06475
+35,70.0,72.5333,playing,not_playing,fn,2.5333,0.0,0.0,playing cello,0.089706,0.040104
+36,72.0,74.5333,playing,not_playing,fn,2.5333,0.0,0.0,headbanging,0.319784,0.010317
+37,74.0,76.5333,playing,not_playing,fn,2.5333,0.0,0.0,playing cello,0.277883,0.077801
+38,76.0,78.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.208329,0.208329
+39,78.0,80.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.544808,0.544808
+40,80.0,82.5333,playing,not_playing,fn,2.5333,0.0,0.0,plastering,0.26772,0.226691
+41,82.0,84.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.497951,0.497951
+42,84.0,86.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.421283,0.421283
+43,86.0,88.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.44715,0.44715
+44,88.0,90.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.470036,0.470036
+45,90.0,92.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.344518,0.344518
+46,92.0,94.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.383003,0.383003
+47,94.0,96.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.428153,0.428153
+48,96.0,98.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.612352,0.612352
+49,98.0,100.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.668821,0.668821
+50,100.0,102.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.622764,0.622764
+51,102.0,104.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.490617,0.490617
+52,104.0,106.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.548951,0.548951
+53,106.0,108.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.686485,0.686485
+54,108.0,110.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.552458,0.552458
+55,110.0,112.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.317369,0.317369
+56,112.0,114.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.588135,0.588135
+57,114.0,116.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.534795,0.534795
+58,116.0,118.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.603161,0.603161
+59,118.0,120.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.480013,0.480013
+60,120.0,122.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.570067,0.570067
+61,122.0,124.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.597732,0.597732
+62,124.0,126.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.449619,0.449619
+63,126.0,128.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.476355,0.476355
+64,128.0,130.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.47874,0.47874
+65,130.0,132.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.516644,0.516644
+66,132.0,134.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.486503,0.486503
+67,134.0,136.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.514909,0.514909
+68,136.0,138.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.545023,0.545023
+69,138.0,140.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.514251,0.514251
+70,140.0,142.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.47392,0.47392
+71,142.0,144.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.503759,0.503759
+72,144.0,146.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.407641,0.407641
+73,146.0,148.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.487372,0.487372
+74,148.0,150.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.432346,0.432346
+75,150.0,152.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.460634,0.460634
+76,152.0,154.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.43239,0.43239
+77,154.0,156.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.420631,0.420631
+78,156.0,158.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.353778,0.353778
+79,158.0,160.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.442551,0.442551
+80,160.0,162.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.47494,0.47494
+81,162.0,164.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.447559,0.447559
+82,164.0,166.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.455636,0.455636
+83,166.0,168.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.519503,0.519503
+84,168.0,170.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.458635,0.458635
+85,170.0,172.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.299673,0.299673
+86,172.0,174.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.191623,0.191623
+87,174.0,176.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.207963,0.207963
+88,176.0,178.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.39742,0.39742
+89,178.0,180.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.472238,0.472238
+90,180.0,182.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.421427,0.421427
+91,182.0,184.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.496245,0.496245
+92,184.0,186.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.460093,0.460093
+93,186.0,188.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.442603,0.442603
+94,188.0,190.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.480184,0.480184
+95,190.0,192.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.440532,0.440532
+96,192.0,194.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.431319,0.431319
+97,194.0,196.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.333229,0.333229
+98,196.0,198.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.337072,0.337072
+99,198.0,200.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.429323,0.429323
+100,200.0,202.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.611519,0.611519
+101,202.0,204.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.566765,0.566765
+102,204.0,206.5333,playing,not_playing,fn,2.5333,0.0,0.0,plastering,0.457944,0.095134
+103,206.0,208.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.750039,0.750039
+104,208.0,210.5333,ambiguous,playing,excluded,2.0756,0.0,0.4577,playing guitar,0.602176,0.602176
+105,210.0,212.5333,ambiguous,not_playing,excluded,0.0756,0.0,2.4577,opening bottle,0.065442,0.006364
+106,212.0,214.5333,ambiguous,not_playing,excluded,0.0,0.0,2.5333,juggling balls,0.123103,0.002233
+107,214.0,216.5333,ambiguous,not_playing,excluded,0.0,0.0,2.5333,juggling balls,0.12698,0.00257
+108,216.0,218.5333,ambiguous,not_playing,excluded,0.0,0.0,2.5333,juggling balls,0.11006,0.002697
+109,218.0,220.5333,ambiguous,playing,excluded,1.1646,0.0,1.3687,playing guitar,0.608506,0.608506
+110,220.0,222.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.470793,0.470793
+111,222.0,224.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.57011,0.57011
+112,224.0,226.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.369397,0.369397
+113,226.0,228.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.088375,0.088375
+114,228.0,230.5333,playing,not_playing,fn,2.5333,0.0,0.0,plastering,0.079829,0.037392
+115,230.0,232.5333,playing,not_playing,fn,2.5333,0.0,0.0,juggling balls,0.182905,0.016066
+116,232.0,234.5333,playing,not_playing,fn,2.5333,0.0,0.0,contact juggling,0.637057,0.022784
+117,234.0,236.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.424578,0.424578
+118,236.0,238.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.454491,0.454491
+119,238.0,240.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.404391,0.404391
+120,240.0,242.5333,playing,playing,tp,2.5333,0.0,0.0,playing guitar,0.444871,0.444871
+121,242.0,244.5333,playing,playing,tp,2.3728,0.1605,0.0,playing guitar,0.415312,0.415312
+122,244.0,246.5333,not_playing,playing,fp,0.3728,2.1605,0.0,playing guitar,0.367945,0.367945
+123,246.0,248.5333,not_playing,playing,fp,0.0,2.5333,0.0,playing guitar,0.314956,0.314956
+124,248.0,250.5333,not_playing,playing,fp,0.0,2.5333,0.0,playing guitar,0.243688,0.243688
+125,250.0,252.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,beatboxing,0.303965,0.002801
+126,252.0,254.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,beatboxing,0.596285,0.000766
+127,254.0,256.5333,not_playing,not_playing,tn,0.0,2.5333,0.0,shaving head,0.088505,0.002777

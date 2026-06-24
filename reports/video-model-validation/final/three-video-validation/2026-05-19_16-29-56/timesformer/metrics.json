@@ -1,0 +1,89 @@
+{
+  "annotation": "/tmp/life-monitoring-annotation-splits/2026-05-19_16-29-56.json",
+  "timeline": "/home/arturka/Documents/Projects/life-monitoring/reports/video-model-validation/final/20260623-192301-comparison/2026-05-19_16-29-56_timesformer_timeline.json",
+  "video_duration_sec": 258.083333,
+  "label_studio": {
+    "task_id": 986,
+    "video": "/data/local-files/?d=raw-videos/labeling/2026-05-19_16-29-56.mp4",
+    "timeline_start_frame": 1.0,
+    "timeline_end_frame": 6194.0,
+    "timeline_span_frames": 6193.0,
+    "seconds_per_timeline_frame": 0.04167339463910867
+  },
+  "ground_truth_intervals": [
+    {
+      "start_frame": 1.0,
+      "end_frame": 650.0,
+      "label": "not_playing",
+      "start_sec": 0.0,
+      "end_sec": 27.046033120781527
+    },
+    {
+      "start_frame": 650.0,
+      "end_frame": 5042.0,
+      "label": "playing",
+      "start_sec": 27.046033120781527,
+      "end_sec": 210.0755823757468
+    },
+    {
+      "start_frame": 5042.0,
+      "end_frame": 5265.0,
+      "label": "ambiguous",
+      "start_sec": 210.0755823757468,
+      "end_sec": 219.368749380268
+    },
+    {
+      "start_frame": 5265.0,
+      "end_frame": 5865.0,
+      "label": "playing",
+      "start_sec": 219.368749380268,
+      "end_sec": 244.37278616373325
+    },
+    {
+      "start_frame": 5865.0,
+      "end_frame": 6194.0,
+      "label": "not_playing",
+      "start_sec": 244.37278616373325,
+      "end_sec": 258.083333
+    }
+  ],
+  "ground_truth_window_overlap_threshold": 0.5,
+  "results": {
+    "top1": {
+      "tp": 59,
+      "fp": 4,
+      "fn": 44,
+      "tn": 15,
+      "excluded": 6,
+      "evaluated_windows": 122,
+      "total_windows": 128,
+      "precision": 0.9365079365079365,
+      "recall": 0.5728155339805825,
+      "f1": 0.710843373493976,
+      "accuracy": 0.6065573770491803,
+      "specificity": 0.7894736842105263,
+      "ground_truth_playing_sec": 208.0335860384305,
+      "predicted_playing_sec": 131.73309999999998,
+      "playing_duration_error_sec": -76.30048603843053,
+      "playing_duration_absolute_error_sec": 76.30048603843053
+    },
+    "threshold": {
+      "tp": 59,
+      "fp": 4,
+      "fn": 44,
+      "tn": 15,
+      "excluded": 6,
+      "evaluated_windows": 122,
+      "total_windows": 128,
+      "precision": 0.9365079365079365,
+      "recall": 0.5728155339805825,
+      "f1": 0.710843373493976,
+      "accuracy": 0.6065573770491803,
+      "specificity": 0.7894736842105263,
+      "ground_truth_playing_sec": 208.0335860384305,
+      "predicted_playing_sec": 131.73309999999998,
+      "playing_duration_error_sec": -76.30048603843053,
+      "playing_duration_absolute_error_sec": 76.30048603843053
+    }
+  }
+}

@@ -1,0 +1,1295 @@
+{
+  "summary": {
+    "repo": "MCG-NJU/videomae-base-finetuned-kinetics",
+    "clip_len": 16,
+    "clip_span_sec": 2.53,
+    "windows": 128,
+    "top1_playing_guitar": 92,
+    "top1_guitar_rate": 0.7188,
+    "mean_playing_guitar_prob": 0.3081,
+    "model": "videomae",
+    "video": "2026-05-19_16-29-56.mp4"
+  },
+  "rows": [
+    {
+      "window_index": 0,
+      "start_sec": 0.0,
+      "end_sec": 2.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.424053,
+      "playing_guitar_prob": 0.424053,
+      "is_playing": true
+    },
+    {
+      "window_index": 1,
+      "start_sec": 2.0,
+      "end_sec": 4.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.524766,
+      "playing_guitar_prob": 0.524766,
+      "is_playing": true
+    },
+    {
+      "window_index": 2,
+      "start_sec": 4.0,
+      "end_sec": 6.5333,
+      "top1_id": 333,
+      "top1_label": "stretching arm",
+      "top1_prob": 0.214408,
+      "playing_guitar_prob": 0.004441,
+      "is_playing": false
+    },
+    {
+      "window_index": 3,
+      "start_sec": 6.0,
+      "end_sec": 8.5333,
+      "top1_id": 241,
+      "top1_label": "playing piano",
+      "top1_prob": 0.034759,
+      "playing_guitar_prob": 0.005305,
+      "is_playing": false
+    },
+    {
+      "window_index": 4,
+      "start_sec": 8.0,
+      "end_sec": 10.5333,
+      "top1_id": 107,
+      "top1_label": "dunking basketball",
+      "top1_prob": 0.141654,
+      "playing_guitar_prob": 0.003129,
+      "is_playing": false
+    },
+    {
+      "window_index": 5,
+      "start_sec": 10.0,
+      "end_sec": 12.5333,
+      "top1_id": 258,
+      "top1_label": "punching bag",
+      "top1_prob": 0.228688,
+      "playing_guitar_prob": 0.003799,
+      "is_playing": false
+    },
+    {
+      "window_index": 6,
+      "start_sec": 12.0,
+      "end_sec": 14.5333,
+      "top1_id": 169,
+      "top1_label": "juggling balls",
+      "top1_prob": 0.07486,
+      "playing_guitar_prob": 0.003415,
+      "is_playing": false
+    },
+    {
+      "window_index": 7,
+      "start_sec": 14.0,
+      "end_sec": 16.5333,
+      "top1_id": 169,
+      "top1_label": "juggling balls",
+      "top1_prob": 0.070683,
+      "playing_guitar_prob": 0.003459,
+      "is_playing": false
+    },
+    {
+      "window_index": 8,
+      "start_sec": 16.0,
+      "end_sec": 18.5333,
+      "top1_id": 69,
+      "top1_label": "contact juggling",
+      "top1_prob": 0.055281,
+      "playing_guitar_prob": 0.00186,
+      "is_playing": false
+    },
+    {
+      "window_index": 9,
+      "start_sec": 18.0,
+      "end_sec": 20.5333,
+      "top1_id": 69,
+      "top1_label": "contact juggling",
+      "top1_prob": 0.114839,
+      "playing_guitar_prob": 0.003114,
+      "is_playing": false
+    },
+    {
+      "window_index": 10,
+      "start_sec": 20.0,
+      "end_sec": 22.5333,
+      "top1_id": 258,
+      "top1_label": "punching bag",
+      "top1_prob": 0.25286,
+      "playing_guitar_prob": 0.051588,
+      "is_playing": false
+    },
+    {
+      "window_index": 11,
+      "start_sec": 22.0,
+      "end_sec": 24.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.356532,
+      "playing_guitar_prob": 0.356532,
+      "is_playing": true
+    },
+    {
+      "window_index": 12,
+      "start_sec": 24.0,
+      "end_sec": 26.5333,
+      "top1_id": 5,
+      "top1_label": "archery",
+      "top1_prob": 0.318731,
+      "playing_guitar_prob": 0.024052,
+      "is_playing": false
+    },
+    {
+      "window_index": 13,
+      "start_sec": 26.0,
+      "end_sec": 28.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.13752,
+      "playing_guitar_prob": 0.13752,
+      "is_playing": true
+    },
+    {
+      "window_index": 14,
+      "start_sec": 28.0,
+      "end_sec": 30.5333,
+      "top1_id": 5,
+      "top1_label": "archery",
+      "top1_prob": 0.396067,
+      "playing_guitar_prob": 0.022816,
+      "is_playing": false
+    },
+    {
+      "window_index": 15,
+      "start_sec": 30.0,
+      "end_sec": 32.5333,
+      "top1_id": 5,
+      "top1_label": "archery",
+      "top1_prob": 0.106789,
+      "playing_guitar_prob": 0.028647,
+      "is_playing": false
+    },
+    {
+      "window_index": 16,
+      "start_sec": 32.0,
+      "end_sec": 34.5333,
+      "top1_id": 327,
+      "top1_label": "spray painting",
+      "top1_prob": 0.141453,
+      "playing_guitar_prob": 0.015954,
+      "is_playing": false
+    },
+    {
+      "window_index": 17,
+      "start_sec": 34.0,
+      "end_sec": 36.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.074799,
+      "playing_guitar_prob": 0.074799,
+      "is_playing": true
+    },
+    {
+      "window_index": 18,
+      "start_sec": 36.0,
+      "end_sec": 38.5333,
+      "top1_id": 149,
+      "top1_label": "headbanging",
+      "top1_prob": 0.119182,
+      "playing_guitar_prob": 0.113153,
+      "is_playing": false
+    },
+    {
+      "window_index": 19,
+      "start_sec": 38.0,
+      "end_sec": 40.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.09659,
+      "playing_guitar_prob": 0.09659,
+      "is_playing": true
+    },
+    {
+      "window_index": 20,
+      "start_sec": 40.0,
+      "end_sec": 42.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.105269,
+      "playing_guitar_prob": 0.105269,
+      "is_playing": true
+    },
+    {
+      "window_index": 21,
+      "start_sec": 42.0,
+      "end_sec": 44.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.056153,
+      "playing_guitar_prob": 0.056153,
+      "is_playing": true
+    },
+    {
+      "window_index": 22,
+      "start_sec": 44.0,
+      "end_sec": 46.5333,
+      "top1_id": 149,
+      "top1_label": "headbanging",
+      "top1_prob": 0.078692,
+      "playing_guitar_prob": 0.055847,
+      "is_playing": false
+    },
+    {
+      "window_index": 23,
+      "start_sec": 46.0,
+      "end_sec": 48.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.13568,
+      "playing_guitar_prob": 0.13568,
+      "is_playing": true
+    },
+    {
+      "window_index": 24,
+      "start_sec": 48.0,
+      "end_sec": 50.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.047472,
+      "playing_guitar_prob": 0.047472,
+      "is_playing": true
+    },
+    {
+      "window_index": 25,
+      "start_sec": 50.0,
+      "end_sec": 52.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.106416,
+      "playing_guitar_prob": 0.106416,
+      "is_playing": true
+    },
+    {
+      "window_index": 26,
+      "start_sec": 52.0,
+      "end_sec": 54.5333,
+      "top1_id": 149,
+      "top1_label": "headbanging",
+      "top1_prob": 0.140969,
+      "playing_guitar_prob": 0.030068,
+      "is_playing": false
+    },
+    {
+      "window_index": 27,
+      "start_sec": 54.0,
+      "end_sec": 56.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.050115,
+      "playing_guitar_prob": 0.050115,
+      "is_playing": true
+    },
+    {
+      "window_index": 28,
+      "start_sec": 56.0,
+      "end_sec": 58.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.129965,
+      "playing_guitar_prob": 0.129965,
+      "is_playing": true
+    },
+    {
+      "window_index": 29,
+      "start_sec": 58.0,
+      "end_sec": 60.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.049044,
+      "playing_guitar_prob": 0.049044,
+      "is_playing": true
+    },
+    {
+      "window_index": 30,
+      "start_sec": 60.0,
+      "end_sec": 62.5333,
+      "top1_id": 333,
+      "top1_label": "stretching arm",
+      "top1_prob": 0.088289,
+      "playing_guitar_prob": 0.043801,
+      "is_playing": false
+    },
+    {
+      "window_index": 31,
+      "start_sec": 62.0,
+      "end_sec": 64.5333,
+      "top1_id": 289,
+      "top1_label": "shaking head",
+      "top1_prob": 0.09996,
+      "playing_guitar_prob": 0.073804,
+      "is_playing": false
+    },
+    {
+      "window_index": 32,
+      "start_sec": 64.0,
+      "end_sec": 66.5333,
+      "top1_id": 149,
+      "top1_label": "headbanging",
+      "top1_prob": 0.259455,
+      "playing_guitar_prob": 0.089906,
+      "is_playing": false
+    },
+    {
+      "window_index": 33,
+      "start_sec": 66.0,
+      "end_sec": 68.5333,
+      "top1_id": 149,
+      "top1_label": "headbanging",
+      "top1_prob": 0.391325,
+      "playing_guitar_prob": 0.034437,
+      "is_playing": false
+    },
+    {
+      "window_index": 34,
+      "start_sec": 68.0,
+      "end_sec": 70.5333,
+      "top1_id": 149,
+      "top1_label": "headbanging",
+      "top1_prob": 0.330728,
+      "playing_guitar_prob": 0.06475,
+      "is_playing": false
+    },
+    {
+      "window_index": 35,
+      "start_sec": 70.0,
+      "end_sec": 72.5333,
+      "top1_id": 223,
+      "top1_label": "playing cello",
+      "top1_prob": 0.089706,
+      "playing_guitar_prob": 0.040104,
+      "is_playing": false
+    },
+    {
+      "window_index": 36,
+      "start_sec": 72.0,
+      "end_sec": 74.5333,
+      "top1_id": 149,
+      "top1_label": "headbanging",
+      "top1_prob": 0.319784,
+      "playing_guitar_prob": 0.010317,
+      "is_playing": false
+    },
+    {
+      "window_index": 37,
+      "start_sec": 74.0,
+      "end_sec": 76.5333,
+      "top1_id": 223,
+      "top1_label": "playing cello",
+      "top1_prob": 0.277883,
+      "playing_guitar_prob": 0.077801,
+      "is_playing": false
+    },
+    {
+      "window_index": 38,
+      "start_sec": 76.0,
+      "end_sec": 78.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.208329,
+      "playing_guitar_prob": 0.208329,
+      "is_playing": true
+    },
+    {
+      "window_index": 39,
+      "start_sec": 78.0,
+      "end_sec": 80.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.544808,
+      "playing_guitar_prob": 0.544808,
+      "is_playing": true
+    },
+    {
+      "window_index": 40,
+      "start_sec": 80.0,
+      "end_sec": 82.5333,
+      "top1_id": 216,
+      "top1_label": "plastering",
+      "top1_prob": 0.26772,
+      "playing_guitar_prob": 0.226691,
+      "is_playing": false
+    },
+    {
+      "window_index": 41,
+      "start_sec": 82.0,
+      "end_sec": 84.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.497951,
+      "playing_guitar_prob": 0.497951,
+      "is_playing": true
+    },
+    {
+      "window_index": 42,
+      "start_sec": 84.0,
+      "end_sec": 86.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.421283,
+      "playing_guitar_prob": 0.421283,
+      "is_playing": true
+    },
+    {
+      "window_index": 43,
+      "start_sec": 86.0,
+      "end_sec": 88.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.44715,
+      "playing_guitar_prob": 0.44715,
+      "is_playing": true
+    },
+    {
+      "window_index": 44,
+      "start_sec": 88.0,
+      "end_sec": 90.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.470036,
+      "playing_guitar_prob": 0.470036,
+      "is_playing": true
+    },
+    {
+      "window_index": 45,
+      "start_sec": 90.0,
+      "end_sec": 92.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.344518,
+      "playing_guitar_prob": 0.344518,
+      "is_playing": true
+    },
+    {
+      "window_index": 46,
+      "start_sec": 92.0,
+      "end_sec": 94.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.383003,
+      "playing_guitar_prob": 0.383003,
+      "is_playing": true
+    },
+    {
+      "window_index": 47,
+      "start_sec": 94.0,
+      "end_sec": 96.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.428153,
+      "playing_guitar_prob": 0.428153,
+      "is_playing": true
+    },
+    {
+      "window_index": 48,
+      "start_sec": 96.0,
+      "end_sec": 98.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.612352,
+      "playing_guitar_prob": 0.612352,
+      "is_playing": true
+    },
+    {
+      "window_index": 49,
+      "start_sec": 98.0,
+      "end_sec": 100.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.668821,
+      "playing_guitar_prob": 0.668821,
+      "is_playing": true
+    },
+    {
+      "window_index": 50,
+      "start_sec": 100.0,
+      "end_sec": 102.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.622764,
+      "playing_guitar_prob": 0.622764,
+      "is_playing": true
+    },
+    {
+      "window_index": 51,
+      "start_sec": 102.0,
+      "end_sec": 104.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.490617,
+      "playing_guitar_prob": 0.490617,
+      "is_playing": true
+    },
+    {
+      "window_index": 52,
+      "start_sec": 104.0,
+      "end_sec": 106.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.548951,
+      "playing_guitar_prob": 0.548951,
+      "is_playing": true
+    },
+    {
+      "window_index": 53,
+      "start_sec": 106.0,
+      "end_sec": 108.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.686485,
+      "playing_guitar_prob": 0.686485,
+      "is_playing": true
+    },
+    {
+      "window_index": 54,
+      "start_sec": 108.0,
+      "end_sec": 110.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.552458,
+      "playing_guitar_prob": 0.552458,
+      "is_playing": true
+    },
+    {
+      "window_index": 55,
+      "start_sec": 110.0,
+      "end_sec": 112.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.317369,
+      "playing_guitar_prob": 0.317369,
+      "is_playing": true
+    },
+    {
+      "window_index": 56,
+      "start_sec": 112.0,
+      "end_sec": 114.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.588135,
+      "playing_guitar_prob": 0.588135,
+      "is_playing": true
+    },
+    {
+      "window_index": 57,
+      "start_sec": 114.0,
+      "end_sec": 116.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.534795,
+      "playing_guitar_prob": 0.534795,
+      "is_playing": true
+    },
+    {
+      "window_index": 58,
+      "start_sec": 116.0,
+      "end_sec": 118.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.603161,
+      "playing_guitar_prob": 0.603161,
+      "is_playing": true
+    },
+    {
+      "window_index": 59,
+      "start_sec": 118.0,
+      "end_sec": 120.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.480013,
+      "playing_guitar_prob": 0.480013,
+      "is_playing": true
+    },
+    {
+      "window_index": 60,
+      "start_sec": 120.0,
+      "end_sec": 122.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.570067,
+      "playing_guitar_prob": 0.570067,
+      "is_playing": true
+    },
+    {
+      "window_index": 61,
+      "start_sec": 122.0,
+      "end_sec": 124.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.597732,
+      "playing_guitar_prob": 0.597732,
+      "is_playing": true
+    },
+    {
+      "window_index": 62,
+      "start_sec": 124.0,
+      "end_sec": 126.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.449619,
+      "playing_guitar_prob": 0.449619,
+      "is_playing": true
+    },
+    {
+      "window_index": 63,
+      "start_sec": 126.0,
+      "end_sec": 128.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.476355,
+      "playing_guitar_prob": 0.476355,
+      "is_playing": true
+    },
+    {
+      "window_index": 64,
+      "start_sec": 128.0,
+      "end_sec": 130.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.47874,
+      "playing_guitar_prob": 0.47874,
+      "is_playing": true
+    },
+    {
+      "window_index": 65,
+      "start_sec": 130.0,
+      "end_sec": 132.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.516644,
+      "playing_guitar_prob": 0.516644,
+      "is_playing": true
+    },
+    {
+      "window_index": 66,
+      "start_sec": 132.0,
+      "end_sec": 134.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.486503,
+      "playing_guitar_prob": 0.486503,
+      "is_playing": true
+    },
+    {
+      "window_index": 67,
+      "start_sec": 134.0,
+      "end_sec": 136.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.514909,
+      "playing_guitar_prob": 0.514909,
+      "is_playing": true
+    },
+    {
+      "window_index": 68,
+      "start_sec": 136.0,
+      "end_sec": 138.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.545023,
+      "playing_guitar_prob": 0.545023,
+      "is_playing": true
+    },
+    {
+      "window_index": 69,
+      "start_sec": 138.0,
+      "end_sec": 140.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.514251,
+      "playing_guitar_prob": 0.514251,
+      "is_playing": true
+    },
+    {
+      "window_index": 70,
+      "start_sec": 140.0,
+      "end_sec": 142.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.47392,
+      "playing_guitar_prob": 0.47392,
+      "is_playing": true
+    },
+    {
+      "window_index": 71,
+      "start_sec": 142.0,
+      "end_sec": 144.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.503759,
+      "playing_guitar_prob": 0.503759,
+      "is_playing": true
+    },
+    {
+      "window_index": 72,
+      "start_sec": 144.0,
+      "end_sec": 146.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.407641,
+      "playing_guitar_prob": 0.407641,
+      "is_playing": true
+    },
+    {
+      "window_index": 73,
+      "start_sec": 146.0,
+      "end_sec": 148.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.487372,
+      "playing_guitar_prob": 0.487372,
+      "is_playing": true
+    },
+    {
+      "window_index": 74,
+      "start_sec": 148.0,
+      "end_sec": 150.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.432346,
+      "playing_guitar_prob": 0.432346,
+      "is_playing": true
+    },
+    {
+      "window_index": 75,
+      "start_sec": 150.0,
+      "end_sec": 152.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.460634,
+      "playing_guitar_prob": 0.460634,
+      "is_playing": true
+    },
+    {
+      "window_index": 76,
+      "start_sec": 152.0,
+      "end_sec": 154.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.43239,
+      "playing_guitar_prob": 0.43239,
+      "is_playing": true
+    },
+    {
+      "window_index": 77,
+      "start_sec": 154.0,
+      "end_sec": 156.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.420631,
+      "playing_guitar_prob": 0.420631,
+      "is_playing": true
+    },
+    {
+      "window_index": 78,
+      "start_sec": 156.0,
+      "end_sec": 158.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.353778,
+      "playing_guitar_prob": 0.353778,
+      "is_playing": true
+    },
+    {
+      "window_index": 79,
+      "start_sec": 158.0,
+      "end_sec": 160.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.442551,
+      "playing_guitar_prob": 0.442551,
+      "is_playing": true
+    },
+    {
+      "window_index": 80,
+      "start_sec": 160.0,
+      "end_sec": 162.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.47494,
+      "playing_guitar_prob": 0.47494,
+      "is_playing": true
+    },
+    {
+      "window_index": 81,
+      "start_sec": 162.0,
+      "end_sec": 164.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.447559,
+      "playing_guitar_prob": 0.447559,
+      "is_playing": true
+    },
+    {
+      "window_index": 82,
+      "start_sec": 164.0,
+      "end_sec": 166.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.455636,
+      "playing_guitar_prob": 0.455636,
+      "is_playing": true
+    },
+    {
+      "window_index": 83,
+      "start_sec": 166.0,
+      "end_sec": 168.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.519503,
+      "playing_guitar_prob": 0.519503,
+      "is_playing": true
+    },
+    {
+      "window_index": 84,
+      "start_sec": 168.0,
+      "end_sec": 170.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.458635,
+      "playing_guitar_prob": 0.458635,
+      "is_playing": true
+    },
+    {
+      "window_index": 85,
+      "start_sec": 170.0,
+      "end_sec": 172.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.299673,
+      "playing_guitar_prob": 0.299673,
+      "is_playing": true
+    },
+    {
+      "window_index": 86,
+      "start_sec": 172.0,
+      "end_sec": 174.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.191623,
+      "playing_guitar_prob": 0.191623,
+      "is_playing": true
+    },
+    {
+      "window_index": 87,
+      "start_sec": 174.0,
+      "end_sec": 176.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.207963,
+      "playing_guitar_prob": 0.207963,
+      "is_playing": true
+    },
+    {
+      "window_index": 88,
+      "start_sec": 176.0,
+      "end_sec": 178.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.39742,
+      "playing_guitar_prob": 0.39742,
+      "is_playing": true
+    },
+    {
+      "window_index": 89,
+      "start_sec": 178.0,
+      "end_sec": 180.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.472238,
+      "playing_guitar_prob": 0.472238,
+      "is_playing": true
+    },
+    {
+      "window_index": 90,
+      "start_sec": 180.0,
+      "end_sec": 182.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.421427,
+      "playing_guitar_prob": 0.421427,
+      "is_playing": true
+    },
+    {
+      "window_index": 91,
+      "start_sec": 182.0,
+      "end_sec": 184.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.496245,
+      "playing_guitar_prob": 0.496245,
+      "is_playing": true
+    },
+    {
+      "window_index": 92,
+      "start_sec": 184.0,
+      "end_sec": 186.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.460093,
+      "playing_guitar_prob": 0.460093,
+      "is_playing": true
+    },
+    {
+      "window_index": 93,
+      "start_sec": 186.0,
+      "end_sec": 188.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.442603,
+      "playing_guitar_prob": 0.442603,
+      "is_playing": true
+    },
+    {
+      "window_index": 94,
+      "start_sec": 188.0,
+      "end_sec": 190.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.480184,
+      "playing_guitar_prob": 0.480184,
+      "is_playing": true
+    },
+    {
+      "window_index": 95,
+      "start_sec": 190.0,
+      "end_sec": 192.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.440532,
+      "playing_guitar_prob": 0.440532,
+      "is_playing": true
+    },
+    {
+      "window_index": 96,
+      "start_sec": 192.0,
+      "end_sec": 194.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.431319,
+      "playing_guitar_prob": 0.431319,
+      "is_playing": true
+    },
+    {
+      "window_index": 97,
+      "start_sec": 194.0,
+      "end_sec": 196.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.333229,
+      "playing_guitar_prob": 0.333229,
+      "is_playing": true
+    },
+    {
+      "window_index": 98,
+      "start_sec": 196.0,
+      "end_sec": 198.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.337072,
+      "playing_guitar_prob": 0.337072,
+      "is_playing": true
+    },
+    {
+      "window_index": 99,
+      "start_sec": 198.0,
+      "end_sec": 200.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.429323,
+      "playing_guitar_prob": 0.429323,
+      "is_playing": true
+    },
+    {
+      "window_index": 100,
+      "start_sec": 200.0,
+      "end_sec": 202.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.611519,
+      "playing_guitar_prob": 0.611519,
+      "is_playing": true
+    },
+    {
+      "window_index": 101,
+      "start_sec": 202.0,
+      "end_sec": 204.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.566765,
+      "playing_guitar_prob": 0.566765,
+      "is_playing": true
+    },
+    {
+      "window_index": 102,
+      "start_sec": 204.0,
+      "end_sec": 206.5333,
+      "top1_id": 216,
+      "top1_label": "plastering",
+      "top1_prob": 0.457944,
+      "playing_guitar_prob": 0.095134,
+      "is_playing": false
+    },
+    {
+      "window_index": 103,
+      "start_sec": 206.0,
+      "end_sec": 208.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.750039,
+      "playing_guitar_prob": 0.750039,
+      "is_playing": true
+    },
+    {
+      "window_index": 104,
+      "start_sec": 208.0,
+      "end_sec": 210.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.602176,
+      "playing_guitar_prob": 0.602176,
+      "is_playing": true
+    },
+    {
+      "window_index": 105,
+      "start_sec": 210.0,
+      "end_sec": 212.5333,
+      "top1_id": 203,
+      "top1_label": "opening bottle",
+      "top1_prob": 0.065442,
+      "playing_guitar_prob": 0.006364,
+      "is_playing": false
+    },
+    {
+      "window_index": 106,
+      "start_sec": 212.0,
+      "end_sec": 214.5333,
+      "top1_id": 169,
+      "top1_label": "juggling balls",
+      "top1_prob": 0.123103,
+      "playing_guitar_prob": 0.002233,
+      "is_playing": false
+    },
+    {
+      "window_index": 107,
+      "start_sec": 214.0,
+      "end_sec": 216.5333,
+      "top1_id": 169,
+      "top1_label": "juggling balls",
+      "top1_prob": 0.12698,
+      "playing_guitar_prob": 0.00257,
+      "is_playing": false
+    },
+    {
+      "window_index": 108,
+      "start_sec": 216.0,
+      "end_sec": 218.5333,
+      "top1_id": 169,
+      "top1_label": "juggling balls",
+      "top1_prob": 0.11006,
+      "playing_guitar_prob": 0.002697,
+      "is_playing": false
+    },
+    {
+      "window_index": 109,
+      "start_sec": 218.0,
+      "end_sec": 220.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.608506,
+      "playing_guitar_prob": 0.608506,
+      "is_playing": true
+    },
+    {
+      "window_index": 110,
+      "start_sec": 220.0,
+      "end_sec": 222.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.470793,
+      "playing_guitar_prob": 0.470793,
+      "is_playing": true
+    },
+    {
+      "window_index": 111,
+      "start_sec": 222.0,
+      "end_sec": 224.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.57011,
+      "playing_guitar_prob": 0.57011,
+      "is_playing": true
+    },
+    {
+      "window_index": 112,
+      "start_sec": 224.0,
+      "end_sec": 226.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.369397,
+      "playing_guitar_prob": 0.369397,
+      "is_playing": true
+    },
+    {
+      "window_index": 113,
+      "start_sec": 226.0,
+      "end_sec": 228.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.088375,
+      "playing_guitar_prob": 0.088375,
+      "is_playing": true
+    },
+    {
+      "window_index": 114,
+      "start_sec": 228.0,
+      "end_sec": 230.5333,
+      "top1_id": 216,
+      "top1_label": "plastering",
+      "top1_prob": 0.079829,
+      "playing_guitar_prob": 0.037392,
+      "is_playing": false
+    },
+    {
+      "window_index": 115,
+      "start_sec": 230.0,
+      "end_sec": 232.5333,
+      "top1_id": 169,
+      "top1_label": "juggling balls",
+      "top1_prob": 0.182905,
+      "playing_guitar_prob": 0.016066,
+      "is_playing": false
+    },
+    {
+      "window_index": 116,
+      "start_sec": 232.0,
+      "end_sec": 234.5333,
+      "top1_id": 69,
+      "top1_label": "contact juggling",
+      "top1_prob": 0.637057,
+      "playing_guitar_prob": 0.022784,
+      "is_playing": false
+    },
+    {
+      "window_index": 117,
+      "start_sec": 234.0,
+      "end_sec": 236.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.424578,
+      "playing_guitar_prob": 0.424578,
+      "is_playing": true
+    },
+    {
+      "window_index": 118,
+      "start_sec": 236.0,
+      "end_sec": 238.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.454491,
+      "playing_guitar_prob": 0.454491,
+      "is_playing": true
+    },
+    {
+      "window_index": 119,
+      "start_sec": 238.0,
+      "end_sec": 240.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.404391,
+      "playing_guitar_prob": 0.404391,
+      "is_playing": true
+    },
+    {
+      "window_index": 120,
+      "start_sec": 240.0,
+      "end_sec": 242.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.444871,
+      "playing_guitar_prob": 0.444871,
+      "is_playing": true
+    },
+    {
+      "window_index": 121,
+      "start_sec": 242.0,
+      "end_sec": 244.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.415312,
+      "playing_guitar_prob": 0.415312,
+      "is_playing": true
+    },
+    {
+      "window_index": 122,
+      "start_sec": 244.0,
+      "end_sec": 246.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.367945,
+      "playing_guitar_prob": 0.367945,
+      "is_playing": true
+    },
+    {
+      "window_index": 123,
+      "start_sec": 246.0,
+      "end_sec": 248.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.314956,
+      "playing_guitar_prob": 0.314956,
+      "is_playing": true
+    },
+    {
+      "window_index": 124,
+      "start_sec": 248.0,
+      "end_sec": 250.5333,
+      "top1_id": 232,
+      "top1_label": "playing guitar",
+      "top1_prob": 0.243688,
+      "playing_guitar_prob": 0.243688,
+      "is_playing": true
+    },
+    {
+      "window_index": 125,
+      "start_sec": 250.0,
+      "end_sec": 252.5333,
+      "top1_id": 16,
+      "top1_label": "beatboxing",
+      "top1_prob": 0.303965,
+      "playing_guitar_prob": 0.002801,
+      "is_playing": false
+    },
+    {
+      "window_index": 126,
+      "start_sec": 252.0,
+      "end_sec": 254.5333,
+      "top1_id": 16,
+      "top1_label": "beatboxing",
+      "top1_prob": 0.596285,
+      "playing_guitar_prob": 0.000766,
+      "is_playing": false
+    },
+    {
+      "window_index": 127,
+      "start_sec": 254.0,
+      "end_sec": 256.5333,
+      "top1_id": 292,
+      "top1_label": "shaving head",
+      "top1_prob": 0.088505,
+      "playing_guitar_prob": 0.002777,
+      "is_playing": false
+    }
+  ]
+}
