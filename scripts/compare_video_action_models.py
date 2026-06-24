@@ -12,6 +12,7 @@ Tier-1 (runnable via transformers): VideoMAE, TimeSformer, ViViT.
 from __future__ import annotations
 
 import argparse
+import csv
 import datetime as dt
 import json
 from pathlib import Path
@@ -52,6 +53,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--window-span-sec", type=float, default=2.5)
     parser.add_argument("--window-stride-sec", type=float, default=2.0)
     parser.add_argument("--batch-size", type=int, default=8)
+    parser.add_argument("--models", nargs="+", choices=[spec["key"] for spec in MODELS], default=[spec["key"] for spec in MODELS])
     return parser.parse_args()
 
 
@@ -121,7 +123,8 @@ def run_model_on_frames(repo: str, patch_bias: bool, frames: list[np.ndarray],
     sample_offsets = np.linspace(0, window_frames - 1, clip_len).round().astype(int)
     softmax = torch.nn.Softmax(dim=-1)
 
-    top1_guitar, guitar_probs = 0, []
+    id2label = {int(i): str(v) for i, v in model.config.id2label.items()}
+    top1_guitar, guitar_probs, rows = 0, [], []
     for batch_start in range(0, len(starts), args.batch_size):
         batch = starts[batch_start: batch_start + args.batch_size]
         clips = [[frames[s + off] for off in sample_offsets] for s in batch]
@@ -130,9 +133,17 @@ def run_model_on_frames(repo: str, patch_bias: bool, frames: list[np.ndarray],
             probs = softmax(model(**inputs).logits)
         top1 = probs.argmax(dim=-1)
         for row in range(len(batch)):
-            guitar_probs.append(float(probs[row, guitar_id]))
-            if int(top1[row]) == guitar_id:
+            start_frame = batch[row]
+            guitar_prob = float(probs[row, guitar_id])
+            top1_id = int(top1[row])
+            is_guitar = top1_id == guitar_id
+            guitar_probs.append(guitar_prob)
+            if is_guitar:
                 top1_guitar += 1
+            top1_label = id2label.get(top1_id, f"LABEL_{top1_id}")
+            if top1_id == GUITAR_INDEX and top1_label.startswith("LABEL_"):
+                top1_label = "playing guitar"
+            rows.append({"window_index": batch_start + row, "start_sec": round(start_frame / eff_fps, 4), "end_sec": round((start_frame + window_frames) / eff_fps, 4), "top1_id": top1_id, "top1_label": top1_label, "top1_prob": round(float(probs[row, top1_id]), 6), "playing_guitar_prob": round(guitar_prob, 6), "is_playing": is_guitar})
 
     del model
     if device.type == "cuda":
@@ -140,6 +151,7 @@ def run_model_on_frames(repo: str, patch_bias: bool, frames: list[np.ndarray],
 
     total = len(starts)
     return {
+        "summary": {
         "repo": repo,
         "clip_len": clip_len,
         "clip_span_sec": round(clip_len and window_frames / eff_fps, 2),
@@ -147,6 +159,8 @@ def run_model_on_frames(repo: str, patch_bias: bool, frames: list[np.ndarray],
         "top1_playing_guitar": top1_guitar,
         "top1_guitar_rate": round(top1_guitar / total, 4) if total else 0.0,
         "mean_playing_guitar_prob": round(sum(guitar_probs) / total, 4) if total else 0.0,
+    },
+        "rows": rows,
     }
 
 
@@ -164,13 +178,19 @@ def main() -> int:
         print(f"\nDecoding {video_path.name} ...")
         frames, eff_fps = decode_decimated(video_path, args.sample_fps)
         print(f"  {len(frames)} frames @ {eff_fps:.1f} fps")
-        for spec in MODELS:
+        for spec in [item for item in MODELS if item["key"] in args.models]:
             print(f"  running {spec['key']} ...")
-            res = run_model_on_frames(spec["repo"], spec["patch_bias"], frames, eff_fps, args, device)
+            result = run_model_on_frames(spec["repo"], spec["patch_bias"], frames, eff_fps, args, device)
+            res = result["summary"]
             res.update({"model": spec["key"], "video": video_path.name})
             results.append(res)
-            print(f"    top1 guitar {res['top1_guitar_rate']*100:5.1f}%  "
-                  f"mean prob {res['mean_playing_guitar_prob']:.3f}  ({res['windows']} windows)")
+            stem = video_path.stem.replace(" ", "_")
+            (out_dir / f"{stem}_{spec['key']}_timeline.json").write_text(json.dumps(result, indent=2), encoding="utf-8")
+            with (out_dir / f"{stem}_{spec['key']}_timeline.csv").open("w", newline="", encoding="utf-8") as handle:
+                writer = csv.DictWriter(handle, fieldnames=list(result["rows"][0].keys()))
+                writer.writeheader()
+                writer.writerows(result["rows"])
+            print(f"    top1 guitar {res['top1_guitar_rate']*100:5.1f}%  " f"mean prob {res['mean_playing_guitar_prob']:.3f}  ({res['windows']} windows)")
 
     (out_dir / "comparison.json").write_text(json.dumps(results, indent=2), encoding="utf-8")
 
@@ -187,7 +207,7 @@ def main() -> int:
     lines.append("\n## Aggregated per model\n")
     lines.append("| Model | Total windows | Top-1 guitar windows | Top-1 guitar rate | Mean P(guitar) |")
     lines.append("|---|---|---|---|---|")
-    for spec in MODELS:
+    for spec in [item for item in MODELS if item["key"] in args.models]:
         rows = [r for r in results if r["model"] == spec["key"]]
         w = sum(r["windows"] for r in rows)
         g = sum(r["top1_playing_guitar"] for r in rows)
