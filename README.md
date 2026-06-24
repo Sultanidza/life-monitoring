@@ -1,11 +1,32 @@
 # life-monitoring
 
-Minimal project scaffold for `life-monitoring`.
+Computer-vision MVP for detecting when the primary user is playing guitar.
 
 Primary project goal:
 
-- build a detector pipeline that can tell from video when the user is playing guitar
-- use image/frame object detection first as the foundation for that later video-level behavior signal
+- detect guitar playing from video
+- evaluate image-level object detection and video-level action recognition
+
+Current selected baselines:
+
+- image detection: Grounding DINO for `person` and `guitar`
+- video action recognition: VideoMAE with top-1 `playing guitar`
+
+Validated VideoMAE metrics across three labeled videos and 353 scored windows:
+
+- precision: `0.9409`
+- recall: `0.8414`
+- F1: `0.8884`
+- accuracy: `0.8640`
+
+With the selected temporal smoothing rule:
+
+- precision: `0.9409`
+- recall: `0.9119`
+- F1: `0.9262`
+- accuracy: `0.9065`
+
+See `reports/video-model-validation/final/three-video-validation/comparison.md`.
 
 ## Structure
 
@@ -22,6 +43,8 @@ Primary project goal:
 - `scripts/run_coco_model_validation.py` for multi-model validation on a COCO-labeled set
 - `scripts/build_model_comparison_visuals.py` for overall/per-class model comparison visuals
 - `scripts/build_model_error_overlays.py` for GT-vs-prediction overlay images
+- `scripts/compare_video_action_models.py` for VideoMAE/TimeSformer/ViViT inference
+- `scripts/score_videomae_against_label_studio.py` for temporal ground-truth scoring
 - `reports/` for saved research notes and test runs
 
 ## Extract Video Frames
@@ -45,12 +68,15 @@ Store dataset labels under `data/annotations/<dataset-name>/`, for example:
 
 - `data/annotations/eval-webcamoid-obs-studio-2026-05-17-11-06-20/coco.json`
 
+Video annotations are Label Studio timeline exports using `playing`, `not_playing`, and `ambiguous`. Windows touching `ambiguous` intervals are excluded from scoring.
+
 ## Metrics And Reports
 
 Use:
 
 - `data/metrics/` for the active single-model evaluation artifacts
-- `reports/model-validation/<timestamp>/` for multi-model comparison runs
+- `reports/model-validation/<timestamp>/` for image-model comparison runs
+- `reports/video-model-validation/final/` for the validated video-model comparison
 
 ## Test Baselines
 
@@ -92,3 +118,4 @@ Use:
 
 - `data/metrics/` for the active single-model Grounding DINO evaluation
 - `reports/model-validation/<timestamp>/` for multi-model comparisons, heatmaps, and GT-vs-prediction overlays
+- `reports/video-model-validation/final/three-video-validation/` for the validated three-video action-model comparison

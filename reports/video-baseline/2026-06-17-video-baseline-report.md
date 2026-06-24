@@ -1,5 +1,8 @@
 # Video-Level Baseline Report — 2026-06-17
 
+> Historical first-pass report. Final validated results are in
+> `reports/video-model-validation/final/three-video-validation/comparison.md`.
+
 First video-level pass: detecting when the user is **playing guitar** directly
 from video, using Kinetics-400 action-recognition models near-zero-shot
 ("playing guitar" is a Kinetics class). Repo: https://github.com/Sultanidza/life-monitoring
@@ -75,9 +78,7 @@ actually behave, not an arbitrary cutoff.
 
 ## Caveats
 
-- These videos are **not labeled** playing/not-playing, so the rates are
-  *descriptive*, not validated accuracy. A small hand-labeled subset would turn
-  this into a measured precision/recall.
+- At the time of this report the videos were unlabeled, so these rates were descriptive. Validation was completed on 2026-06-23.
 - Clip classification says *whether* a clip is playing, not *when* within a long
   video (no exact interval localization).
 - Kinetics splits guitar across several classes; aggregating the guitar family
@@ -87,12 +88,10 @@ actually behave, not an arbitrary cutoff.
 
 ## Next steps
 
-- Refine the per-window decision rule to top-1 (or guitar-family) and re-emit the
-  timelines for a cleaner "playing timeline" artifact.
-- Hand-label a small clip subset to validate the threshold (turn descriptive into
-  measured).
-- The image-level IoU descriptive analytics (person-with-guitar, average IoU,
-  near-object false positives) from step 1 remains a separate pending deliverable.
+- Completed: label all three videos with temporal ground truth.
+- Completed: rerun and score VideoMAE, TimeSformer, and ViViT.
+- Completed: select VideoMAE by validated F1.
+- Remaining: test guitar-family decisions and temporal smoothing.
 - Optional: detection + tracking (BoxMOT on Grounding DINO) to complement the
   action signal with per-frame person/guitar boxes over time.
 

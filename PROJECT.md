@@ -16,7 +16,7 @@ Do not store personal notes here.
 
 ## Overview
 
-`life-monitoring` is a computer-vision MVP focused on lifestyle and musical-activity monitoring from images and video frames.
+`life-monitoring` is a computer-vision MVP focused on detecting and measuring guitar-playing activity from images and video.
 
 Current product direction inferred from the linked project discussions and the implemented repo workflow:
 
@@ -53,9 +53,7 @@ Secondary goals:
 
 Current MVP scope:
 
-- object detection, not segmentation or tracking
-- image/frame-based evaluation first
-- image/frame-based evaluation is the preparation step for later video-level guitar-playing detection
+- object detection plus video action recognition, not segmentation or tracking
 - one-camera setup
 - one-user setup
 - classes:
@@ -70,7 +68,7 @@ Out of scope for now:
 
 - full production deployment
 - full COCO mAP reporting
-- end-to-end video analytics beyond frame extraction
+- production-grade end-to-end video analytics
 - broad lifestyle-event taxonomy beyond the current detection classes
 - multi-user generalization as a first-class requirement
 - broad robotics scope outside this CV MVP
@@ -145,6 +143,14 @@ Current frame/image roots:
 - `data/frames/obs-studio-2026-05-17-11-06-20`
 - `data/frames/obs-studio-2026-05-17-16-31-19`
 
+Current video validation set:
+
+- `data/raw-videos/labeling/2026-05-17_11-06-20.mp4`
+- `data/raw-videos/labeling/2026-05-17_16-31-19.mp4`
+- `data/raw-videos/labeling/2026-05-19_16-29-56.mp4`
+- Label Studio export: `data/annotations/video-playing/project-6-at-2026-06-23-23-17-db3befee.json`
+- total windows: `383`; ambiguous excluded: `30`; scored: `353`
+
 Current mixed evaluation annotation set:
 
 - `data/annotations/eval-webcamoid-obs-studio-2026-05-17-11-06-20/coco.json`
@@ -180,7 +186,8 @@ Archived historical 2-class active-set snapshot before mirror-box update:
 
 Current decisions:
 
-- COCO is the evaluation source of truth
+- COCO is the image-detection evaluation source of truth
+- Label Studio timeline JSON is the video-activity evaluation source of truth
 - Label Studio is acceptable for labeling as long as exports are normalized through the resolver
 - raw datasets stay under `data/`
 - reports and run metadata stay under `reports/`
@@ -189,6 +196,11 @@ Current decisions:
 - keep source datasets separated by folder rather than flattening everything immediately
 - prefer minimizing manual labeling cost
 - use pretrained models, transfer learning, and small focused datasets before scaling labeling effort
+- video labels are `playing`, `not_playing`, and `ambiguous`
+- visible intentional guitar playing is `playing`
+- pauses up to 2 seconds in continuous playing remain `playing`
+- off-camera audio-only activity is `ambiguous`
+- windows touching `ambiguous` are excluded from scoring
 
 Important path-resolution rule for Label Studio exports:
 
@@ -231,6 +243,17 @@ Current project workflow:
 9. inspect false positives, false negatives, and class confusion visually
 10. refine data, prompts, and class definitions before making larger model changes
 
+Current video-validation workflow:
+
+1. convert recordings to browser-compatible MP4
+2. label temporal intervals in Label Studio
+3. run all models with identical windows
+4. save per-window timelines
+5. convert Label Studio frames to timestamps
+6. assign ground truth by majority overlap
+7. exclude windows touching `ambiguous`
+8. calculate per-video and micro-averaged metrics
+
 Preferred iteration style:
 
 - short sprints
@@ -258,6 +281,8 @@ Current project scripts:
 - `scripts/eval_grounding_dino_predictions.py`
 - `scripts/build_metrics_heatmap.py`
 - `scripts/run_coco_model_validation.py`
+- `scripts/compare_video_action_models.py`
+- `scripts/score_videomae_against_label_studio.py`
 
 Current environment/tooling assumptions:
 
@@ -282,6 +307,8 @@ Use these storage conventions consistently:
 - `reports/model-validation/<timestamp>/`
   - for multi-model comparison runs
   - store per-model predictions, metrics, heatmaps, manifests, and summary tables there
+- `reports/video-model-validation/final/`
+  - canonical video timelines, per-video scoring, and combined comparison
 
 This keeps the canonical single-model reference separate from experiment bundles.
 
@@ -327,8 +354,15 @@ Selected video-level baseline (2026-06-17, empirical, on 3 real OBS videos):
 - loader note: remap the checkpoint's `q_bias`/`v_bias` to `query.bias`/`value.bias`
   (newer transformers drops them, which silently breaks predictions)
 - full report: `reports/video-baseline/2026-06-17-video-baseline-report.md`
-- these videos are not yet labeled playing/not-playing, so rates are descriptive,
-  not validated precision/recall
+- three videos are now labeled with playing, not_playing, and ambiguous intervals
+- final validated comparison: reports/video-model-validation/final/three-video-validation/comparison.md
+- VideoMAE combined metrics across 353 scored windows: precision 0.9409, recall 0.8414, F1 0.8884, accuracy 0.8640
+- VideoMAE wins on every labeled video and remains the selected video baseline
+- TimeSformer combined F1: 0.7000; ViViT combined F1: 0.4800
+- temporal smoothing selected: fill gaps of up to two negative windows only when bounded by positive windows
+- smoothed VideoMAE metrics: precision `0.9409`, recall `0.9119`, F1 `0.9262`, accuracy `0.9065`
+- smoothing reduces false negatives from `36` to `20` while false positives increase from `12` to `13`
+- smoothing report: `reports/video-model-validation/final/three-video-validation/smoothing-experiment/report.md`
 
 ## Current Results
 
@@ -425,9 +459,13 @@ Current findings from the project data:
 - `guitar` is already usable as an evaluation class
 - visual inspection is necessary because aggregate metrics alone hide class-confusion patterns
 - narrow, concrete classes are more useful than broad semantic classes for the current MVP
-- a small manually trusted test set is necessary before scaling any video evaluation
+- three manually labeled videos now provide the trusted initial video test set
 - removing `musical instrument` from the active evaluation set produced a much cleaner benchmark
 - mirror reflections are currently part of the task definition and should be treated as legitimate visible instances when labeled
+- VideoMAE is the strongest validated action model across all three videos
+- combined VideoMAE errors are 12 false positives and 36 false negatives
+- VideoMAE recall, not precision, is the main improvement target
+- ambiguous intervals correctly remove off-camera and visually unobservable activity from scoring
 
 ## Test Set Strategy
 
@@ -460,6 +498,8 @@ Current hypotheses worth testing:
 
 Current evaluation priorities:
 
+Image evaluation:
+
 - IoU-based matching
 - precision
 - recall
@@ -468,6 +508,14 @@ Current evaluation priorities:
 - per-class diagnostics
 - visual error inspection
 - GT-vs-prediction overlays for hard images, especially mirror cases
+
+Video evaluation:
+
+- top-1 `playing guitar` decision rule
+- precision, recall, F1, and accuracy
+- per-video metrics plus micro-averaged combined counts
+- playing-duration error
+- exclusion of windows touching `ambiguous` intervals
 
 Current evaluation policy:
 
@@ -491,11 +539,12 @@ Current deployment expectations:
 
 Near-term priorities currently supported by the project context:
 
-- keep improving the labeled test set
-- increase scene diversity in collected images and videos
-- continue extracting frames automatically from video at roughly `2` to `5` second intervals where useful
-- use model-assisted prelabeling instead of scaling manual labeling linearly
-- keep the current detection case focused before expanding to unrelated domains
+- inspect the remaining 20 smoothed false-negative windows
+- test guitar-family decisions against the smoothed baseline
+- implement the selected smoothing rule in the production timeline/session pipeline
+- generate practice-duration and timeline/heatmap outputs
+- add more diverse recordings only after the current decision rule is tuned
+- keep image detection as a complementary visibility/localization signal
 
 ## Project Memory Rules
 

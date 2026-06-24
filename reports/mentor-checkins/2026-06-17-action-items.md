@@ -46,23 +46,15 @@ work completed as of this check-in. Repo: https://github.com/Sultanidza/life-mon
 - [ ] Review CV and send comments/clarifying questions.
 - [ ] Send meeting materials before/on Friday; confirm follow-up (same time).
 
-## Next steps (next sprint — validate the video baseline)
+## Video-validation follow-up
 
-Everything above is **descriptive**, not yet **validated**: we have no ground
-truth for *playing*, so we cannot yet say how well VideoMAE performs. The "top-1
-playing-guitar rate" used to compare models only counts positive predictions — it
-cannot tell genuine detection from over-prediction (false positives). Fixing that
-is the next priority.
+The video baseline is now validated on all three recordings. The final comparison uses identical 2.5-second windows and excludes ambiguous intervals.
 
-- [ ] **Define what counts as "playing"** (does tuning count? holding without
-      strumming? short mid-song pauses?) — agree the rule with mentor.
-- [ ] **Label the playing time-intervals on one video** (temporal labels, not
-      boxes — just note start/end times, e.g. `0:30–2:15`). One 4-min video is
-      enough to start (~250 windows).
-- [ ] **Score VideoMAE against those labels:** precision, recall, F1, and
-      total-playing-time error (precision directly exposes false positives).
-- [ ] Use the result to tune the decision rule and the session parameters, and to
-      decide whether a heavier model (temporal localization, tIoU) is justified.
+- [x] **Define what counts as playing.** Visible intentional guitar playing; short pauses up to 2 seconds remain playing; off-camera audio-only activity is ambiguous.
+- [x] **Label all three videos** with playing, not_playing, and ambiguous intervals.
+- [x] **Score VideoMAE, TimeSformer, and ViViT.** VideoMAE wins every video; combined precision `0.9409`, recall `0.8414`, F1 `0.8884`.
+- [x] **Test temporal smoothing.** Filling gaps of up to two negative windows improves VideoMAE F1 from `0.8884` to `0.9262`; precision stays `0.9409`, recall rises to `0.9119`.
+- [ ] Test guitar-family decisions against the smoothed baseline, then implement session aggregation.
 
 ## How to send
 
