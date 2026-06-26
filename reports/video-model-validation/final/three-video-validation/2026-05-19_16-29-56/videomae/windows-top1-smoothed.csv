@@ -1,0 +1,129 @@
+video,model,window_index,start_sec,end_sec,ground_truth,raw_prediction,smoothed_prediction,raw_outcome,smoothed_outcome,smoothing_changed,top1_label,top1_prob,playing_guitar_prob,playing_overlap_sec,not_playing_overlap_sec,ambiguous_overlap_sec
+2026-05-19_16-29-56.mp4,videomae,0,0.0,2.5333,not_playing,playing,playing,fp,fp,False,playing guitar,0.424053,0.424053,0.0,2.5333,0.0
+2026-05-19_16-29-56.mp4,videomae,1,2.0,4.5333,not_playing,playing,playing,fp,fp,False,playing guitar,0.524766,0.524766,0.0,2.5333,0.0
+2026-05-19_16-29-56.mp4,videomae,2,4.0,6.5333,not_playing,not_playing,not_playing,tn,tn,False,stretching arm,0.214408,0.004441,0.0,2.5333,0.0
+2026-05-19_16-29-56.mp4,videomae,3,6.0,8.5333,not_playing,not_playing,not_playing,tn,tn,False,playing piano,0.034759,0.005305,0.0,2.5333,0.0
+2026-05-19_16-29-56.mp4,videomae,4,8.0,10.5333,not_playing,not_playing,not_playing,tn,tn,False,dunking basketball,0.141654,0.003129,0.0,2.5333,0.0
+2026-05-19_16-29-56.mp4,videomae,5,10.0,12.5333,not_playing,not_playing,not_playing,tn,tn,False,punching bag,0.228688,0.003799,0.0,2.5333,0.0
+2026-05-19_16-29-56.mp4,videomae,6,12.0,14.5333,not_playing,not_playing,not_playing,tn,tn,False,juggling balls,0.07486,0.003415,0.0,2.5333,0.0
+2026-05-19_16-29-56.mp4,videomae,7,14.0,16.5333,not_playing,not_playing,not_playing,tn,tn,False,juggling balls,0.070683,0.003459,0.0,2.5333,0.0
+2026-05-19_16-29-56.mp4,videomae,8,16.0,18.5333,not_playing,not_playing,not_playing,tn,tn,False,contact juggling,0.055281,0.00186,0.0,2.5333,0.0
+2026-05-19_16-29-56.mp4,videomae,9,18.0,20.5333,not_playing,not_playing,not_playing,tn,tn,False,contact juggling,0.114839,0.003114,0.0,2.5333,0.0
+2026-05-19_16-29-56.mp4,videomae,10,20.0,22.5333,not_playing,not_playing,not_playing,tn,tn,False,punching bag,0.25286,0.051588,0.0,2.5333,0.0
+2026-05-19_16-29-56.mp4,videomae,11,22.0,24.5333,not_playing,playing,playing,fp,fp,False,playing guitar,0.356532,0.356532,0.0,2.5333,0.0
+2026-05-19_16-29-56.mp4,videomae,12,24.0,26.5333,not_playing,not_playing,playing,tn,fp,True,archery,0.318731,0.024052,0.0,2.5333,0.0
+2026-05-19_16-29-56.mp4,videomae,13,26.0,28.5333,playing,playing,playing,tp,tp,False,playing guitar,0.13752,0.13752,1.4873,1.046,0.0
+2026-05-19_16-29-56.mp4,videomae,14,28.0,30.5333,playing,not_playing,not_playing,fn,fn,False,archery,0.396067,0.022816,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,15,30.0,32.5333,playing,not_playing,not_playing,fn,fn,False,archery,0.106789,0.028647,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,16,32.0,34.5333,playing,not_playing,not_playing,fn,fn,False,spray painting,0.141453,0.015954,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,17,34.0,36.5333,playing,playing,playing,tp,tp,False,playing guitar,0.074799,0.074799,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,18,36.0,38.5333,playing,not_playing,playing,fn,tp,True,headbanging,0.119182,0.113153,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,19,38.0,40.5333,playing,playing,playing,tp,tp,False,playing guitar,0.09659,0.09659,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,20,40.0,42.5333,playing,playing,playing,tp,tp,False,playing guitar,0.105269,0.105269,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,21,42.0,44.5333,playing,playing,playing,tp,tp,False,playing guitar,0.056153,0.056153,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,22,44.0,46.5333,playing,not_playing,playing,fn,tp,True,headbanging,0.078692,0.055847,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,23,46.0,48.5333,playing,playing,playing,tp,tp,False,playing guitar,0.13568,0.13568,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,24,48.0,50.5333,playing,playing,playing,tp,tp,False,playing guitar,0.047472,0.047472,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,25,50.0,52.5333,playing,playing,playing,tp,tp,False,playing guitar,0.106416,0.106416,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,26,52.0,54.5333,playing,not_playing,playing,fn,tp,True,headbanging,0.140969,0.030068,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,27,54.0,56.5333,playing,playing,playing,tp,tp,False,playing guitar,0.050115,0.050115,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,28,56.0,58.5333,playing,playing,playing,tp,tp,False,playing guitar,0.129965,0.129965,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,29,58.0,60.5333,playing,playing,playing,tp,tp,False,playing guitar,0.049044,0.049044,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,30,60.0,62.5333,playing,not_playing,not_playing,fn,fn,False,stretching arm,0.088289,0.043801,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,31,62.0,64.5333,playing,not_playing,not_playing,fn,fn,False,shaking head,0.09996,0.073804,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,32,64.0,66.5333,playing,not_playing,not_playing,fn,fn,False,headbanging,0.259455,0.089906,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,33,66.0,68.5333,playing,not_playing,not_playing,fn,fn,False,headbanging,0.391325,0.034437,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,34,68.0,70.5333,playing,not_playing,not_playing,fn,fn,False,headbanging,0.330728,0.06475,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,35,70.0,72.5333,playing,not_playing,not_playing,fn,fn,False,playing cello,0.089706,0.040104,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,36,72.0,74.5333,playing,not_playing,not_playing,fn,fn,False,headbanging,0.319784,0.010317,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,37,74.0,76.5333,playing,not_playing,not_playing,fn,fn,False,playing cello,0.277883,0.077801,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,38,76.0,78.5333,playing,playing,playing,tp,tp,False,playing guitar,0.208329,0.208329,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,39,78.0,80.5333,playing,playing,playing,tp,tp,False,playing guitar,0.544808,0.544808,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,40,80.0,82.5333,playing,not_playing,playing,fn,tp,True,plastering,0.26772,0.226691,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,41,82.0,84.5333,playing,playing,playing,tp,tp,False,playing guitar,0.497951,0.497951,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,42,84.0,86.5333,playing,playing,playing,tp,tp,False,playing guitar,0.421283,0.421283,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,43,86.0,88.5333,playing,playing,playing,tp,tp,False,playing guitar,0.44715,0.44715,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,44,88.0,90.5333,playing,playing,playing,tp,tp,False,playing guitar,0.470036,0.470036,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,45,90.0,92.5333,playing,playing,playing,tp,tp,False,playing guitar,0.344518,0.344518,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,46,92.0,94.5333,playing,playing,playing,tp,tp,False,playing guitar,0.383003,0.383003,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,47,94.0,96.5333,playing,playing,playing,tp,tp,False,playing guitar,0.428153,0.428153,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,48,96.0,98.5333,playing,playing,playing,tp,tp,False,playing guitar,0.612352,0.612352,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,49,98.0,100.5333,playing,playing,playing,tp,tp,False,playing guitar,0.668821,0.668821,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,50,100.0,102.5333,playing,playing,playing,tp,tp,False,playing guitar,0.622764,0.622764,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,51,102.0,104.5333,playing,playing,playing,tp,tp,False,playing guitar,0.490617,0.490617,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,52,104.0,106.5333,playing,playing,playing,tp,tp,False,playing guitar,0.548951,0.548951,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,53,106.0,108.5333,playing,playing,playing,tp,tp,False,playing guitar,0.686485,0.686485,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,54,108.0,110.5333,playing,playing,playing,tp,tp,False,playing guitar,0.552458,0.552458,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,55,110.0,112.5333,playing,playing,playing,tp,tp,False,playing guitar,0.317369,0.317369,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,56,112.0,114.5333,playing,playing,playing,tp,tp,False,playing guitar,0.588135,0.588135,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,57,114.0,116.5333,playing,playing,playing,tp,tp,False,playing guitar,0.534795,0.534795,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,58,116.0,118.5333,playing,playing,playing,tp,tp,False,playing guitar,0.603161,0.603161,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,59,118.0,120.5333,playing,playing,playing,tp,tp,False,playing guitar,0.480013,0.480013,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,60,120.0,122.5333,playing,playing,playing,tp,tp,False,playing guitar,0.570067,0.570067,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,61,122.0,124.5333,playing,playing,playing,tp,tp,False,playing guitar,0.597732,0.597732,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,62,124.0,126.5333,playing,playing,playing,tp,tp,False,playing guitar,0.449619,0.449619,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,63,126.0,128.5333,playing,playing,playing,tp,tp,False,playing guitar,0.476355,0.476355,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,64,128.0,130.5333,playing,playing,playing,tp,tp,False,playing guitar,0.47874,0.47874,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,65,130.0,132.5333,playing,playing,playing,tp,tp,False,playing guitar,0.516644,0.516644,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,66,132.0,134.5333,playing,playing,playing,tp,tp,False,playing guitar,0.486503,0.486503,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,67,134.0,136.5333,playing,playing,playing,tp,tp,False,playing guitar,0.514909,0.514909,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,68,136.0,138.5333,playing,playing,playing,tp,tp,False,playing guitar,0.545023,0.545023,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,69,138.0,140.5333,playing,playing,playing,tp,tp,False,playing guitar,0.514251,0.514251,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,70,140.0,142.5333,playing,playing,playing,tp,tp,False,playing guitar,0.47392,0.47392,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,71,142.0,144.5333,playing,playing,playing,tp,tp,False,playing guitar,0.503759,0.503759,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,72,144.0,146.5333,playing,playing,playing,tp,tp,False,playing guitar,0.407641,0.407641,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,73,146.0,148.5333,playing,playing,playing,tp,tp,False,playing guitar,0.487372,0.487372,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,74,148.0,150.5333,playing,playing,playing,tp,tp,False,playing guitar,0.432346,0.432346,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,75,150.0,152.5333,playing,playing,playing,tp,tp,False,playing guitar,0.460634,0.460634,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,76,152.0,154.5333,playing,playing,playing,tp,tp,False,playing guitar,0.43239,0.43239,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,77,154.0,156.5333,playing,playing,playing,tp,tp,False,playing guitar,0.420631,0.420631,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,78,156.0,158.5333,playing,playing,playing,tp,tp,False,playing guitar,0.353778,0.353778,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,79,158.0,160.5333,playing,playing,playing,tp,tp,False,playing guitar,0.442551,0.442551,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,80,160.0,162.5333,playing,playing,playing,tp,tp,False,playing guitar,0.47494,0.47494,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,81,162.0,164.5333,playing,playing,playing,tp,tp,False,playing guitar,0.447559,0.447559,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,82,164.0,166.5333,playing,playing,playing,tp,tp,False,playing guitar,0.455636,0.455636,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,83,166.0,168.5333,playing,playing,playing,tp,tp,False,playing guitar,0.519503,0.519503,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,84,168.0,170.5333,playing,playing,playing,tp,tp,False,playing guitar,0.458635,0.458635,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,85,170.0,172.5333,playing,playing,playing,tp,tp,False,playing guitar,0.299673,0.299673,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,86,172.0,174.5333,playing,playing,playing,tp,tp,False,playing guitar,0.191623,0.191623,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,87,174.0,176.5333,playing,playing,playing,tp,tp,False,playing guitar,0.207963,0.207963,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,88,176.0,178.5333,playing,playing,playing,tp,tp,False,playing guitar,0.39742,0.39742,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,89,178.0,180.5333,playing,playing,playing,tp,tp,False,playing guitar,0.472238,0.472238,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,90,180.0,182.5333,playing,playing,playing,tp,tp,False,playing guitar,0.421427,0.421427,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,91,182.0,184.5333,playing,playing,playing,tp,tp,False,playing guitar,0.496245,0.496245,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,92,184.0,186.5333,playing,playing,playing,tp,tp,False,playing guitar,0.460093,0.460093,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,93,186.0,188.5333,playing,playing,playing,tp,tp,False,playing guitar,0.442603,0.442603,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,94,188.0,190.5333,playing,playing,playing,tp,tp,False,playing guitar,0.480184,0.480184,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,95,190.0,192.5333,playing,playing,playing,tp,tp,False,playing guitar,0.440532,0.440532,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,96,192.0,194.5333,playing,playing,playing,tp,tp,False,playing guitar,0.431319,0.431319,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,97,194.0,196.5333,playing,playing,playing,tp,tp,False,playing guitar,0.333229,0.333229,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,98,196.0,198.5333,playing,playing,playing,tp,tp,False,playing guitar,0.337072,0.337072,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,99,198.0,200.5333,playing,playing,playing,tp,tp,False,playing guitar,0.429323,0.429323,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,100,200.0,202.5333,playing,playing,playing,tp,tp,False,playing guitar,0.611519,0.611519,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,101,202.0,204.5333,playing,playing,playing,tp,tp,False,playing guitar,0.566765,0.566765,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,102,204.0,206.5333,playing,not_playing,playing,fn,tp,True,plastering,0.457944,0.095134,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,103,206.0,208.5333,playing,playing,playing,tp,tp,False,playing guitar,0.750039,0.750039,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,104,208.0,210.5333,ambiguous,playing,playing,excluded,excluded,False,playing guitar,0.602176,0.602176,2.0756,0.0,0.4577
+2026-05-19_16-29-56.mp4,videomae,105,210.0,212.5333,ambiguous,not_playing,not_playing,excluded,excluded,False,opening bottle,0.065442,0.006364,0.0756,0.0,2.4577
+2026-05-19_16-29-56.mp4,videomae,106,212.0,214.5333,ambiguous,not_playing,not_playing,excluded,excluded,False,juggling balls,0.123103,0.002233,0.0,0.0,2.5333
+2026-05-19_16-29-56.mp4,videomae,107,214.0,216.5333,ambiguous,not_playing,not_playing,excluded,excluded,False,juggling balls,0.12698,0.00257,0.0,0.0,2.5333
+2026-05-19_16-29-56.mp4,videomae,108,216.0,218.5333,ambiguous,not_playing,not_playing,excluded,excluded,False,juggling balls,0.11006,0.002697,0.0,0.0,2.5333
+2026-05-19_16-29-56.mp4,videomae,109,218.0,220.5333,ambiguous,playing,playing,excluded,excluded,False,playing guitar,0.608506,0.608506,1.1646,0.0,1.3687
+2026-05-19_16-29-56.mp4,videomae,110,220.0,222.5333,playing,playing,playing,tp,tp,False,playing guitar,0.470793,0.470793,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,111,222.0,224.5333,playing,playing,playing,tp,tp,False,playing guitar,0.57011,0.57011,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,112,224.0,226.5333,playing,playing,playing,tp,tp,False,playing guitar,0.369397,0.369397,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,113,226.0,228.5333,playing,playing,playing,tp,tp,False,playing guitar,0.088375,0.088375,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,114,228.0,230.5333,playing,not_playing,not_playing,fn,fn,False,plastering,0.079829,0.037392,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,115,230.0,232.5333,playing,not_playing,not_playing,fn,fn,False,juggling balls,0.182905,0.016066,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,116,232.0,234.5333,playing,not_playing,not_playing,fn,fn,False,contact juggling,0.637057,0.022784,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,117,234.0,236.5333,playing,playing,playing,tp,tp,False,playing guitar,0.424578,0.424578,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,118,236.0,238.5333,playing,playing,playing,tp,tp,False,playing guitar,0.454491,0.454491,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,119,238.0,240.5333,playing,playing,playing,tp,tp,False,playing guitar,0.404391,0.404391,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,120,240.0,242.5333,playing,playing,playing,tp,tp,False,playing guitar,0.444871,0.444871,2.5333,0.0,0.0
+2026-05-19_16-29-56.mp4,videomae,121,242.0,244.5333,playing,playing,playing,tp,tp,False,playing guitar,0.415312,0.415312,2.3728,0.1605,0.0
+2026-05-19_16-29-56.mp4,videomae,122,244.0,246.5333,not_playing,playing,playing,fp,fp,False,playing guitar,0.367945,0.367945,0.3728,2.1605,0.0
+2026-05-19_16-29-56.mp4,videomae,123,246.0,248.5333,not_playing,playing,playing,fp,fp,False,playing guitar,0.314956,0.314956,0.0,2.5333,0.0
+2026-05-19_16-29-56.mp4,videomae,124,248.0,250.5333,not_playing,playing,playing,fp,fp,False,playing guitar,0.243688,0.243688,0.0,2.5333,0.0
+2026-05-19_16-29-56.mp4,videomae,125,250.0,252.5333,not_playing,not_playing,not_playing,tn,tn,False,beatboxing,0.303965,0.002801,0.0,2.5333,0.0
+2026-05-19_16-29-56.mp4,videomae,126,252.0,254.5333,not_playing,not_playing,not_playing,tn,tn,False,beatboxing,0.596285,0.000766,0.0,2.5333,0.0
+2026-05-19_16-29-56.mp4,videomae,127,254.0,256.5333,not_playing,not_playing,not_playing,tn,tn,False,shaving head,0.088505,0.002777,0.0,2.5333,0.0

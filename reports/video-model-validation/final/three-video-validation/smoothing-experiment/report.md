@@ -4,6 +4,18 @@ Stride is the time between consecutive window starts. These 2.5-second windows s
 
 All rules were evaluated against the same three-video ground truth. Smoothing never crosses an ambiguous window.
 
+## Updated metrics: selected smoothing rule
+
+| Case | Precision | Recall | F1 | Accuracy | FP | FN |
+|---|---:|---:|---:|---:|---:|---:|
+| Raw VideoMAE | 0.941 | 0.841 | 0.888 | 0.864 | 12 | 36 |
+| VideoMAE + selected smoothing | 0.941 | 0.912 | 0.926 | 0.907 | 13 | 20 |
+| Change | 0.000 | +0.071 | +0.038 | +0.043 | +1 | -16 |
+
+The selected rule fills up to two consecutive negative windows when both neighboring windows are positive.
+
+## All tested rules
+
 | Rule | Changed windows | Precision | Recall | F1 | Accuracy | FP | FN |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | none | 0 | 0.941 | 0.841 | 0.888 | 0.864 | 12 | 36 |
